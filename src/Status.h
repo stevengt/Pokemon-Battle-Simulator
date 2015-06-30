@@ -1,0 +1,4 @@
+
+#pragma once
+
+enum Status {BURNED,FROZEN,PARALYZED,POISENED,ASLEEP,CONFUSED,NONE};
