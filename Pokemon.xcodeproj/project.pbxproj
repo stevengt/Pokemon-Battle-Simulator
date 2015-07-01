@@ -27,6 +27,8 @@
 		CF830C791B3E1CA700ECDD90 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF830C6E1B3E1CA700ECDD90 /* ofxSlider.cpp */; };
 		CF830C7A1B3E1CA700ECDD90 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF830C701B3E1CA700ECDD90 /* ofxSliderGroup.cpp */; };
 		CF830C7B1B3E1CA700ECDD90 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF830C721B3E1CA700ECDD90 /* ofxToggle.cpp */; };
+		CFA737931B4362A900F106C2 /* SelectPokemonMenuOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFA737911B4362A900F106C2 /* SelectPokemonMenuOption.cpp */; };
+		CFA737941B4362A900F106C2 /* SelectPokemonMenuOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFA737911B4362A900F106C2 /* SelectPokemonMenuOption.cpp */; };
 		CFAD44001B423DDF00219932 /* MySecretGlobalVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFAD43FF1B423DDF00219932 /* MySecretGlobalVariables.cpp */; };
 		CFAD44011B423DDF00219932 /* MySecretGlobalVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFAD43FF1B423DDF00219932 /* MySecretGlobalVariables.cpp */; };
 		CFD589D81B4071E400A8BAA4 /* ButtonManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFD589BB1B4071E400A8BAA4 /* ButtonManager.cpp */; };
@@ -169,6 +171,8 @@
 		CF8F9BFD1B402B7B003BAA1E /* AttackTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackTests.h; sourceTree = "<group>"; };
 		CF8F9BFE1B402DA1003BAA1E /* TrainerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainerTests.h; sourceTree = "<group>"; };
 		CFA0C16D1B3E09C700D26C9C /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		CFA737911B4362A900F106C2 /* SelectPokemonMenuOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectPokemonMenuOption.cpp; sourceTree = "<group>"; };
+		CFA737921B4362A900F106C2 /* SelectPokemonMenuOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPokemonMenuOption.h; sourceTree = "<group>"; };
 		CFAD43FF1B423DDF00219932 /* MySecretGlobalVariables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySecretGlobalVariables.cpp; sourceTree = "<group>"; };
 		CFBC87A31B3FA2C6001C9DBF /* PokemonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTests.h; sourceTree = "<group>"; };
 		CFC54B0B1B3F382C003006F9 /* ItemTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTests.h; sourceTree = "<group>"; };
@@ -311,6 +315,8 @@
 				CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */,
 				CF34AE8D1B40DB3100E80277 /* SelectPokemonMenu.h */,
 				CF34AE911B40DEFC00E80277 /* ListOfScreens.h */,
+				CFA737911B4362A900F106C2 /* SelectPokemonMenuOption.cpp */,
+				CFA737921B4362A900F106C2 /* SelectPokemonMenuOption.h */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -652,6 +658,7 @@
 				CFD58A2F1B40752F00A8BAA4 /* tinyxmlparser.cpp in Sources */,
 				CFD58A2E1B40752F00A8BAA4 /* tinyxmlerror.cpp in Sources */,
 				CFD589EB1B4071E400A8BAA4 /* ToggleItem.cpp in Sources */,
+				CFA737941B4362A900F106C2 /* SelectPokemonMenuOption.cpp in Sources */,
 				CFD58A2D1B40752F00A8BAA4 /* tinyxml.cpp in Sources */,
 				CFD589F01B4071E400A8BAA4 /* SlideButton.cpp in Sources */,
 				CFD589F11B4071E400A8BAA4 /* SimpleButton.cpp in Sources */,
@@ -702,6 +709,7 @@
 				CFD589DE1B4071E400A8BAA4 /* ToggleItem.cpp in Sources */,
 				CFD589D91B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
 				CF48E2A91B3A276A00BAB62B /* Pokemon.cpp in Sources */,
+				CFA737931B4362A900F106C2 /* SelectPokemonMenuOption.cpp in Sources */,
 				CF830C781B3E1CA700ECDD90 /* ofxPanel.cpp in Sources */,
 				CF830C751B3E1CA700ECDD90 /* ofxButton.cpp in Sources */,
 				CF48E2AD1B3A276A00BAB62B /* StatusItem.cpp in Sources */,

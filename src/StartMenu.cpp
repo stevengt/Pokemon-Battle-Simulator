@@ -12,10 +12,6 @@ StartMenu::StartMenu(ofApp &listener){
     setOnlineButton();
 }
 
-void StartMenu::test(){
-    std::cout<<"test";
-}
-
 StartMenu::~StartMenu(){
 
 
@@ -67,3 +63,4 @@ void StartMenu::draw(){
     computerButton.draw();
     onlineButton.draw();
 }
+

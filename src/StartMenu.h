@@ -27,7 +27,6 @@ private:
     ofEvent<bool> onComputerButtonClick;
     
 public:
-    void test();
     StartMenu();
     StartMenu(ofApp &listener);
     ~StartMenu();

@@ -38,6 +38,7 @@ private:
         ScreenState currentState;
         //void* mem = malloc(1000);
         //sofPtr<bool> isUpdating;
+        bool isPaused;
     
         ScreenState currentScreen;
 };

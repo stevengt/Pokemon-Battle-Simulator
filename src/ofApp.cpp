@@ -9,6 +9,7 @@
 void ofApp::setup(){
     //void* mem = malloc(sizeof(StartMenu));
     currentState = START_MENU;
+    //ofSetBackgroundAuto(false);
     //setUpdating(false);
 //    bool tmp;
 //    bool *atmp;
@@ -21,7 +22,7 @@ void ofApp::setup(){
     screens.push_back(new StartMenu(*this));
     screens.push_back(new SelectPokemonMenu(*this));
     currentScreen = START_MENU;
-    
+    isPaused = false;
     //currentScreen = ofPtr<Screen>(new StartMenu(*this));     //this line
     
     
@@ -51,7 +52,7 @@ void ofApp::draw(){
     if(!*MySecretGlobalVariables::isUpdating){
         //std::cout << std::endl << this->currentScreen;
     //std::cout << *MySecretGlobalVariables::isUpdating;
-        screens.at(currentScreen)->test();
+        //screens.at(currentScreen)->test();
         screens.at(currentScreen)->draw();
     }
 }
@@ -76,12 +77,14 @@ void ofApp::computerBattlePressed(){
     //Screen *newScreen = new SelectPokemonMenu(*this);
     
     MySecretGlobalVariables::globalApp->currentScreen = SELECT_POKEMON;
+    ofClear(200, 200, 200 );
     
     
     //currentScreen = ofPtr<Screen>(new SelectPokemonMenu(*this));  //only this line
     
     
     *MySecretGlobalVariables::isUpdating = false;
+    //MySecretGlobalVariables::globalApp->screens.at(MySecretGlobalVariables::globalApp->currentScreen)->draw();
     //currentScreen.~ofPtr();
     //Screen *newScreen = new SelectPokemonMenu(*this);
     //currentScreen = newScreen;
