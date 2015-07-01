@@ -8,19 +8,26 @@
 #include "ofApp.h"
 #include "ofxGui.h"
 #include "SelectPokemonMenuOption.h"
+#include "GlobalVariables.h"
+
 #include <iostream>
 #include <vector>
 
 class SelectPokemonMenu : public Screen {
     
 private:
-    
-    
+    ofApp *listener;
+    //ofxButton button;
+    SelectPokemonMenuOption theOption;
 public:
     
-    static std::vector<SelectPokemonMenuOption> options;
+    std::vector<SelectPokemonMenuOption> options;
+
+    SelectPokemonMenu();
     
-    SelectPokemonMenu(ofApp &listener);
+    void setListener(ofApp newListener);
  
     void draw();
+    
+    void clear();
 };

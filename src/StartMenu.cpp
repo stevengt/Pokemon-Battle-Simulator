@@ -2,10 +2,10 @@
 #include "StartMenu.h"
 
 
-StartMenu::StartMenu(){}
-StartMenu::StartMenu(ofApp &listener){
+
+StartMenu::StartMenu(){
     setImage("images/startMenu.png");
-    setListener(listener);
+    setListener(*GlobalVariables::globalApp);
     //gui->add(computerBattle.set("Computer battle", false));
     //parentWindow = theParentWindow;
     setComputerButton();
@@ -16,8 +16,8 @@ StartMenu::~StartMenu(){
 
 
     image.~ofImage_();
-    computerButton.~ofxButton();
-    onlineButton.~ofxButton();
+    computerButton->~ofxButton();
+    onlineButton->~ofxButton();
     computerButtonLocation.~ofPoint();
     onlineButtonLocation.~ofPoint();
     onComputerButtonClick.~ofEvent();
@@ -27,8 +27,8 @@ StartMenu::~StartMenu(){
 }
 
 ofImage StartMenu::getImage(){return image;}
-ofxButton StartMenu::getComputerButton(){return computerButton;}
-ofxButton StartMenu::getOnlineButton(){return onlineButton;}
+ofxButton StartMenu::getComputerButton(){return *computerButton;}
+ofxButton StartMenu::getOnlineButton(){return *onlineButton;}
 
 ofApp StartMenu::getListener(){
     return *listener;
@@ -45,22 +45,31 @@ void StartMenu::setImage(std::string imageLocation){
 
 void StartMenu::setComputerButton(){
     
-    computerButton = ofxButton();
-    computerButton.setup("Computer Battle", buttonWidth,buttonHeight);
-    computerButton.setPosition(computerButtonLocation);
-    computerButton.addListener(listener, &ofApp::computerBattlePressed);
+    computerButton = new ofxButton();
+    computerButton->setup("Computer Battle", buttonWidth,buttonHeight);
+    computerButton->setPosition(computerButtonLocation);
+    computerButton->addListener(listener, &ofApp::computerBattlePressed);
     
 }
 void StartMenu::setOnlineButton(){
-    onlineButton = ofxButton();
-    onlineButton.setup("Online", buttonWidth,buttonHeight);
-    onlineButton.setPosition(onlineButtonLocation);
+    onlineButton = new ofxButton();
+    onlineButton->setup("Online", buttonWidth,buttonHeight);
+    onlineButton->setPosition(onlineButtonLocation);
     
 }
 
 void StartMenu::draw(){
     image.draw(50, 50, imageWidth, imageHeight);
-    computerButton.draw();
-    onlineButton.draw();
+    computerButton->draw();
+    onlineButton->draw();
+}
+
+void StartMenu::clear(){
+    image.~ofImage_();
+    computerButton->~ofxButton();
+    onlineButton->~ofxButton();
+    computerButtonLocation.~ofPoint();
+    onlineButtonLocation.~ofPoint();
+    onComputerButtonClick.~ofEvent();
 }
 

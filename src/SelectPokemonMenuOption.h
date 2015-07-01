@@ -3,18 +3,21 @@
 
 #include "ofMain.h"
 #include "ofxButton.h"
+#include "ofApp.h"
+#include "GlobalVariables.h"
 
 class SelectPokemonMenuOption{
 private:
     ofImage image;
-    ofxButton button;
-    static const int imageWidth = 200;
-    static const int imageHeight = 200;
-    static const int buttonWidth = 100;
+    ofxButton* button;
+    static const int imageWidth = 150;
+    static const int imageHeight = 150;
+    static const int buttonWidth = 150;
     static const int buttonHeight = 50;
-    static const int buttonOffset = 250;
     static const int frameMargin = 50;
-    static const int imagePadding = 50;
+    static const int imagePaddingRight = 25;
+    static const int imagePaddingBottom = 100;
+    static int buttonOffset;
     static int frameWidth;
     static int frameHeight;
     static int cellWidth;
@@ -29,6 +32,7 @@ private:
     ofParameter<ofPoint> location;
     
 public:
+    SelectPokemonMenuOption();
     SelectPokemonMenuOption(std::string imageLocation, std::string pokemonName, int numOfOptions);
     void setImage(std::string imageLocation);
     void setLocation(int numOfOptions);

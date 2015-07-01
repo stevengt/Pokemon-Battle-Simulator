@@ -7,7 +7,7 @@
 #include "ofMain.h"
 #include "ofApp.h"
 #include "ofxGui.h"
-#include "MySecretGlobalVariables.h"
+#include "GlobalVariables.h"
 #include <iostream>
 
 class StartMenu : public Screen {
@@ -15,8 +15,8 @@ class StartMenu : public Screen {
 private:
     ofImage image;
     ofApp *listener;
-    ofxButton computerButton;
-    ofxButton onlineButton;
+    ofxButton *computerButton;
+    ofxButton *onlineButton;
     //ofParameter<bool> computerBattle;
     int imageWidth = 400;
     int imageHeight = 400;
@@ -28,7 +28,6 @@ private:
     
 public:
     StartMenu();
-    StartMenu(ofApp &listener);
     ~StartMenu();
     ofImage getImage();
     ofxButton getComputerButton();
@@ -40,4 +39,5 @@ public:
     void setComputerButton();
     void setOnlineButton();
     void draw();
+    void clear();
 };

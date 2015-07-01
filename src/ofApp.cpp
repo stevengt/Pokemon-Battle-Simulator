@@ -3,7 +3,7 @@
 #include "StartMenu.h"
 #include "SelectPokemonMenu.h"
 
-#include "MySecretGlobalVariables.h"
+#include "GlobalVariables.h"
 //using namespace MySecretGlobalVariables;
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -19,8 +19,8 @@ void ofApp::setup(){
 //    MySecretGlobalVariables::isUpdating = ofPtr<bool>(atmp);
     //std::cout << MySecretGlobalVariables::isUpdating;
     ofSetBackgroundAuto(false);
-    screens.push_back(new StartMenu(*this));
-    screens.push_back(new SelectPokemonMenu(*this));
+    screens.push_back(new StartMenu());
+    screens.push_back(new SelectPokemonMenu());
     currentScreen = START_MENU;
     isPaused = false;
     //currentScreen = ofPtr<Screen>(new StartMenu(*this));     //this line
@@ -49,7 +49,7 @@ void ofApp::update(){
 void ofApp::draw(){
     //std::cout << &currentScreen;
     //std::cout << "stopped";
-    if(!*MySecretGlobalVariables::isUpdating){
+    if(!*GlobalVariables::isUpdating){
         //std::cout << std::endl << this->currentScreen;
     //std::cout << *MySecretGlobalVariables::isUpdating;
         //screens.at(currentScreen)->test();
@@ -71,19 +71,22 @@ void ofApp::computerBattlePressed(){
     
     //delete currentScreen;
     //std::cout << MySecretGlobalVariables::isUpdating;
-    *MySecretGlobalVariables::isUpdating = true;
+    *GlobalVariables::isUpdating = true;
+    
+    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clear();;
+    
+    //GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clearButtons();
     //this->currentScreen.~ofPtr();
     //currentScreen.~ofPtr();
     //Screen *newScreen = new SelectPokemonMenu(*this);
     
-    MySecretGlobalVariables::globalApp->currentScreen = SELECT_POKEMON;
+    GlobalVariables::globalApp->currentScreen = SELECT_POKEMON;
     ofClear(200, 200, 200 );
-    
     
     //currentScreen = ofPtr<Screen>(new SelectPokemonMenu(*this));  //only this line
     
     
-    *MySecretGlobalVariables::isUpdating = false;
+    *GlobalVariables::isUpdating = false;
     //MySecretGlobalVariables::globalApp->screens.at(MySecretGlobalVariables::globalApp->currentScreen)->draw();
     //currentScreen.~ofPtr();
     //Screen *newScreen = new SelectPokemonMenu(*this);

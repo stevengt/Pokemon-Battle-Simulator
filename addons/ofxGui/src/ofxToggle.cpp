@@ -138,7 +138,6 @@ bool ofxToggle::setValue(float mx, float my, bool bCheck){
 		ofRectangle checkRect = checkboxRect;
 		checkRect.x += b.x;
 		checkRect.y += b.y;
-
 		if( checkRect.inside(mx, my) ){
 			bGuiActive = true;
 		}else{

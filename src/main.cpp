@@ -1,6 +1,6 @@
 #include "ofMain.h"
 #include "ofApp.h"
-#include "MySecretGlobalVariables.h"
+#include "GlobalVariables.h"
 //#include "PokemonGlobal.cpp"
 
 //========================================================================
@@ -15,12 +15,12 @@ int main( ){
     
   //  app = new ofApp();
     bool tmp;
-    MySecretGlobalVariables::isUpdating= &tmp;
-    *MySecretGlobalVariables::isUpdating = false;
+    GlobalVariables::isUpdating= &tmp;
+    *GlobalVariables::isUpdating = false;
 
-    MySecretGlobalVariables::globalApp = new ofApp();
+    GlobalVariables::globalApp = new ofApp();
     
     
-    ofRunApp(MySecretGlobalVariables::globalApp);
+    ofRunApp(GlobalVariables::globalApp);
 
 }
