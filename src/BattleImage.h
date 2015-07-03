@@ -22,6 +22,7 @@ private:
     bool isTrainer1;
 public:
     BattleImage(Pokemon *pokemon, bool isTrainer1);
+    Pokemon *getPokemon();
     void setPokemon(Pokemon *newPokemon);
     void setImage(std::string imageLocation);
     void setIsPlayer1(bool newVal);

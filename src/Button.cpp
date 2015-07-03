@@ -3,7 +3,6 @@
 #include "Button.h"
 
 Button::Button(int x, int y, int w, int h, std::string text){
-    //renderer = new ofGLProgrammableRenderer();
     button = new ofRectangle();
     setButtonX(x);
     setButtonY(y);
@@ -62,11 +61,8 @@ bool Button::inside(int x, int y){
 }
 
 void Button::draw(){
-    //renderer->drawRectangle(buttonX, buttonY, 0, buttonWidth, buttonHeight);
     ofSetColor(0,0,0);
-    //ofFill();
     ofRect(buttonX, buttonY, buttonWidth, buttonHeight);
-    //ofSetColor(0,0,0,255);
     ofSetColor(255,255,255);
     ofDrawBitmapString(text, buttonX+textOffset, buttonY+textOffset+10);
 }

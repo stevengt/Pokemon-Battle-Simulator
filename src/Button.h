@@ -6,7 +6,6 @@
 
 class Button : public Drawable {
 private:
-    ofGLProgrammableRenderer *renderer;
     ofRectangle *button;
     std::string text;
     int buttonX;

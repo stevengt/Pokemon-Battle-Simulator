@@ -20,6 +20,10 @@ void BattleImage::setIsPlayer1(bool newVal){
     isTrainer1 = newVal;
 }
 
+Pokemon *BattleImage::getPokemon(){
+    return pokemon;
+}
+
 void BattleImage::draw(){
     healthbarWidth = ( ( (pokemon->getCurrentHp()) / (pokemon->getMaxHp()) ) * imageWidth );
     if (isTrainer1){
