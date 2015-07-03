@@ -37,18 +37,18 @@ void SelectPokemonMenuOption::setLocation(int numOfOptions){
 }
 
 void SelectPokemonMenuOption::setButton(std::string pokemonName){
-    button = new ofxButton();
-    button->setup(pokemonName, buttonWidth, buttonHeight);
-    button->setPosition(location->x, location->y+buttonOffset);
-    //button->setShape(ofRectangle(location->x, location->y+buttonOffset, buttonWidth , buttonHeight));
-    //button.setPosition(location->x, location->y+buttonOffset);
-    
-    //button.ofxToggle::setPosition(location->x,location->y+buttonOffset);
-    //button.addListener(GlobalVariables::globalApp, &ofApp::computerBattlePressed);
-    //computerButton.addListener(listener, &ofApp::computerBattlePressed);
+    button = new ofxToggle();
+    button->setup(pokemonName,false);
+    button->setShape(location.x, location.y+buttonOffset, buttonWidth, buttonHeight);
 }
 
 void SelectPokemonMenuOption::draw(){
-    image.draw(location->x, location->y, imageWidth, imageHeight);
+    image.draw(location.x, location.y, imageWidth, imageHeight);
     button->draw();
+}
+
+void SelectPokemonMenuOption::clear(){
+    image.~ofImage_();
+    button->~ofxToggle();
+    location.~ofPoint();
 }

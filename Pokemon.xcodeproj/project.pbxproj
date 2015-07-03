@@ -18,6 +18,8 @@
 		CF48E2AB1B3A276A00BAB62B /* StartMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E29A1B3A276A00BAB62B /* StartMenu.cpp */; };
 		CF48E2AD1B3A276A00BAB62B /* StatusItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E29D1B3A276A00BAB62B /* StatusItem.cpp */; };
 		CF48E2AF1B3A276A00BAB62B /* Trainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E29F1B3A276A00BAB62B /* Trainer.cpp */; };
+		CF54021A1B460FA3004B7CBC /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF5402181B460FA3004B7CBC /* Button.cpp */; };
+		CF54021B1B460FA3004B7CBC /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF5402181B460FA3004B7CBC /* Button.cpp */; };
 		CF5C24DD1B3B71A2005A9082 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		CF830C741B3E1CA700ECDD90 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF830C631B3E1CA700ECDD90 /* ofxBaseGui.cpp */; };
 		CF830C751B3E1CA700ECDD90 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF830C651B3E1CA700ECDD90 /* ofxButton.cpp */; };
@@ -65,8 +67,6 @@
 		CFD58A2D1B40752F00A8BAA4 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFD58A241B40752F00A8BAA4 /* tinyxml.cpp */; };
 		CFD58A2E1B40752F00A8BAA4 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFD58A261B40752F00A8BAA4 /* tinyxmlerror.cpp */; };
 		CFD58A2F1B40752F00A8BAA4 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFD58A271B40752F00A8BAA4 /* tinyxmlparser.cpp */; };
-		CFEE52001B44603E0095E4F2 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFEE51FF1B44603E0095E4F2 /* Screen.cpp */; };
-		CFEE52011B44603E0095E4F2 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFEE51FF1B44603E0095E4F2 /* Screen.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -152,6 +152,10 @@
 		CF48E29E1B3A276A00BAB62B /* StatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItem.h; sourceTree = "<group>"; };
 		CF48E29F1B3A276A00BAB62B /* Trainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Trainer.cpp; sourceTree = "<group>"; };
 		CF48E2A01B3A276A00BAB62B /* Trainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trainer.h; sourceTree = "<group>"; };
+		CF5402151B44A880004B7CBC /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
+		CF5402161B44A91D004B7CBC /* Screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		CF5402181B460FA3004B7CBC /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Button.cpp; sourceTree = "<group>"; };
+		CF5402191B460FA3004B7CBC /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
 		CF830C631B3E1CA700ECDD90 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
 		CF830C641B3E1CA700ECDD90 /* ofxBaseGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
 		CF830C651B3E1CA700ECDD90 /* ofxButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
@@ -172,7 +176,6 @@
 		CF8ACB231B42304500DAA8C3 /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
 		CF8F9BFD1B402B7B003BAA1E /* AttackTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackTests.h; sourceTree = "<group>"; };
 		CF8F9BFE1B402DA1003BAA1E /* TrainerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainerTests.h; sourceTree = "<group>"; };
-		CFA0C16D1B3E09C700D26C9C /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
 		CFA737911B4362A900F106C2 /* SelectPokemonMenuOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectPokemonMenuOption.cpp; sourceTree = "<group>"; };
 		CFA737921B4362A900F106C2 /* SelectPokemonMenuOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPokemonMenuOption.h; sourceTree = "<group>"; };
 		CFAD43FF1B423DDF00219932 /* GlobalVariables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalVariables.cpp; sourceTree = "<group>"; };
@@ -211,7 +214,6 @@
 		CFD58A251B40752F00A8BAA4 /* tinyxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
 		CFD58A261B40752F00A8BAA4 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
 		CFD58A271B40752F00A8BAA4 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
-		CFEE51FF1B44603E0095E4F2 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -312,8 +314,6 @@
 		CF34AE901B40DB3600E80277 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				CFA0C16D1B3E09C700D26C9C /* Screen.h */,
-				CFEE51FF1B44603E0095E4F2 /* Screen.cpp */,
 				CF48E29A1B3A276A00BAB62B /* StartMenu.cpp */,
 				CF48E29B1B3A276A00BAB62B /* StartMenu.h */,
 				CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */,
@@ -321,6 +321,10 @@
 				CF34AE911B40DEFC00E80277 /* ListOfScreens.h */,
 				CFA737911B4362A900F106C2 /* SelectPokemonMenuOption.cpp */,
 				CFA737921B4362A900F106C2 /* SelectPokemonMenuOption.h */,
+				CF5402151B44A880004B7CBC /* Drawable.h */,
+				CF5402161B44A91D004B7CBC /* Screen.h */,
+				CF5402181B460FA3004B7CBC /* Button.cpp */,
+				CF5402191B460FA3004B7CBC /* Button.h */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -673,10 +677,10 @@
 				CFD589E81B4071E400A8BAA4 /* ListItem.cpp in Sources */,
 				CFD589E61B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
 				CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */,
-				CFEE52011B44603E0095E4F2 /* Screen.cpp in Sources */,
 				CFD589EE1B4071E400A8BAA4 /* ImageButton.cpp in Sources */,
 				CFD589EC1B4071E400A8BAA4 /* DisplayButton.cpp in Sources */,
 				CFD589EA1B4071E400A8BAA4 /* SliderItem.cpp in Sources */,
+				CF54021B1B460FA3004B7CBC /* Button.cpp in Sources */,
 				CFD589E71B4071E400A8BAA4 /* FlashItem.cpp in Sources */,
 				CFD589E51B4071E400A8BAA4 /* ButtonManager.cpp in Sources */,
 				CFAD44011B423DDF00219932 /* GlobalVariables.cpp in Sources */,
@@ -695,6 +699,7 @@
 				CFAD44001B423DDF00219932 /* GlobalVariables.cpp in Sources */,
 				CFD589E41B4071E400A8BAA4 /* SimpleButton.cpp in Sources */,
 				CF48E2AB1B3A276A00BAB62B /* StartMenu.cpp in Sources */,
+				CF54021A1B460FA3004B7CBC /* Button.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				CF830C771B3E1CA700ECDD90 /* ofxLabel.cpp in Sources */,
 				CF48E2A31B3A276A00BAB62B /* Bag.cpp in Sources */,
@@ -704,7 +709,6 @@
 				CFD589D81B4071E400A8BAA4 /* ButtonManager.cpp in Sources */,
 				CFD589DC1B4071E400A8BAA4 /* SelectionItem.cpp in Sources */,
 				CFD589DD1B4071E400A8BAA4 /* SliderItem.cpp in Sources */,
-				CFEE52001B44603E0095E4F2 /* Screen.cpp in Sources */,
 				CFD589E11B4071E400A8BAA4 /* ImageButton.cpp in Sources */,
 				CFD589E31B4071E400A8BAA4 /* SlideButton.cpp in Sources */,
 				CFD589DA1B4071E400A8BAA4 /* FlashItem.cpp in Sources */,

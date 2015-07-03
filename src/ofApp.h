@@ -11,8 +11,6 @@ class ofApp : public ofBaseApp {
 
 private:
     
-    //ofPtr<bool> isUpdating;
-    
 	public:
 		void setup();
 		void update();
@@ -27,19 +25,13 @@ private:
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-        //bool getUpdating();
-        void computerBattlePressed();
-        //std::auto_ptr<Screen> currentScreen;
-        //Screen *currentScreen;
-        //ofPtr<Screen> currentScreen;
-        //std::shared_ptr<Screen> currentScreen;
+    
+        void switchToSelectPokemonMenu();
+        void switchToStartMenu();
         std::vector<Screen*> screens;
         ofEvent<bool> computerBattle;
-        ScreenState currentState;
-        //void* mem = malloc(1000);
-        //sofPtr<bool> isUpdating;
         bool isPaused;
-    
+        void addScreens();
         ScreenState currentScreen;
 };
 

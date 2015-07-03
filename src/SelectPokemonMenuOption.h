@@ -6,14 +6,15 @@
 #include "ofApp.h"
 #include "GlobalVariables.h"
 
-class SelectPokemonMenuOption{
+
+class SelectPokemonMenuOption : public Drawable{
 private:
     ofImage image;
-    ofxButton* button;
+    ofxToggle *button;
     static const int imageWidth = 150;
     static const int imageHeight = 150;
     static const int buttonWidth = 150;
-    static const int buttonHeight = 50;
+    static const int buttonHeight = 20;
     static const int frameMargin = 50;
     static const int imagePaddingRight = 25;
     static const int imagePaddingBottom = 100;
@@ -26,10 +27,7 @@ private:
     static int gridHeight;
     static int cellsPerRow;
     static int cellsPerCol;
-    
-    
-    
-    ofParameter<ofPoint> location;
+    ofPoint location;
     
 public:
     SelectPokemonMenuOption();
@@ -38,5 +36,6 @@ public:
     void setLocation(int numOfOptions);
     void setButton(std::string pokemonName);
     void draw();
+    void clear();
     
 };
