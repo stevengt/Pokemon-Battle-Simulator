@@ -25,6 +25,7 @@ public:
     void setButtonWidth(int width);
     void setButtonHeight(int height);
     bool inside(int x, int y);
+    std::string getText();
     int getMinX();
     int getMaxX();
     int getMinY();

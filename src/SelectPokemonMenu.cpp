@@ -11,14 +11,14 @@ void SelectPokemonMenu::setListener(ofApp newListener){
 
 void SelectPokemonMenu::addOptions(){
     options = new std::vector<SelectPokemonMenuOption>();
-    options->push_back(SelectPokemonMenuOption("images/pikachu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/startMenu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/pikachu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/startMenu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/pikachu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/startMenu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/pikachu.png","Pikachu", options->size()));
-    options->push_back(SelectPokemonMenuOption("images/startMenu.png","Pikachu", options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
 }
 
 void SelectPokemonMenu::setContinueButton(){
@@ -53,6 +53,33 @@ void SelectPokemonMenu::clear(){
     }
 }
 
+Trainer *SelectPokemonMenu::initializeTrainer(bool isTrainer1){
+    Trainer *trainer = new Trainer();
+    if(isTrainer1){
+        for(int i = 0; i < options->size() ; i++){
+            if(optionIsSelected(i)){
+                trainer->addPokemon(options->at(i).getPokemon());
+            }
+        }
+    } else {
+        for (int i = 0; i < 6; i++){
+            trainer->addPokemon(options->at(i).getPokemon());
+        }
+    }
+    return trainer;
+}
+
+bool SelectPokemonMenu::optionIsSelected(int optionNum){
+    return options->at(optionNum).getButton()->getParameter().toString() == "1";
+}
+
+
+Battle *SelectPokemonMenu::makeBattle(){
+    Trainer *trainer1 = initializeTrainer(true);
+    Trainer *trainer2 = initializeTrainer(false);
+    return new Battle(trainer1, trainer2);
+}
+
 
 void SelectPokemonMenu::populate(){
     addOptions();
@@ -68,7 +95,7 @@ void SelectPokemonMenu::setWarningMessage(){
 bool SelectPokemonMenu::selectionIsValid(){
     int count = 0;
     for (int i = 0; i < options->size(); i++){
-        if(options->at(i).getButton()->getParameter().toString() == "1"){
+        if(optionIsSelected(i)){
             count++;
         }
     }
@@ -85,6 +112,8 @@ void SelectPokemonMenu::mousePressed(int x, int y){
     if(continueButton->inside(x,y)){
         if (!selectionIsValid()){
             setWarningMessage();
+        } else {
+            GlobalVariables::globalApp->switchToBattleScreen(makeBattle());
         }
     }
     

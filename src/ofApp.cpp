@@ -4,7 +4,7 @@
 #include "SelectPokemonMenu.h"
 
 #include "GlobalVariables.h"
-//using namespace MySecretGlobalVariables;
+
 //--------------------------------------------------------------
 void ofApp::setup(){
 
@@ -36,24 +36,28 @@ void ofApp::addScreens(){
 
 
 void ofApp::switchToSelectPokemonMenu(){
-    *GlobalVariables::isUpdating = true;
-    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clear();
-    GlobalVariables::globalApp->currentScreen = SELECT_POKEMON;
-    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->populate();
-    ofClear(200, 200, 200 );
-    *GlobalVariables::isUpdating = false;
+    switchScreens(SELECT_POKEMON);
 
 }
 
 
 void ofApp::switchToStartMenu(){
+    switchScreens(START_MENU);
+    
+}
+
+void ofApp::switchToBattleScreen(Battle *battle){
+    screens.push_back(new BattleScreen(battle));
+    switchScreens(BATTLE_SCREEN);
+}
+
+void ofApp::switchScreens(ScreenState newScreen){
     *GlobalVariables::isUpdating = true;
     GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clear();;
-    GlobalVariables::globalApp->currentScreen = START_MENU;
+    GlobalVariables::globalApp->currentScreen = newScreen;
     GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->populate();
     ofClear(200, 200, 200 );
     *GlobalVariables::isUpdating = false;
-    
 }
 
 //--------------------------------------------------------------

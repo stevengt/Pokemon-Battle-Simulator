@@ -16,10 +16,11 @@ int SelectPokemonMenuOption::buttonOffset = imageHeight + 10;
 
 SelectPokemonMenuOption::SelectPokemonMenuOption(){}
 
-SelectPokemonMenuOption::SelectPokemonMenuOption(std::string imageLocation, std::string pokemonName, int numOfOptions){
+SelectPokemonMenuOption::SelectPokemonMenuOption(Pokemon *pokemon, int numOfOptions){
+    setPokemon(pokemon);
     setLocation(numOfOptions);
-    setImage(imageLocation);
-    setButton(pokemonName);
+    setImage(pokemon->getImageLocation());
+    setButton(pokemon->getName());
     
 }
 
@@ -35,6 +36,15 @@ void SelectPokemonMenuOption::setLocation(int numOfOptions){
     location = ofPoint(frameMargin + (gridPosition.x)*(cellWidth), frameMargin+(gridPosition.y)*(cellHeight));
 
 }
+
+void SelectPokemonMenuOption::setPokemon(Pokemon *newPokemon){
+    pokemon = newPokemon;
+}
+
+Pokemon *SelectPokemonMenuOption::getPokemon(){
+    return pokemon;
+}
+
 
 ofxToggle *SelectPokemonMenuOption::getButton(){
     return button;

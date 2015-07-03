@@ -10,6 +10,7 @@ class Pokemon{
     
 private:
     std::string name;
+    std::string imageLocation;
     PokeType type;
     Status status;
     
@@ -21,23 +22,23 @@ private:
     
 public:
     Pokemon();
-    Pokemon(std::string name, PokeType type, std::string imageLocation, int level, int maxHp);
+    Pokemon(std::string name, PokeType type, std::string imageLocation, int maxHp);
     std::string getName();
+    std::string getImageLocation();
     PokeType getType();
     Status getStatus();
     std::vector<Attack> getAttacks();
     //ofImage getSprite();
-    int getLevel();
     int getMaxHp();
     int getCurrentHp();
     
+    void setImageLocation(std::string newImageLocation);
     void setName(std::string newName);
     void setType(PokeType newType);
     void setStatus(Status newStatus);
     void addAttack(Attack newAttack);
     void removeAttack(int attackNum);
     //ofImage setSprite();
-    void setLevel(int newLevel);
     void setMaxHp(int newMaxHp);
     void setCurrentHp(int newCurrentHp);
     

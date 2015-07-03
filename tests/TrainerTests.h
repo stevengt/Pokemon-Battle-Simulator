@@ -42,7 +42,7 @@ public:
         trainer.removePokemon(2);
         TS_ASSERT(trainer.equals(trainer2));
         TS_ASSERT_EQUALS(trainer.getAllPokemon().size(),3);
-        TS_ASSERT(trainer.getPokemon(2).equals(pokemon4));
+        TS_ASSERT(trainer.getPokemon(2)->equals(*pokemon4));
         
     }
 

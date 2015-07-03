@@ -2,10 +2,12 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxButton.h"
+#include "ofxToggle.h"
 #include "ofApp.h"
-#include "GlobalVariables.h"
 
+#include "Pokemon.h"
+
+#include "GlobalVariables.h"
 
 class SelectPokemonMenuOption : public Drawable{
 private:
@@ -28,15 +30,19 @@ private:
     static int cellsPerRow;
     static int cellsPerCol;
     ofPoint location;
+    Pokemon *pokemon;
     
 public:
     SelectPokemonMenuOption();
-    SelectPokemonMenuOption(std::string imageLocation, std::string pokemonName, int numOfOptions);
+    SelectPokemonMenuOption(Pokemon *pokemon, int numOfOptions);
     void setImage(std::string imageLocation);
     void setLocation(int numOfOptions);
-    void setButton(std::string pokemonName);
     ofxToggle *getButton();
+    void setPokemon(Pokemon *newPokemon);
+    Pokemon *getPokemon();
+    void setButton(std::string pokemonName);
     void draw();
     void clear();
+    
     
 };

@@ -4,21 +4,20 @@
 #include <iostream>
 
 Pokemon::Pokemon(){}
-Pokemon::Pokemon(std::string name, PokeType type, std::string imageLocation, int level, int maxHp){
+Pokemon::Pokemon(std::string name, PokeType type, std::string imageLocation, int maxHp){
     setName(name);
     setType(type);
-    setLevel(level);
     setMaxHp(maxHp);
     Status status = NONE;
     setStatus(status);
     setCurrentHp(maxHp);
+    setImageLocation(imageLocation);
 }
 std::string Pokemon::getName(){return name;}
 PokeType Pokemon::getType(){return type;}
 Status Pokemon::getStatus(){return status;}
 std::vector<Attack> Pokemon::getAttacks(){return attacks;}
 //ofImage getSprite(){return sprite;}
-int Pokemon::getLevel(){return level;}
 int Pokemon::getMaxHp(){return maxHp;}
 int Pokemon::getCurrentHp(){return currentHp;}
 
@@ -43,9 +42,16 @@ void Pokemon::removeAttack(int attackNum){
     attacks.erase(attacks.begin() + attackNum);
 }
 
+std::string Pokemon::getImageLocation(){
+    return imageLocation;
+}
+
+void Pokemon::setImageLocation(std::string newImageLocation){
+    imageLocation = newImageLocation;
+}
+
 
 //ofImage setSprite(){return sprite;}
-void Pokemon::setLevel(int newLevel){level = newLevel;}
 void Pokemon::setMaxHp(int newMaxHp){maxHp = newMaxHp;}
 void Pokemon::setCurrentHp(int newCurrentHp){currentHp = newCurrentHp;}
 
@@ -54,7 +60,6 @@ bool Pokemon::equals(Pokemon otherPokemon){
         if (name != otherPokemon.getName()
             || type != otherPokemon.getType()
             || status != otherPokemon.getStatus()
-            || level != otherPokemon.getLevel()
             || maxHp != otherPokemon.getMaxHp()
             ||currentHp != otherPokemon.getCurrentHp()){
             

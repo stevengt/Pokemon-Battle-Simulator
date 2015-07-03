@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		CF20CC251B46D2B10073CCBE /* BattleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */; };
+		CF20CC261B46D2B10073CCBE /* BattleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */; };
+		CF20CC291B46D3FE0073CCBE /* Battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC271B46D3FE0073CCBE /* Battle.cpp */; };
+		CF20CC2A1B46D3FE0073CCBE /* Battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC271B46D3FE0073CCBE /* Battle.cpp */; };
+		CF20CC2D1B46E3BB0073CCBE /* BattleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */; };
+		CF20CC2E1B46E3BB0073CCBE /* BattleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */; };
 		CF34AE8E1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF48E2A11B3A276A00BAB62B /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E28E1B3A276A00BAB62B /* Attack.cpp */; };
@@ -127,6 +133,12 @@
 
 /* Begin PBXFileReference section */
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleScreen.cpp; sourceTree = "<group>"; };
+		CF20CC241B46D2B10073CCBE /* BattleScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleScreen.h; sourceTree = "<group>"; };
+		CF20CC271B46D3FE0073CCBE /* Battle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Battle.cpp; sourceTree = "<group>"; };
+		CF20CC281B46D3FE0073CCBE /* Battle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Battle.h; sourceTree = "<group>"; };
+		CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleImage.cpp; sourceTree = "<group>"; };
+		CF20CC2C1B46E3BB0073CCBE /* BattleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleImage.h; sourceTree = "<group>"; };
 		CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectPokemonMenu.cpp; sourceTree = "<group>"; };
 		CF34AE8D1B40DB3100E80277 /* SelectPokemonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPokemonMenu.h; sourceTree = "<group>"; };
 		CF34AE911B40DEFC00E80277 /* ListOfScreens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfScreens.h; sourceTree = "<group>"; };
@@ -325,6 +337,10 @@
 				CF5402161B44A91D004B7CBC /* Screen.h */,
 				CF5402181B460FA3004B7CBC /* Button.cpp */,
 				CF5402191B460FA3004B7CBC /* Button.h */,
+				CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */,
+				CF20CC241B46D2B10073CCBE /* BattleScreen.h */,
+				CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */,
+				CF20CC2C1B46E3BB0073CCBE /* BattleImage.h */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -539,6 +555,8 @@
 				CF48E2A01B3A276A00BAB62B /* Trainer.h */,
 				CF48E2B31B3A28C100BAB62B /* main */,
 				CF34AE901B40DB3600E80277 /* Screens */,
+				CF20CC271B46D3FE0073CCBE /* Battle.cpp */,
+				CF20CC281B46D3FE0073CCBE /* Battle.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -670,12 +688,15 @@
 				CFD58A2D1B40752F00A8BAA4 /* tinyxml.cpp in Sources */,
 				CFD589F01B4071E400A8BAA4 /* SlideButton.cpp in Sources */,
 				CFD589F11B4071E400A8BAA4 /* SimpleButton.cpp in Sources */,
+				CF20CC2E1B46E3BB0073CCBE /* BattleImage.cpp in Sources */,
 				CFD589ED1B4071E400A8BAA4 /* FlashButton.cpp in Sources */,
 				CFD589E91B4071E400A8BAA4 /* SelectionItem.cpp in Sources */,
 				CFD589EF1B4071E400A8BAA4 /* OnOffButton.cpp in Sources */,
 				CFD58A2C1B40752F00A8BAA4 /* ofxXmlSettings.cpp in Sources */,
 				CFD589E81B4071E400A8BAA4 /* ListItem.cpp in Sources */,
 				CFD589E61B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
+				CF20CC2A1B46D3FE0073CCBE /* Battle.cpp in Sources */,
+				CF20CC261B46D2B10073CCBE /* BattleScreen.cpp in Sources */,
 				CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */,
 				CFD589EE1B4071E400A8BAA4 /* ImageButton.cpp in Sources */,
 				CFD589EC1B4071E400A8BAA4 /* DisplayButton.cpp in Sources */,
@@ -716,10 +737,13 @@
 				CF48E2A11B3A276A00BAB62B /* Attack.cpp in Sources */,
 				CFD589DF1B4071E400A8BAA4 /* DisplayButton.cpp in Sources */,
 				CFD58A281B40752F00A8BAA4 /* ofxXmlSettings.cpp in Sources */,
+				CF20CC2D1B46E3BB0073CCBE /* BattleImage.cpp in Sources */,
 				CFD589DE1B4071E400A8BAA4 /* ToggleItem.cpp in Sources */,
 				CFD589D91B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
+				CF20CC291B46D3FE0073CCBE /* Battle.cpp in Sources */,
 				CF48E2A91B3A276A00BAB62B /* Pokemon.cpp in Sources */,
 				CFA737931B4362A900F106C2 /* SelectPokemonMenuOption.cpp in Sources */,
+				CF20CC251B46D2B10073CCBE /* BattleScreen.cpp in Sources */,
 				CF830C781B3E1CA700ECDD90 /* ofxPanel.cpp in Sources */,
 				CF830C751B3E1CA700ECDD90 /* ofxButton.cpp in Sources */,
 				CF48E2AD1B3A276A00BAB62B /* StatusItem.cpp in Sources */,

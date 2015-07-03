@@ -5,18 +5,30 @@
 
 Trainer::Trainer(){}
 
-std::vector<Pokemon> Trainer::getAllPokemon(){return pokemon;}
+std::vector<Pokemon*> Trainer::getAllPokemon(){return pokemon;}
 
-Pokemon Trainer::getPokemon(int pokemonNum){
+Pokemon* Trainer::getPokemon(int pokemonNum){
     if(pokemonNum<0 || pokemonNum>5){
         throw std::invalid_argument( "Invalid Pokemon index" );
     }
-    return pokemon[pokemonNum];
+    return pokemon.at(pokemonNum);
 }
 
 Bag Trainer::getBag(){return bag;}
 
-void Trainer::addPokemon(Pokemon newPokemon){
+Pokemon *Trainer::getActivePokemon(){
+    return pokemon.at(activePokemon);
+}
+
+void Trainer::setActivePokemon(int pokemonNum){
+    if(pokemonNum < 0 || pokemonNum > 5){
+        throw std::invalid_argument( "Invalid Pokemon index" );
+    } else {
+        activePokemon = pokemonNum;
+    }
+}
+
+void Trainer::addPokemon(Pokemon *newPokemon){
     if(pokemon.size()>5){
         throw std::invalid_argument( "Already have 6 Pokemon" );
     }
@@ -42,7 +54,7 @@ bool Trainer::equals(Trainer otherTrainer){
         return false;
     }
     for (int i = 0; i < pokemon.size(); i++){
-        if (!pokemon.at(i).equals(otherTrainer.getAllPokemon().at(i))){
+        if (!pokemon.at(i)->equals(*otherTrainer.getPokemon(i))){
             return false;
         }
     }

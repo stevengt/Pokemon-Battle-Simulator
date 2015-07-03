@@ -10,6 +10,7 @@
 #include "SelectPokemonMenuOption.h"
 #include "GlobalVariables.h"
 #include "Button.h"
+#include "Battle.h"
 #include <iostream>
 #include <vector>
 
@@ -40,6 +41,9 @@ public:
     void setContinueButton();
     void setBackButton();
     void setWarningMessage();
+    bool optionIsSelected(int optionNum);
+    Battle *makeBattle();
+    Trainer *initializeTrainer(bool isTrainer1);
     void draw();
     void clear();
     void populate();

@@ -8,15 +8,18 @@
 class Trainer{
 
 private:
-    std::vector<Pokemon> pokemon;
+    std::vector<Pokemon*> pokemon;
+    int activePokemon;
     Bag bag;
     
 public:
     Trainer();
-    std::vector<Pokemon>getAllPokemon();
-    Pokemon getPokemon(int pokemonNum);
+    Pokemon *getActivePokemon();
+    void setActivePokemon(int pokemonNum);
+    std::vector<Pokemon*>getAllPokemon();
+    Pokemon *getPokemon(int pokemonNum);
     Bag getBag();
-    void addPokemon(Pokemon newPokemon);
+    void addPokemon(Pokemon *newPokemon);
     void removePokemon(int pokemonNum);
     void setBag(Bag newBag);
     bool equals(Trainer otherTrainer);

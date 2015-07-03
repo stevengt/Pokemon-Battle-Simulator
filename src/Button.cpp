@@ -28,6 +28,10 @@ void Button::setButtonHeight(int height){
     buttonHeight = height;
 }
 
+std::string Button::getText(){
+    return text;
+}
+
 void Button::setButtonY(int y){
     buttonY = y;
 }

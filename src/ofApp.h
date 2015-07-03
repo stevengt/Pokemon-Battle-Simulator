@@ -3,9 +3,9 @@
 #include "ofMain.h"
 #include "Screen.h"
 #include "ListOfScreens.h"
-//#include "MySecretGlobalVariables.h"
-//#include "MySecretGlobalVariables.h"
 #include "ListOfScreens.h"
+#include "Battle.h"
+#include "BattleScreen.h"
 #include <vector>
 class ofApp : public ofBaseApp {
 
@@ -26,8 +26,10 @@ private:
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+        void switchScreens(ScreenState newScreen);
         void switchToSelectPokemonMenu();
         void switchToStartMenu();
+        void switchToBattleScreen(Battle *battle);
         std::vector<Screen*> screens;
         ofEvent<bool> computerBattle;
         bool isPaused;
