@@ -16,24 +16,20 @@ class StartMenu : public Screen {
 private:
     ofImage image;
     ofApp *listener;
-//    ofxButton *computerButton;
-//    ofxButton *onlineButton;
     Button *computerButton;
     Button *onlineButton;
-    int imageWidth = 400;
-    int imageHeight = 400;
-    int buttonWidth = 200;
-    int buttonHeight = 70;
-    ofPoint computerButtonLocation = ofPoint(600,200);
-    ofPoint onlineButtonLocation = ofPoint(600,400);
-    //ofEvent<bool> onComputerButtonClick;
+    static const int imageWidth = 400;
+    static const int imageHeight = 400;
+    static const int buttonWidth = 200;
+    static const int buttonHeight = 70;
+    static const int computerButtonLocationX = 600;
+    static const int computerButtonLocationY = 200;
+    static const int onlineButtonLocationX = 600;
+    static const int onlineButtonLocationY = 400;
     
 public:
     StartMenu();
-    ~StartMenu();
     ofImage getImage();
-//    ofxButton getComputerButton();
-//    ofxButton getOnlineButton();
     Button getComputerButton();
     Button getOnlineButton();
     ofApp getListener();

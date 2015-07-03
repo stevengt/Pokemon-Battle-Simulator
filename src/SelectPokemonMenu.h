@@ -19,10 +19,14 @@ private:
     ofApp *listener;
     Button *continueButton;
     Button *backButton;
+    Button *warningMessage = NULL;
     static const int backButtonLocationX = 50;
     static const int backButtonLocationY = 700;
+    static const int warningButtonLocationX = 350;
+    static const int warningButtonLocationY = 700;
     static const int continueButtonLocationX = 800;
     static const int continueButtonLocationY = 700;
+    static const int warningButtonWidth = 300;
     static const int buttonWidth = 200;
     static const int buttonHeight = 50;
     static const int textOffset = 10;
@@ -35,8 +39,10 @@ public:
     void addOptions();
     void setContinueButton();
     void setBackButton();
+    void setWarningMessage();
     void draw();
     void clear();
     void populate();
     void mousePressed(int x, int y);
+    bool selectionIsValid();
 };

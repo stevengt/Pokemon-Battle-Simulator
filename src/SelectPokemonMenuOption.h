@@ -35,6 +35,7 @@ public:
     void setImage(std::string imageLocation);
     void setLocation(int numOfOptions);
     void setButton(std::string pokemonName);
+    ofxToggle *getButton();
     void draw();
     void clear();
     

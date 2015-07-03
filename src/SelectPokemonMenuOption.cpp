@@ -36,6 +36,10 @@ void SelectPokemonMenuOption::setLocation(int numOfOptions){
 
 }
 
+ofxToggle *SelectPokemonMenuOption::getButton(){
+    return button;
+}
+
 void SelectPokemonMenuOption::setButton(std::string pokemonName){
     button = new ofxToggle();
     button->setup(pokemonName,false);
