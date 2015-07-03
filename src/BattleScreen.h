@@ -8,6 +8,7 @@
 #include "MainButtonGroup.h"
 #include "BattleScreenState.h"
 #include "AttackButtonGroup.h"
+#include "PokemonButtonGroup.h"
 
 class BattleScreen : public Screen {
     
@@ -26,7 +27,9 @@ public:
     
     void setBattle(Battle *newBattle);
     Battle getBattle();
+    void switchToMainButtons();
     void switchToAttackButtons();
+    void switchToPokemonButtons();
     void mousePressed(int x, int y);
     void draw();
     void clear();

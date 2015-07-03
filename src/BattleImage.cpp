@@ -9,6 +9,7 @@ BattleImage::BattleImage(Pokemon *pokemon, bool isTrainer1){
 
 void BattleImage::setPokemon(Pokemon *newPokemon){
     pokemon = newPokemon;
+    setImage(pokemon->getImageLocation());
 }
 
 void BattleImage::setImage(std::string imageLocation){

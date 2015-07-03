@@ -112,7 +112,7 @@ public:
 
 static class TestDescription_suite_TrainerTests_testRemovePokemon : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_TrainerTests_testRemovePokemon() : CxxTest::RealTestDescription( Tests_TrainerTests, suiteDescription_TrainerTests, 30, "testRemovePokemon" ) {}
+ TestDescription_suite_TrainerTests_testRemovePokemon() : CxxTest::RealTestDescription( Tests_TrainerTests, suiteDescription_TrainerTests, 31, "testRemovePokemon" ) {}
  void runTest() { suite_TrainerTests.testRemovePokemon(); }
 } testDescription_suite_TrainerTests_testRemovePokemon;
 

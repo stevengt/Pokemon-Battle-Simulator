@@ -25,6 +25,7 @@ public:
         
         TS_ASSERT_THROWS_ANYTHING(trainer.addPokemon(pokemon5));
         
+                
     }
     
     void testRemovePokemon(void) {
@@ -43,7 +44,7 @@ public:
         TS_ASSERT(trainer.equals(trainer2));
         TS_ASSERT_EQUALS(trainer.getAllPokemon().size(),3);
         TS_ASSERT(trainer.getPokemon(2)->equals(*pokemon4));
-        
+
     }
 
     

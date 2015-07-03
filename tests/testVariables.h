@@ -134,6 +134,7 @@ namespace testVariables {
     struct Init{
         Init(){
             
+            
             attack1 = Attack(attackName1, attackType1, attackBaseDamage1, attackMaxPp1);
             attack2 = Attack(attackName2, attackType2, attackBaseDamage2, attackMaxPp2);
             attack3 = Attack(attackName3, attackType3, attackBaseDamage3, attackMaxPp3);
@@ -185,6 +186,7 @@ namespace testVariables {
             trainer2.addPokemon(pokemon2);
             trainer2.addPokemon(pokemon4);
             
+        
         }
     } init_;
 

@@ -10,7 +10,7 @@ class Trainer{
 private:
     std::vector<Pokemon*> pokemon;
     int activePokemon;
-    Bag bag;
+    Bag *bag = NULL;
     
 public:
     Trainer();
@@ -18,10 +18,10 @@ public:
     void setActivePokemon(int pokemonNum);
     std::vector<Pokemon*>getAllPokemon();
     Pokemon *getPokemon(int pokemonNum);
-    Bag getBag();
+    Bag *getBag();
     void addPokemon(Pokemon *newPokemon);
     void removePokemon(int pokemonNum);
-    void setBag(Bag newBag);
+    void setBag(Bag *newBag);
     bool equals(Trainer otherTrainer);
 };
 

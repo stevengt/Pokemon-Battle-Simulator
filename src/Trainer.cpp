@@ -14,7 +14,7 @@ Pokemon* Trainer::getPokemon(int pokemonNum){
     return pokemon.at(pokemonNum);
 }
 
-Bag Trainer::getBag(){return bag;}
+Bag *Trainer::getBag(){return bag;}
 
 Pokemon *Trainer::getActivePokemon(){
     return pokemon.at(activePokemon);
@@ -46,12 +46,14 @@ void Trainer::removePokemon(int pokemonNum){
 }
 
 
-void Trainer::setBag(Bag newBag){bag = newBag;}
+void Trainer::setBag(Bag *newBag){bag = newBag;}
 
 bool Trainer::equals(Trainer otherTrainer){
-    if(!bag.equals(otherTrainer.getBag())
-       || pokemon.size() != otherTrainer.getAllPokemon().size()){
-        return false;
+    if (bag != NULL){
+        if(!bag->equals(*otherTrainer.getBag())
+           || pokemon.size() != otherTrainer.getAllPokemon().size()){
+            return false;
+        }
     }
     for (int i = 0; i < pokemon.size(); i++){
         if (!pokemon.at(i)->equals(*otherTrainer.getPokemon(i))){

@@ -20,6 +20,8 @@
 		CF20CC371B471FF60073CCBE /* MainButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC341B471FF60073CCBE /* MainButtonGroup.cpp */; };
 		CF20CC3B1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC391B4723730073CCBE /* AttackButtonGroup.cpp */; };
 		CF20CC3C1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC391B4723730073CCBE /* AttackButtonGroup.cpp */; };
+		CF20CC411B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */; };
+		CF20CC421B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */; };
 		CF34AE8E1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF48E2A11B3A276A00BAB62B /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E28E1B3A276A00BAB62B /* Attack.cpp */; };
@@ -153,6 +155,8 @@
 		CF20CC381B4721A20073CCBE /* GroupOf4Buttons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupOf4Buttons.h; sourceTree = "<group>"; };
 		CF20CC391B4723730073CCBE /* AttackButtonGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AttackButtonGroup.cpp; sourceTree = "<group>"; };
 		CF20CC3A1B4723730073CCBE /* AttackButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackButtonGroup.h; sourceTree = "<group>"; };
+		CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PokemonButtonGroup.cpp; sourceTree = "<group>"; };
+		CF20CC401B473EF70073CCBE /* PokemonButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonButtonGroup.h; sourceTree = "<group>"; };
 		CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectPokemonMenu.cpp; sourceTree = "<group>"; };
 		CF34AE8D1B40DB3100E80277 /* SelectPokemonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPokemonMenu.h; sourceTree = "<group>"; };
 		CF34AE911B40DEFC00E80277 /* ListOfScreens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfScreens.h; sourceTree = "<group>"; };
@@ -337,6 +341,34 @@
 			name = "3rd party frameworks";
 			sourceTree = "<group>";
 		};
+		CF20CC3D1B473D610073CCBE /* Button Groups */ = {
+			isa = PBXGroup;
+			children = (
+				CF20CC2F1B471A4B0073CCBE /* ButtonGroup.cpp */,
+				CF20CC341B471FF60073CCBE /* MainButtonGroup.cpp */,
+				CF20CC381B4721A20073CCBE /* GroupOf4Buttons.h */,
+				CF20CC391B4723730073CCBE /* AttackButtonGroup.cpp */,
+				CF20CC3A1B4723730073CCBE /* AttackButtonGroup.h */,
+				CF20CC351B471FF60073CCBE /* MainButtonGroup.h */,
+				CF20CC301B471A4B0073CCBE /* ButtonGroup.h */,
+				CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */,
+				CF20CC401B473EF70073CCBE /* PokemonButtonGroup.h */,
+			);
+			name = "Button Groups";
+			sourceTree = "<group>";
+		};
+		CF20CC3E1B473D810073CCBE /* Battle Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */,
+				CF20CC241B46D2B10073CCBE /* BattleScreen.h */,
+				CF20CC331B471F570073CCBE /* BattleScreenState.h */,
+				CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */,
+				CF20CC2C1B46E3BB0073CCBE /* BattleImage.h */,
+			);
+			name = "Battle Screen";
+			sourceTree = "<group>";
+		};
 		CF34AE901B40DB3600E80277 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,18 +383,8 @@
 				CF5402161B44A91D004B7CBC /* Screen.h */,
 				CF5402181B460FA3004B7CBC /* Button.cpp */,
 				CF5402191B460FA3004B7CBC /* Button.h */,
-				CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */,
-				CF20CC241B46D2B10073CCBE /* BattleScreen.h */,
-				CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */,
-				CF20CC2C1B46E3BB0073CCBE /* BattleImage.h */,
-				CF20CC2F1B471A4B0073CCBE /* ButtonGroup.cpp */,
-				CF20CC301B471A4B0073CCBE /* ButtonGroup.h */,
-				CF20CC331B471F570073CCBE /* BattleScreenState.h */,
-				CF20CC341B471FF60073CCBE /* MainButtonGroup.cpp */,
-				CF20CC351B471FF60073CCBE /* MainButtonGroup.h */,
-				CF20CC381B4721A20073CCBE /* GroupOf4Buttons.h */,
-				CF20CC391B4723730073CCBE /* AttackButtonGroup.cpp */,
-				CF20CC3A1B4723730073CCBE /* AttackButtonGroup.h */,
+				CF20CC3E1B473D810073CCBE /* Battle Screen */,
+				CF20CC3D1B473D610073CCBE /* Button Groups */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -720,6 +742,7 @@
 				CFD58A2C1B40752F00A8BAA4 /* ofxXmlSettings.cpp in Sources */,
 				CFD589E81B4071E400A8BAA4 /* ListItem.cpp in Sources */,
 				CFD589E61B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
+				CF20CC421B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */,
 				CF20CC2A1B46D3FE0073CCBE /* Battle.cpp in Sources */,
 				CF20CC261B46D2B10073CCBE /* BattleScreen.cpp in Sources */,
 				CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */,
@@ -764,6 +787,7 @@
 				CFD589DF1B4071E400A8BAA4 /* DisplayButton.cpp in Sources */,
 				CFD58A281B40752F00A8BAA4 /* ofxXmlSettings.cpp in Sources */,
 				CF20CC2D1B46E3BB0073CCBE /* BattleImage.cpp in Sources */,
+				CF20CC411B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */,
 				CFD589DE1B4071E400A8BAA4 /* ToggleItem.cpp in Sources */,
 				CFD589D91B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
 				CF20CC291B46D3FE0073CCBE /* Battle.cpp in Sources */,

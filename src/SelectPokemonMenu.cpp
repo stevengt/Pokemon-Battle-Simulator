@@ -12,13 +12,13 @@ void SelectPokemonMenu::setListener(ofApp newListener){
 void SelectPokemonMenu::addOptions(){
     options = new std::vector<SelectPokemonMenuOption>();
     options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
     options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
     options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
     options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
 }
 
 void SelectPokemonMenu::setContinueButton(){
