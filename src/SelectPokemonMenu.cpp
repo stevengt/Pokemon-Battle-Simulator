@@ -79,7 +79,7 @@ bool SelectPokemonMenu::optionIsSelected(int optionNum){
 Battle *SelectPokemonMenu::makeBattle(){
     Trainer *trainer1 = initializeTrainer(true);
     Trainer *trainer2 = initializeTrainer(false);
-    return new Battle(trainer1, trainer2);
+    return new LocalBattle(trainer1, trainer2);
 }
 
 

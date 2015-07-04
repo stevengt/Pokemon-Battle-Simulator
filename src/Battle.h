@@ -2,17 +2,28 @@
 #pragma once
 
 #include "Trainer.h"
+#include "PlayerAction.h"
 
 class Battle {
-private:
+protected:
     Trainer *trainer1;
     Trainer *trainer2;
-    int turnNum;
-    
+    bool player1TookAction;
+    bool player2TookAction;
+    bool updating;
+    PlayerAction *action1;
+    PlayerAction *action2;
 public:
     Battle(Trainer *trainer1, Trainer *trainer2);
     void setTrainers(Trainer *newTrainer1, Trainer *newTrainer2);
     Trainer *getTrainer1();
     Trainer *getTrainer2();
-    bool getIsTrainer1Turn();
+    bool bothPlayersTookActions();
+    virtual void updatePlayer1TookAction(bool newVal)=0;
+    virtual void updatePlayer2TookAction(bool newVal)=0;
+    virtual void updatePlayer1TookAction(PlayerAction *action)=0;
+    virtual void updatePlayer2TookAction(PlayerAction *action)=0;
+    void setUpdating(bool newVal);
+    bool isUpdating();
+    void executeActions();
 };

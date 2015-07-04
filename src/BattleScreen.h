@@ -27,11 +27,7 @@ public:
     
     void setBattle(Battle *newBattle);
     Battle getBattle();
-    void switchToMainButtons();
-    void switchToAttackButtons();
-    void switchToPokemonButtons();
-    void switchToHpAndPpItemButtons();
-    void switchToStatusItemButtons();
+    void switchState(BattleScreenState newState);
     void mousePressed(int x, int y);
     void draw();
     void clear();

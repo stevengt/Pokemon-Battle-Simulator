@@ -4,6 +4,7 @@
 
 
 Trainer::Trainer(){
+    activePokemon = 0;
     bag = new Bag(10);
 }
 

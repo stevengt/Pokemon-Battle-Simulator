@@ -4,7 +4,7 @@
 #include "ofMain.h"
 
 #include "Drawable.h"
-#include "Pokemon.h"
+#include "Trainer.h"
 
 class BattleImage : public Drawable {
 private:
@@ -17,14 +17,14 @@ private:
     static const int healthbarHeight = 10;
     static const int healthbarOffset = 20;
     int healthbarWidth;
-    Pokemon *pokemon;
+    Trainer *trainer;
     ofImage image;
     bool isTrainer1;
 public:
-    BattleImage(Pokemon *pokemon, bool isTrainer1);
-    Pokemon *getPokemon();
-    void setPokemon(Pokemon *newPokemon);
-    void setImage(std::string imageLocation);
+    BattleImage(Trainer *trainer, bool isTrainer1);
+    Trainer *getTrainer();
+    void setTrainer(Trainer *newTrainer);
+    void setImage();
     void setIsPlayer1(bool newVal);
     void draw();
     void clear();

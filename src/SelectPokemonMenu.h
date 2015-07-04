@@ -10,7 +10,7 @@
 #include "SelectPokemonMenuOption.h"
 #include "GlobalVariables.h"
 #include "Button.h"
-#include "Battle.h"
+#include "LocalBattle.h"
 #include <iostream>
 #include <vector>
 

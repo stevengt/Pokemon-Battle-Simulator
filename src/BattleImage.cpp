@@ -1,32 +1,32 @@
 
 #include "BattleImage.h"
 
-BattleImage::BattleImage(Pokemon *pokemon, bool isTrainer1){
-    setImage(pokemon->getImageLocation());
-    setPokemon(pokemon);
+BattleImage::BattleImage(Trainer *trainer, bool isTrainer1){
+    image = ofImage();
+    setTrainer(trainer);
+    setImage();
     setIsPlayer1(isTrainer1);
 }
 
-void BattleImage::setPokemon(Pokemon *newPokemon){
-    pokemon = newPokemon;
-    setImage(pokemon->getImageLocation());
+void BattleImage::setTrainer(Trainer *newTrainer){
+    trainer = newTrainer;
 }
 
-void BattleImage::setImage(std::string imageLocation){
-    image = ofImage();
-    image.loadImage(imageLocation);
+void BattleImage::setImage(){
+    image.loadImage(trainer->getActivePokemon()->getImageLocation());
 }
 
 void BattleImage::setIsPlayer1(bool newVal){
     isTrainer1 = newVal;
 }
 
-Pokemon *BattleImage::getPokemon(){
-    return pokemon;
+Trainer *BattleImage::getTrainer(){
+    return trainer;
 }
 
 void BattleImage::draw(){
-    healthbarWidth = ( ( (pokemon->getCurrentHp()) / (pokemon->getMaxHp()) ) * imageWidth );
+    setImage();
+    healthbarWidth = ( ( (float)(trainer->getActivePokemon()->getCurrentHp()) / (trainer->getActivePokemon()->getMaxHp()) ) * imageWidth );
     if (isTrainer1){
         image.draw(imageLocation1X, imageLocation1Y, imageWidth, imageHeight);
         ofRect(imageLocation1X, imageLocation1Y + imageHeight + healthbarOffset, healthbarWidth, healthbarHeight);
