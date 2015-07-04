@@ -30,6 +30,8 @@ public:
     void switchToMainButtons();
     void switchToAttackButtons();
     void switchToPokemonButtons();
+    void switchToHpAndPpItemButtons();
+    void switchToStatusItemButtons();
     void mousePressed(int x, int y);
     void draw();
     void clear();

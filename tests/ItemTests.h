@@ -15,7 +15,7 @@ public:
         std::string itemName = "Potion";
         std::string itemDescription = "Heal 20 damage";
         int itemRestoreAmount = 20;
-        RestoreType itemRestoreType = HP;
+        ItemType itemRestoreType = HP;
         
         
         Item *item = nullptr;

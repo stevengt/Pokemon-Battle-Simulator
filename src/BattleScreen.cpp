@@ -2,7 +2,7 @@
 #include "BattleScreen.h"
 #include "ofMain.h"
 #include "PokeType.h"
-
+#include "ItemButtonGroup.h"
 
 BattleScreen::BattleScreen(Battle *battle){
     setBattle(battle);
@@ -35,6 +35,12 @@ void BattleScreen::mousePressed(int x, int y){
             return;
         } else if (buttons->getButtons().at(1)->inside(x,y)){
             switchToPokemonButtons();
+            return;
+        } else if (buttons->getButtons().at(2)->inside(x,y)){
+            switchToHpAndPpItemButtons();
+            return;
+        } else if (buttons->getButtons().at(3)->inside(x,y)){
+            switchToStatusItemButtons();
             return;
         }
         
@@ -76,7 +82,6 @@ void BattleScreen::switchToAttackButtons(){
     currentState = ATTACK_BUTTONS;
     buttons->clear();
     ofClear(200, 200, 200);
-    activePokemon1->getPokemon()->addAttack(Attack("Thunderbolt", ELECTRIC, 20, 10));
     buttons = new AttackButtonGroup(activePokemon1->getPokemon());
 }
 
@@ -85,6 +90,20 @@ void BattleScreen::switchToPokemonButtons(){
     buttons->clear();
     ofClear(200, 200, 200);
     buttons = new PokemonButtonGroup(battle->getTrainer1());
+}
+
+void BattleScreen::switchToHpAndPpItemButtons(){
+    currentState = HP_AND_PP_BUTTONS;
+    buttons->clear();
+    ofClear(200, 200, 200);
+    buttons = new ItemButtonGroup(battle->getTrainer1()->getBag(), true);
+}
+
+void BattleScreen::switchToStatusItemButtons(){
+    currentState = STATUS_BUTTONS;
+    buttons->clear();
+    ofClear(200, 200, 200);
+    buttons = new ItemButtonGroup(battle->getTrainer1()->getBag(), false);
 }
 
 void BattleScreen::draw(){

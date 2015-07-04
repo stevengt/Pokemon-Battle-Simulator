@@ -2,7 +2,7 @@
 #pragma once
 
 
-#include "RestoreType.h"
+#include "ItemType.h"
 #include "Status.h"
 #include "Bag.cpp"
 #include "Item.cpp"
@@ -80,17 +80,17 @@ namespace testVariables {
     std::string itemName1 = "Potion";
     std::string itemDescription1 = "Heal 20 damage";
     int itemRestoreAmount1 = 20;
-    RestoreType itemRestoreType1 = HP;
+    ItemType itemRestoreType1 = HP;
     
     std::string itemName2 = "Ether";
     std::string itemDescription2 = "Restore 15 PP";
     int itemRestoreAmount2 = 15;
-    RestoreType itemRestoreType2 = PP;
+    ItemType itemRestoreType2 = PP;
     
     std::string itemName3 = "Super Potion";
     std::string itemDescription3 = "Heal 60 damage";
     int itemRestoreAmount3 = 60;
-    RestoreType itemRestoreType3 = HP;
+    ItemType itemRestoreType3 = HP;
     
     std::string itemName4 = "Awaken";
     std::string itemDescription4 = "Wakes up an asleep Pokemon";

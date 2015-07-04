@@ -1,6 +1,6 @@
 
 #include "SelectPokemonMenu.h"
-
+#include "AllPokemon.h"
 //std::vector<SelectPokemonMenuOption> SelectPokemonMenu::options = std::vector<SelectPokemonMenuOption>();
 
 SelectPokemonMenu::SelectPokemonMenu(){}
@@ -11,14 +11,16 @@ void SelectPokemonMenu::setListener(ofApp newListener){
 
 void SelectPokemonMenu::addOptions(){
     options = new std::vector<SelectPokemonMenuOption>();
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/startMenu.png", 80), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pokemon("Pikachu", ELECTRIC, "images/pikachu.png", 80), options->size()));
+ 
+    options->push_back(SelectPokemonMenuOption(new Pikachu(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Charmander(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Squirtle(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pikachu(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Charmander(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Squirtle(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Pikachu(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Charmander(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Squirtle(), options->size()));
 }
 
 void SelectPokemonMenu::setContinueButton(){

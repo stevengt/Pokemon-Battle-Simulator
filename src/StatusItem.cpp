@@ -5,6 +5,7 @@
 
 StatusItem::StatusItem(std::string name, std::string description, Status status) : Item(name, description){
     setStatus(status);
+    setItemType(STATUS);
 }
 
 

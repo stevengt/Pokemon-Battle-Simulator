@@ -22,6 +22,8 @@
 		CF20CC3C1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC391B4723730073CCBE /* AttackButtonGroup.cpp */; };
 		CF20CC411B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */; };
 		CF20CC421B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */; };
+		CF20CC461B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */; };
+		CF20CC471B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */; };
 		CF34AE8E1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF48E2A11B3A276A00BAB62B /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E28E1B3A276A00BAB62B /* Attack.cpp */; };
@@ -157,6 +159,9 @@
 		CF20CC3A1B4723730073CCBE /* AttackButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackButtonGroup.h; sourceTree = "<group>"; };
 		CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PokemonButtonGroup.cpp; sourceTree = "<group>"; };
 		CF20CC401B473EF70073CCBE /* PokemonButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonButtonGroup.h; sourceTree = "<group>"; };
+		CF20CC431B475BBB0073CCBE /* AllPokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllPokemon.h; sourceTree = "<group>"; };
+		CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemButtonGroup.cpp; sourceTree = "<group>"; };
+		CF20CC451B477B0A0073CCBE /* ItemButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemButtonGroup.h; sourceTree = "<group>"; };
 		CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectPokemonMenu.cpp; sourceTree = "<group>"; };
 		CF34AE8D1B40DB3100E80277 /* SelectPokemonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPokemonMenu.h; sourceTree = "<group>"; };
 		CF34AE911B40DEFC00E80277 /* ListOfScreens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfScreens.h; sourceTree = "<group>"; };
@@ -174,7 +179,7 @@
 		CF48E2961B3A276A00BAB62B /* Pokemon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pokemon.cpp; sourceTree = "<group>"; };
 		CF48E2971B3A276A00BAB62B /* Pokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
 		CF48E2981B3A276A00BAB62B /* PokeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokeType.h; sourceTree = "<group>"; };
-		CF48E2991B3A276A00BAB62B /* RestoreType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreType.h; sourceTree = "<group>"; };
+		CF48E2991B3A276A00BAB62B /* ItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemType.h; sourceTree = "<group>"; };
 		CF48E29A1B3A276A00BAB62B /* StartMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartMenu.cpp; sourceTree = "<group>"; };
 		CF48E29B1B3A276A00BAB62B /* StartMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartMenu.h; sourceTree = "<group>"; };
 		CF48E29C1B3A276A00BAB62B /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
@@ -353,6 +358,8 @@
 				CF20CC301B471A4B0073CCBE /* ButtonGroup.h */,
 				CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */,
 				CF20CC401B473EF70073CCBE /* PokemonButtonGroup.h */,
+				CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */,
+				CF20CC451B477B0A0073CCBE /* ItemButtonGroup.h */,
 			);
 			name = "Button Groups";
 			sourceTree = "<group>";
@@ -419,7 +426,7 @@
 			children = (
 				CF48E29D1B3A276A00BAB62B /* StatusItem.cpp */,
 				CF48E2921B3A276A00BAB62B /* HpAndPpItem.cpp */,
-				CF48E2991B3A276A00BAB62B /* RestoreType.h */,
+				CF48E2991B3A276A00BAB62B /* ItemType.h */,
 				CF48E2931B3A276A00BAB62B /* HpAndPpItem.h */,
 				CF48E2941B3A276A00BAB62B /* Item.cpp */,
 				CF48E29E1B3A276A00BAB62B /* StatusItem.h */,
@@ -601,6 +608,7 @@
 				CF34AE901B40DB3600E80277 /* Screens */,
 				CF20CC271B46D3FE0073CCBE /* Battle.cpp */,
 				CF20CC281B46D3FE0073CCBE /* Battle.h */,
+				CF20CC431B475BBB0073CCBE /* AllPokemon.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -738,6 +746,7 @@
 				CFD589ED1B4071E400A8BAA4 /* FlashButton.cpp in Sources */,
 				CFD589E91B4071E400A8BAA4 /* SelectionItem.cpp in Sources */,
 				CF20CC3C1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */,
+				CF20CC471B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */,
 				CFD589EF1B4071E400A8BAA4 /* OnOffButton.cpp in Sources */,
 				CFD58A2C1B40752F00A8BAA4 /* ofxXmlSettings.cpp in Sources */,
 				CFD589E81B4071E400A8BAA4 /* ListItem.cpp in Sources */,
@@ -767,6 +776,7 @@
 				CF48E2AF1B3A276A00BAB62B /* Trainer.cpp in Sources */,
 				CFAD44001B423DDF00219932 /* GlobalVariables.cpp in Sources */,
 				CFD589E41B4071E400A8BAA4 /* SimpleButton.cpp in Sources */,
+				CF20CC461B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */,
 				CF48E2AB1B3A276A00BAB62B /* StartMenu.cpp in Sources */,
 				CF54021A1B460FA3004B7CBC /* Button.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,

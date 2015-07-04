@@ -3,7 +3,9 @@
 #include <stdexcept>
 
 
-Trainer::Trainer(){}
+Trainer::Trainer(){
+    bag = new Bag(10);
+}
 
 std::vector<Pokemon*> Trainer::getAllPokemon(){return pokemon;}
 
