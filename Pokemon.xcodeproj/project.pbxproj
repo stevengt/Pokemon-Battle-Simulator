@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		CF0ACC551B487F0F00A00DBE /* EventsLogDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF0ACC531B487F0F00A00DBE /* EventsLogDisplay.cpp */; };
+		CF0ACC561B487F0F00A00DBE /* EventsLogDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF0ACC531B487F0F00A00DBE /* EventsLogDisplay.cpp */; };
 		CF20CC251B46D2B10073CCBE /* BattleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */; };
 		CF20CC261B46D2B10073CCBE /* BattleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */; };
 		CF20CC291B46D3FE0073CCBE /* Battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC271B46D3FE0073CCBE /* Battle.cpp */; };
@@ -151,6 +153,8 @@
 
 /* Begin PBXFileReference section */
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		CF0ACC531B487F0F00A00DBE /* EventsLogDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventsLogDisplay.cpp; sourceTree = "<group>"; };
+		CF0ACC541B487F0F00A00DBE /* EventsLogDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsLogDisplay.h; sourceTree = "<group>"; };
 		CF20CC231B46D2B10073CCBE /* BattleScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleScreen.cpp; sourceTree = "<group>"; };
 		CF20CC241B46D2B10073CCBE /* BattleScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleScreen.h; sourceTree = "<group>"; };
 		CF20CC271B46D3FE0073CCBE /* Battle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Battle.cpp; sourceTree = "<group>"; };
@@ -388,6 +392,8 @@
 				CF20CC331B471F570073CCBE /* BattleScreenState.h */,
 				CF20CC2B1B46E3BB0073CCBE /* BattleImage.cpp */,
 				CF20CC2C1B46E3BB0073CCBE /* BattleImage.h */,
+				CF0ACC531B487F0F00A00DBE /* EventsLogDisplay.cpp */,
+				CF0ACC541B487F0F00A00DBE /* EventsLogDisplay.h */,
 			);
 			name = "Battle Screen";
 			sourceTree = "<group>";
@@ -779,6 +785,7 @@
 				CFD589ED1B4071E400A8BAA4 /* FlashButton.cpp in Sources */,
 				CFD589E91B4071E400A8BAA4 /* SelectionItem.cpp in Sources */,
 				CF20CC3C1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */,
+				CF0ACC561B487F0F00A00DBE /* EventsLogDisplay.cpp in Sources */,
 				CFA54FF91B48457C0020AD0C /* PlayerAction.cpp in Sources */,
 				CF20CC471B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */,
 				CFD589EF1B4071E400A8BAA4 /* OnOffButton.cpp in Sources */,
@@ -839,6 +846,7 @@
 				CF20CC411B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */,
 				CFD589DE1B4071E400A8BAA4 /* ToggleItem.cpp in Sources */,
 				CFD589D91B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
+				CF0ACC551B487F0F00A00DBE /* EventsLogDisplay.cpp in Sources */,
 				CF20CC291B46D3FE0073CCBE /* Battle.cpp in Sources */,
 				CF20CC3B1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */,
 				CF48E2A91B3A276A00BAB62B /* Pokemon.cpp in Sources */,

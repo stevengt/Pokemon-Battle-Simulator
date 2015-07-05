@@ -11,6 +11,7 @@ public:
         addAttack(Attack("Spark", ELECTRIC, 35, 5));
         addAttack(Attack("Double Slap", NORMAL, 10, 10));
     }
+    Pokemon *clone() const { return new Pikachu(*this); }
 };
 
 
@@ -25,6 +26,7 @@ public:
         addAttack(Attack("Ancient Power", ROCK, 25, 5));
         addAttack(Attack("Crunch", DARK, 20, 10));
     }
+    Pokemon *clone() const { return new Charmander(*this); }
 };
 
 
@@ -39,4 +41,5 @@ public:
         addAttack(Attack("Bite", DARK, 25, 5));
         addAttack(Attack("Ice Beam", ICE, 25, 15));
     }
+    Pokemon *clone() const { return new Squirtle(*this); }
 };

@@ -6,11 +6,11 @@
 #include "SwitchPokemonAction.h"
 #include "AttackAction.h"
 
-BattleScreen::BattleScreen(Battle *battle){
+BattleScreen::BattleScreen(Battle *battle) {
     setBattle(battle);
     activePokemon1 = new BattleImage(battle->getTrainer1(), true);
     activePokemon2 = new BattleImage(battle->getTrainer2(), false);
-    
+    eventsLog = EventsLogDisplay(battle);
     currentState = MAIN_BUTTONS;
     
     buttons = new MainButtonGroup();
@@ -48,22 +48,23 @@ void BattleScreen::mousePressed(int x, int y){
         
         } else if (currentState == POKEMON_BUTTONS){
             bool buttonPressed = false;
-            if (buttons->getButtons().at(0)->inside(x,y)){
+            Pokemon *activePokemon = battle->getTrainer1()->getActivePokemon();
+            if (buttons->getButtons().at(0)->inside(x,y) && battle->getTrainer1()->getAllPokemon().at(0) != activePokemon){
                 battle->updatePlayer1TookAction(new SwitchPokemonAction(battle->getTrainer1(), 0));
                 buttonPressed = true;
-            } else if (buttons->getButtons().at(1)->inside(x,y)){
+            } else if (buttons->getButtons().at(1)->inside(x,y) && battle->getTrainer1()->getAllPokemon().at(1) != activePokemon){
                  battle->updatePlayer1TookAction(new SwitchPokemonAction(battle->getTrainer1(), 1));
                 buttonPressed = true;
-            } else if (buttons->getButtons().at(2)->inside(x,y)){
+            } else if (buttons->getButtons().at(2)->inside(x,y) && battle->getTrainer1()->getAllPokemon().at(2) != activePokemon){
                  battle->updatePlayer1TookAction(new SwitchPokemonAction(battle->getTrainer1(), 2));
                 buttonPressed = true;
-            } else if (buttons->getButtons().at(3)->inside(x,y)){
+            } else if (buttons->getButtons().at(3)->inside(x,y) && battle->getTrainer1()->getAllPokemon().at(3) != activePokemon){
                 battle->updatePlayer1TookAction(new SwitchPokemonAction(battle->getTrainer1(), 3));
                 buttonPressed = true;
-            } else if (buttons->getButtons().at(4)->inside(x,y)){
+            } else if (buttons->getButtons().at(4)->inside(x,y) && battle->getTrainer1()->getAllPokemon().at(4) != activePokemon){
                 battle->updatePlayer1TookAction(new SwitchPokemonAction(battle->getTrainer1(), 4));
                 buttonPressed = true;
-            } else if (buttons->getButtons().at(5)->inside(x,y)){
+            } else if (buttons->getButtons().at(5)->inside(x,y) && battle->getTrainer1()->getAllPokemon().at(5) != activePokemon){
                 battle->updatePlayer1TookAction(new SwitchPokemonAction(battle->getTrainer1(), 5));
                 buttonPressed = true;
             }
@@ -74,18 +75,18 @@ void BattleScreen::mousePressed(int x, int y){
         } else if (currentState == ATTACK_BUTTONS){
             bool buttonPressed = false;
             Pokemon *attackingPokemon = battle->getTrainer1()->getActivePokemon();
-            Pokemon *defendingPokemon = battle->getTrainer2()->getActivePokemon();
+            Trainer *defendingTrainer = battle->getTrainer2();
             if (buttons->getButtons().at(0)->inside(x,y)){
-                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon,defendingPokemon,attackingPokemon->getAttacks().at(0)));
+                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon, defendingTrainer, attackingPokemon->getAttacks().at(0)));
                 buttonPressed = true;
             } else if (buttons->getButtons().at(1)->inside(x,y)){
-                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon,defendingPokemon,attackingPokemon->getAttacks().at(1)));
+                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon, defendingTrainer, attackingPokemon->getAttacks().at(1)));
                 buttonPressed = true;
             } else if (buttons->getButtons().at(2)->inside(x,y)){
-                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon,defendingPokemon,attackingPokemon->getAttacks().at(2)));
+                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon, defendingTrainer, attackingPokemon->getAttacks().at(2)));
                 buttonPressed = true;
             } else if (buttons->getButtons().at(3)->inside(x,y)){
-                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon,defendingPokemon,attackingPokemon->getAttacks().at(3)));
+                battle->updatePlayer1TookAction(new AttackAction(attackingPokemon, defendingTrainer, attackingPokemon->getAttacks().at(3)));
                 buttonPressed = true;
             }
             if (buttonPressed){
@@ -123,6 +124,7 @@ void BattleScreen::switchState(BattleScreenState newState){
 void BattleScreen::draw(){
     activePokemon1->draw();
     activePokemon2->draw();
+    eventsLog.draw();
     buttons->draw();
 }
 void BattleScreen::clear(){}

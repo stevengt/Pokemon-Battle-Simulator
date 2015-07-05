@@ -14,6 +14,9 @@ void SwitchPokemonAction::setNewPokemonNum(int newVal){
     newPokemonNum = newVal;
 }
 
-void SwitchPokemonAction::execute(){
+std::string SwitchPokemonAction::execute(){
+    std::string oldPokemonName = trainer->getActivePokemon()->getName();
     trainer->setActivePokemon(newPokemonNum);
+    std::string newPokemonName = trainer->getActivePokemon()->getName();
+    return "Player switched out " + oldPokemonName + " for " + newPokemonName;
 }

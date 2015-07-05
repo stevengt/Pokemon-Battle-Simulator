@@ -65,7 +65,7 @@ Trainer *SelectPokemonMenu::initializeTrainer(bool isTrainer1){
         }
     } else {
         for (int i = 0; i < 6; i++){
-            trainer->addPokemon(options->at(i).getPokemon());
+            trainer->addPokemon(options->at(i).getPokemon()->clone());
         }
     }
     return trainer;

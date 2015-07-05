@@ -11,4 +11,5 @@ public:
     void updatePlayer2TookAction(bool newVal);
     void updatePlayer1TookAction(PlayerAction *action);
     void updatePlayer2TookAction(PlayerAction *action);
+    PlayerAction *generateRandomeAction();
 };

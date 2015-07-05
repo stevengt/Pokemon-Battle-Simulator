@@ -38,6 +38,17 @@ bool Battle::isUpdating(){
 }
 
 void Battle::executeActions(){
-    action1->execute();
-    action2->execute();
+    addToLogs(action1->execute());
+    addToLogs(action2->execute());
+}
+
+void Battle::addToLogs(std::string event){
+    eventsLog.push_back(event);
+    if (eventsLog.size() > 15){
+        eventsLog.erase(eventsLog.begin());
+    }
+}
+
+std::vector<std::string> Battle::getEventsLog(){
+    return eventsLog;
 }

@@ -15,7 +15,6 @@ private:
 public:
     Attack();
     Attack(std::string name, PokeType type, int baseDamage, int maxPp);
-    
     std::string getName();
     PokeType getType();
     int getBaseDamage();

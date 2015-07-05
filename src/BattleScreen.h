@@ -9,6 +9,7 @@
 #include "BattleScreenState.h"
 #include "AttackButtonGroup.h"
 #include "PokemonButtonGroup.h"
+#include "EventsLogDisplay.h"
 
 class BattleScreen : public Screen {
     
@@ -17,7 +18,7 @@ private:
     Battle *battle;
     BattleImage *activePokemon1;
     BattleImage *activePokemon2;
-    
+    EventsLogDisplay eventsLog;
     BattleScreenState currentState;
     ButtonGroup *buttons;
 

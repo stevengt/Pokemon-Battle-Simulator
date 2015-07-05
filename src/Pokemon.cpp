@@ -13,6 +13,9 @@ Pokemon::Pokemon(std::string name, PokeType type, std::string imageLocation, int
     setCurrentHp(maxHp);
     setImageLocation(imageLocation);
 }
+
+Pokemon *Pokemon::clone() const { return 0 ;}
+
 std::string Pokemon::getName(){return name;}
 PokeType Pokemon::getType(){return type;}
 Status Pokemon::getStatus(){return status;}

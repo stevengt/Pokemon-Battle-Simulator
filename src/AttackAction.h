@@ -3,16 +3,19 @@
 
 #include "PlayerAction.h"
 #include "Pokemon.h"
+#include "Trainer.h"
+
+#include <sstream>
 
 class AttackAction : public PlayerAction {
 private:
     Pokemon *attackingPokemon;
-    Pokemon *defendingPokemon;
+    Trainer *defendingTrainer;
     Attack attack;
 public:
-    AttackAction(Pokemon *attackingPokemon, Pokemon *defendingPokemon, Attack attack);
+    AttackAction(Pokemon *attackingPokemon, Trainer *defendingTrainer, Attack attack);
     void setAttackingPokemon(Pokemon *newAttackingPokemon);
-    void setDefendingPokemon(Pokemon *newDefendingPokemon);
+    void setDefendingTrainer(Trainer *newDefendingTrainer);
     void setAttack(Attack newAttack);
-    void execute();
+    std::string execute();
 };

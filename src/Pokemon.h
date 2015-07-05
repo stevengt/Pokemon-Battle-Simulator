@@ -23,6 +23,7 @@ private:
 public:
     Pokemon();
     Pokemon(std::string name, PokeType type, std::string imageLocation, int maxHp);
+    virtual Pokemon *clone() const;
     std::string getName();
     std::string getImageLocation();
     PokeType getType();
@@ -41,7 +42,6 @@ public:
     //ofImage setSprite();
     void setMaxHp(int newMaxHp);
     void setCurrentHp(int newCurrentHp);
-    
     bool equals(Pokemon otherPokemon);
     
 };

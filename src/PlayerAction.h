@@ -1,7 +1,8 @@
 
 #pragma once
+#include <iostream>
 
 class PlayerAction{
 public:
-    virtual void execute()=0;
+    virtual std::string execute()=0;
 };

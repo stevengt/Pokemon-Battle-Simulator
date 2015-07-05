@@ -9,7 +9,7 @@ Attack::Attack(std::string name, PokeType type, int baseDamage, int maxPp){
     setBaseDamage(baseDamage);
     setMaxPp(maxPp);
     setCurrentPp(maxPp);
-};
+}
 
 std::string Attack::getName(){return attackName;}
 PokeType Attack::getType(){return type;}
