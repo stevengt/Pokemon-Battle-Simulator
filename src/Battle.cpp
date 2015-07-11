@@ -48,53 +48,73 @@ bool Battle::isUpdating(){
 BattleReturnState Battle::executeActions(){
     
     
-    addToLogs(action1->execute());
+    int i = rand() % 2;
+    BattleReturnState state;
     
-    if (trainerPokemonFainted(trainer1)){
-        if(trainer2Won()){
-            return PLAYER_LOST;
-        }
-        listener->switchPokemon();
-        return SWITCH_POKEMON;
-    } else if (trainerPokemonFainted(trainer2)){
-        for ( int i = 0; i < 7; i++ ){
+    switch (i){
+        case 0:
+            state = executeAction(action1);
             
-            if(i==6){
-                return PLAYER_WON;
+            if (state == EXECUTE_NEXT_ACTION){
+                state = executeAction(action2);
+                if(state != EXECUTE_NEXT_ACTION){
+                    return state;
+                }
+            } else {
+                return state;
             }
             
-            if (trainer2->getAllPokemon().at(i)->getCurrentHp() != 0) {
-                trainer2->setActivePokemon(i);
-                return SWITCH_TO_MAIN_BUTTONS;
+            
+            return SWITCH_TO_MAIN_BUTTONS;
+            break;
+            
+        case 1:
+            state = executeAction(action2);
+            
+            if (state == EXECUTE_NEXT_ACTION){
+                state = executeAction(action1);
+                if(state != EXECUTE_NEXT_ACTION){
+                    return state;
+                }
+            } else {
+                return state;
             }
-        }
+            
+            
+            return SWITCH_TO_MAIN_BUTTONS;
+            break;
+            
     }
-    
-    addToLogs(action2->execute());
-    
-    if (trainerPokemonFainted(trainer1)){
-        if(trainer2Won()){
-            return PLAYER_LOST;
-        }
-        listener->switchPokemon();
-        return SWITCH_POKEMON;
-    } else if (trainerPokemonFainted(trainer2)){
-        for ( int i = 0; i < 7; i++ ){
-            
-            if(i==6){
-                return PLAYER_WON;
-            }
-            
-            if (trainer2->getAllPokemon().at(i)->getCurrentHp() != 0) {
-                trainer2->setActivePokemon(i);
-                return SWITCH_TO_MAIN_BUTTONS;
-            }
-        }
-    }
-    
-    
-    return SWITCH_TO_MAIN_BUTTONS;
 }
+
+BattleReturnState Battle::executeAction(PlayerAction *action){
+    addToLogs(action->execute());
+    
+    if (trainerPokemonFainted(trainer1)){
+        if(trainer2Won()){
+            return PLAYER_LOST;
+        }
+        listener->switchPokemon();
+        return SWITCH_POKEMON;
+    } else if (trainerPokemonFainted(trainer2)){
+        for ( int i = 0; i < 7; i++ ){
+            
+            if(i==6){
+                return PLAYER_WON;
+            }
+            
+            if (trainer2->getAllPokemon().at(i)->getCurrentHp() != 0) {
+                trainer2->setActivePokemon(i);
+                return SWITCH_TO_MAIN_BUTTONS;
+            }
+        }
+    }
+    
+    return EXECUTE_NEXT_ACTION;
+
+}
+
+
 
 bool Battle::trainerPokemonFainted(Trainer *trainer){
     return trainer->getActivePokemon()->getCurrentHp() == 0;
@@ -123,11 +143,16 @@ bool Battle::trainer2Won(){
 
 
 
-void Battle::addToLogs(std::string event){
-    eventsLog.push_back(event);
-    if (eventsLog.size() > 15){
-        eventsLog.erase(eventsLog.begin());
+void Battle::addToLogs(std::vector<std::string> events){
+    
+    for(int i = 0; i < events.size(); i++){
+        std::string event = events.at(i);
+        eventsLog.push_back(event);
+        if (eventsLog.size() > 15){
+            eventsLog.erase(eventsLog.begin());
+        }
     }
+    
 }
 
 std::vector<std::string> Battle::getEventsLog(){

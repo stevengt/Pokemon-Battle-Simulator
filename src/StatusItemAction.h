@@ -16,5 +16,5 @@ public:
     void setTrainer(Trainer *newTrainer);
     void setItem(StatusItem *item);
     void setPokemon(Pokemon *pokemon);
-    std::string execute();
+    std::vector<std::string> execute();
 };

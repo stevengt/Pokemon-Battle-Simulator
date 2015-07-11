@@ -11,5 +11,5 @@ public:
     SwitchPokemonAction(Trainer *trainer, int newPokemonNum);
     void setTrainer(Trainer *newTrainer);
     void setNewPokemonNum(int newVal);
-    std::string execute();
+    std::vector<std::string> execute();
 };

@@ -20,7 +20,7 @@ void StatusItemAction::setPokemon(Pokemon *newPokemon){
     pokemon = newPokemon;
 }
 
-std::string StatusItemAction::execute(){
+std::vector<std::string> StatusItemAction::execute(){
     
     Status status = item->getStatus();
     trainer->getBag()->removeItem(item);
@@ -28,9 +28,12 @@ std::string StatusItemAction::execute(){
     if (pokemon->getStatus() == status){
         pokemon->setStatus(NONE);
     } else {
-        return "Player wasted a " + item->getName();
+        retVal.push_back("Player wasted a " + item->getName());
+        return retVal;
     }
     
-    return "Player used " + item->getName();
+    retVal.push_back("Player used " + item->getName());
+    
+    return retVal;
     
 }

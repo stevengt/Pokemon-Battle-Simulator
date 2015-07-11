@@ -19,5 +19,5 @@ public:
     void setItem(HpAndPpItem *item);
     void setPokemon(Pokemon *pokemon);
     void setAttack(Attack *newAttack);
-    std::string execute();
+    std::vector<std::string> execute();
 };

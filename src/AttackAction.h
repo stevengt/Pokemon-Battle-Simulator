@@ -17,5 +17,5 @@ public:
     void setAttackingPokemon(Pokemon *newAttackingPokemon);
     void setDefendingTrainer(Trainer *newDefendingTrainer);
     void setAttack(Attack *newAttack);
-    std::string execute();
+    std::vector<std::string> execute();
 };

@@ -29,7 +29,7 @@ void HpAndPpItemAction::setAttack(Attack *newAttack){
     attack = newAttack;
 }
 
-std::string HpAndPpItemAction::execute(){
+std::vector<std::string> HpAndPpItemAction::execute(){
     
     int restoreAmount = item->getRestoreAmount();
     if (item->getItemType() == HP){
@@ -53,6 +53,7 @@ std::string HpAndPpItemAction::execute(){
     }
     
     trainer->getBag()->removeItem(item);
-    return "Player used " + item->getName();
+    retVal.push_back("Player used " + item->getName());
+    return retVal;
     
 }

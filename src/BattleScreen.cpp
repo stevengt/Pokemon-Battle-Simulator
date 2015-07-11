@@ -143,6 +143,9 @@ void BattleScreen::mousePressed(int x, int y){
     if (battle->trainer1Won()){
         switchState(WIN);
     }
+    if (battle->trainer2Won()){
+        switchState(LOSE);
+    }
 }
 
 void BattleScreen::switchState(BattleScreenState newState){
@@ -170,6 +173,9 @@ void BattleScreen::switchState(BattleScreenState newState){
             break;
         case WIN:
             buttons = new EndGameButtonGroup(true);
+            break;
+        case LOSE:
+            buttons = new EndGameButtonGroup(false);
             break;
             
     }

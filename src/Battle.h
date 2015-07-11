@@ -35,8 +35,9 @@ public:
     virtual int updatePlayer2TookAction(PlayerAction *action)=0;
     void setUpdating(bool newVal);
     bool isUpdating();
-    void addToLogs(std::string event);
+    void addToLogs(std::vector<std::string> events);
     std::vector<std::string> getEventsLog();
     BattleReturnState executeActions();
+    BattleReturnState executeAction(PlayerAction *action);
     bool trainerPokemonFainted(Trainer *trainer);
 };
