@@ -14,12 +14,10 @@ Pokemon::Pokemon(std::string name, PokeType type, std::string imageLocation, int
     setImageLocation(imageLocation);
 }
 
-Pokemon *Pokemon::clone() const { return 0 ;}
-
 std::string Pokemon::getName(){return name;}
 PokeType Pokemon::getType(){return type;}
 Status Pokemon::getStatus(){return status;}
-std::vector<Attack> Pokemon::getAttacks(){return attacks;}
+std::vector<Attack*> Pokemon::getAttacks(){return attacks;}
 //ofImage getSprite(){return sprite;}
 int Pokemon::getMaxHp(){return maxHp;}
 int Pokemon::getCurrentHp(){return currentHp;}
@@ -28,7 +26,7 @@ void Pokemon::setName(std::string newName){name = newName;}
 void Pokemon::setType(PokeType newType){type = newType;}
 void Pokemon::setStatus(Status newStatus){status=newStatus;}
 
-void Pokemon::addAttack(Attack newAttack){
+void Pokemon::addAttack(Attack *newAttack){
     if(attacks.size() == 4){
         throw std::invalid_argument( "This Pokemon already has 4 attacks" );
     }
@@ -70,7 +68,7 @@ bool Pokemon::equals(Pokemon otherPokemon){
         }
     
     for (int i = 0; i < attacks.size(); i++){
-        if (!attacks.at(i).equals(otherPokemon.getAttacks().at(i))){
+        if (!attacks.at(i)->equals(otherPokemon.getAttacks().at(i))){
             return false;
         }
     }

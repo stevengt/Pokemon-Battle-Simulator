@@ -1,7 +1,8 @@
 
 #include "HpAndPpItem.h"
 
-//int restoreAmount;
+HpAndPpItem::HpAndPpItem(){}
+
 HpAndPpItem::HpAndPpItem(std::string name, std::string description, int restoreAmount, ItemType type) : Item(name, description){
     setRestoreAmount(restoreAmount);
     setItemType(type);

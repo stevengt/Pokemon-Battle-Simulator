@@ -17,20 +17,20 @@ public:
         int attackBaseDamage = 30;
         int attackMaxPp = 15;
         
-        Attack attack = Attack(attackName1, attackType1, attackBaseDamage1, attackMaxPp1);
+        Attack *attack = new Attack(attackName1, attackType1, attackBaseDamage1, attackMaxPp1);
         
-        TS_ASSERT(attack.equals(attack1));
-        TS_ASSERT(!attack.equals(attack2));
+        TS_ASSERT(attack->equals(attack1));
+        TS_ASSERT(!attack->equals(attack2));
         
-        attack.setName(attackName2);
-        attack.setType(attackType2);
-        attack.setBaseDamage(attackBaseDamage2);
+        attack->setName(attackName2);
+        attack->setType(attackType2);
+        attack->setBaseDamage(attackBaseDamage2);
         
         
-        TS_ASSERT(!attack.equals(attack2));
+        TS_ASSERT(!attack->equals(attack2));
         
-        attack.setMaxPp(attackMaxPp2);
-        TS_ASSERT(attack.equals(attack2));
+        attack->setMaxPp(attackMaxPp2);
+        TS_ASSERT(attack->equals(attack2));
         
     }
     

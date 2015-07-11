@@ -103,11 +103,11 @@ namespace testVariables {
     
     //---------------------------------------------------
     
-    Attack attack1;
-    Attack attack2;
-    Attack attack3;
-    Attack attack4;
-    Attack attack5;
+    Attack *attack1;
+    Attack *attack2;
+    Attack *attack3;
+    Attack *attack4;
+    Attack *attack5;
     
     Item *item1 = nullptr;
     Item *item2 = nullptr;
@@ -135,11 +135,11 @@ namespace testVariables {
         Init(){
             
             
-            attack1 = Attack(attackName1, attackType1, attackBaseDamage1, attackMaxPp1);
-            attack2 = Attack(attackName2, attackType2, attackBaseDamage2, attackMaxPp2);
-            attack3 = Attack(attackName3, attackType3, attackBaseDamage3, attackMaxPp3);
-            attack4 = Attack(attackName4, attackType4, attackBaseDamage4, attackMaxPp4);
-            attack5 = Attack(attackName5, attackType5, attackBaseDamage5, attackMaxPp5);
+            attack1 = new Attack(attackName1, attackType1, attackBaseDamage1, attackMaxPp1);
+            attack2 = new Attack(attackName2, attackType2, attackBaseDamage2, attackMaxPp2);
+            attack3 = new Attack(attackName3, attackType3, attackBaseDamage3, attackMaxPp3);
+            attack4 = new Attack(attackName4, attackType4, attackBaseDamage4, attackMaxPp4);
+            attack5 = new Attack(attackName5, attackType5, attackBaseDamage5, attackMaxPp5);
             
             
             item1 = new HpAndPpItem(itemName1, itemDescription1, itemRestoreAmount1, itemRestoreType1);

@@ -14,8 +14,7 @@ private:
     PokeType type;
     Status status;
     
-    std::vector<Attack> attacks;
-    //ofImage sprite;
+    std::vector<Attack*> attacks;
     int level;
     int maxHp;
     int currentHp;
@@ -23,13 +22,11 @@ private:
 public:
     Pokemon();
     Pokemon(std::string name, PokeType type, std::string imageLocation, int maxHp);
-    virtual Pokemon *clone() const;
     std::string getName();
     std::string getImageLocation();
     PokeType getType();
     Status getStatus();
-    std::vector<Attack> getAttacks();
-    //ofImage getSprite();
+    std::vector<Attack*> getAttacks();
     int getMaxHp();
     int getCurrentHp();
     
@@ -37,9 +34,8 @@ public:
     void setName(std::string newName);
     void setType(PokeType newType);
     void setStatus(Status newStatus);
-    void addAttack(Attack newAttack);
+    void addAttack(Attack *newAttack);
     void removeAttack(int attackNum);
-    //ofImage setSprite();
     void setMaxHp(int newMaxHp);
     void setCurrentHp(int newCurrentHp);
     bool equals(Pokemon otherPokemon);

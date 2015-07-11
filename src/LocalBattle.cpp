@@ -14,17 +14,18 @@ void LocalBattle::updatePlayer1TookAction(bool newVal){
 
 void LocalBattle::updatePlayer2TookAction(bool newVal){player2TookAction = newVal;}
 
-void LocalBattle::updatePlayer1TookAction(PlayerAction *action){
+int LocalBattle::updatePlayer1TookAction(PlayerAction *action){
     updatePlayer1TookAction(true);
     updatePlayer2TookAction(generateRandomeAction());
     action1 = action;
-    executeActions();
     updatePlayer1TookAction(false);
     updatePlayer1TookAction(false);
+    return executeActions();
     
 }
-void LocalBattle::updatePlayer2TookAction(PlayerAction *action){
+int LocalBattle::updatePlayer2TookAction(PlayerAction *action){
     action2 = action;
+    return 0;
 }
 
 PlayerAction *LocalBattle::generateRandomeAction(){
@@ -34,7 +35,15 @@ PlayerAction *LocalBattle::generateRandomeAction(){
     switch (randomNum1){
         case 0:
             randomNum2 = rand() % 6;
-            action = new SwitchPokemonAction(trainer2, randomNum2);
+            if(trainer2->getAllPokemon().at(randomNum2)->getCurrentHp() == 0){
+                int i = 0;
+                while (trainer2->getAllPokemon().at(i)->getCurrentHp() == 0){
+                    i++;
+                }
+                action = new SwitchPokemonAction(trainer2, i);
+            } else {
+                action = new SwitchPokemonAction(trainer2, randomNum2);
+            }
             break;
         case 1:
             randomNum2 = rand() % 4;

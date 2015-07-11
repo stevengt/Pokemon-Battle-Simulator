@@ -1,7 +1,6 @@
 
 #pragma once
 
-#include "Battle.h"
 #include "BattleImage.h"
 #include "Screen.h"
 #include "Button.h"
@@ -11,6 +10,7 @@
 #include "PokemonButtonGroup.h"
 #include "EventsLogDisplay.h"
 
+class Battle;
 class BattleScreen : public Screen {
     
 private:
@@ -27,10 +27,10 @@ public:
     BattleScreen(Battle *battle);
     
     void setBattle(Battle *newBattle);
-    Battle getBattle();
     void switchState(BattleScreenState newState);
     void mousePressed(int x, int y);
     void draw();
     void clear();
     void populate();
+    void switchPokemon();
 };

@@ -21,7 +21,7 @@ public:
         TS_ASSERT(pokemon->equals(*pokemon1));
         
         pokemon->addAttack(attack3);
-        TS_ASSERT(pokemon->getAttacks().at(3).equals(attack3));
+        TS_ASSERT(pokemon->getAttacks().at(3)->equals(attack3));
         TS_ASSERT_THROWS_ANYTHING(pokemon->addAttack(attack5));
         
     }
@@ -40,7 +40,7 @@ public:
         pokemon->removeAttack(2);
         TS_ASSERT(pokemon->equals(*pokemon1));
         TS_ASSERT_EQUALS(pokemon->getAttacks().size(),3);
-        TS_ASSERT(pokemon->getAttacks().at(2).equals(attack4));
+        TS_ASSERT(pokemon->getAttacks().at(2)->equals(attack4));
         
     }
     

@@ -3,9 +3,8 @@
 #include "ofMain.h"
 #include "Screen.h"
 #include "ListOfScreens.h"
-#include "ListOfScreens.h"
-#include "Battle.h"
 #include "BattleScreen.h"
+#include "Battle.h"
 #include <vector>
 class ofApp : public ofBaseApp {
 

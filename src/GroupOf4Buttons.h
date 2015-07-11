@@ -3,7 +3,7 @@
 
 #include "ButtonGroup.h"
 
-class GroupOf4Buttons : public ButtonGroup{
+class GroupOf4Buttons : public ButtonGroup {
 protected:
 
     static const int row1Y = 550;

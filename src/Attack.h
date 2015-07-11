@@ -27,5 +27,5 @@ public:
     void setMaxPp(int newMaxPp);
     void setCurrentPp(int newCurrentPp);
     
-    bool equals(Attack otherAttack);
+    bool equals(Attack *otherAttack);
 };

@@ -49,19 +49,19 @@ public:
 
 static class TestDescription_suite_BagTests_testAddItem : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_BagTests_testAddItem() : CxxTest::RealTestDescription( Tests_BagTests, suiteDescription_BagTests, 17, "testAddItem" ) {}
+ TestDescription_suite_BagTests_testAddItem() : CxxTest::RealTestDescription( Tests_BagTests, suiteDescription_BagTests, 18, "testAddItem" ) {}
  void runTest() { suite_BagTests.testAddItem(); }
 } testDescription_suite_BagTests_testAddItem;
 
 static class TestDescription_suite_BagTests_testRemoveItem : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_BagTests_testRemoveItem() : CxxTest::RealTestDescription( Tests_BagTests, suiteDescription_BagTests, 30, "testRemoveItem" ) {}
+ TestDescription_suite_BagTests_testRemoveItem() : CxxTest::RealTestDescription( Tests_BagTests, suiteDescription_BagTests, 34, "testRemoveItem" ) {}
  void runTest() { suite_BagTests.testRemoveItem(); }
 } testDescription_suite_BagTests_testRemoveItem;
 
 static class TestDescription_suite_BagTests_testEquals : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_BagTests_testEquals() : CxxTest::RealTestDescription( Tests_BagTests, suiteDescription_BagTests, 54, "testEquals" ) {}
+ TestDescription_suite_BagTests_testEquals() : CxxTest::RealTestDescription( Tests_BagTests, suiteDescription_BagTests, 75, "testEquals" ) {}
  void runTest() { suite_BagTests.testEquals(); }
 } testDescription_suite_BagTests_testEquals;
 

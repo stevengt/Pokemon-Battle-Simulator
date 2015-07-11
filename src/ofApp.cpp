@@ -2,7 +2,7 @@
 #include <iostream>
 #include "StartMenu.h"
 #include "SelectPokemonMenu.h"
-
+#include "BattleScreen.h"
 #include "GlobalVariables.h"
 
 //--------------------------------------------------------------
@@ -53,7 +53,7 @@ void ofApp::switchToBattleScreen(Battle *battle){
 
 void ofApp::switchScreens(ScreenState newScreen){
     *GlobalVariables::isUpdating = true;
-    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clear();;
+    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clear();
     GlobalVariables::globalApp->currentScreen = newScreen;
     GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->populate();
     ofClear(200, 200, 200 );

@@ -27,11 +27,11 @@ void Attack::setMaxPp(int newMaxPp){
 }
 void Attack::setCurrentPp(int newCurrentPp){currentPp = newCurrentPp;};
 
-bool Attack::equals(Attack otherAttack){
+bool Attack::equals(Attack *otherAttack){
     
-    return (attackName == otherAttack.getName()
-            && type == otherAttack.getType()
-            && baseDamage == otherAttack.getBaseDamage()
-            && maxPp == otherAttack.getMaxPp()
-            && currentPp == otherAttack.getCurrentPp());
+    return (attackName == otherAttack->getName()
+            && type == otherAttack->getType()
+            && baseDamage == otherAttack->getBaseDamage()
+            && maxPp == otherAttack->getMaxPp()
+            && currentPp == otherAttack->getCurrentPp());
 }

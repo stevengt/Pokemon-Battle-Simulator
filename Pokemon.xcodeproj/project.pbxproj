@@ -26,6 +26,12 @@
 		CF20CC421B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC3F1B473EF70073CCBE /* PokemonButtonGroup.cpp */; };
 		CF20CC461B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */; };
 		CF20CC471B477B0A0073CCBE /* ItemButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */; };
+		CF308FAE1B49C8FB0019F9DD /* HpAndPpItemAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF308FAC1B49C8FB0019F9DD /* HpAndPpItemAction.cpp */; };
+		CF308FAF1B49C8FB0019F9DD /* HpAndPpItemAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF308FAC1B49C8FB0019F9DD /* HpAndPpItemAction.cpp */; };
+		CF308FB21B49FAB80019F9DD /* StatusItemAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF308FB01B49FAB80019F9DD /* StatusItemAction.cpp */; };
+		CF308FB31B49FAB80019F9DD /* StatusItemAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF308FB01B49FAB80019F9DD /* StatusItemAction.cpp */; };
+		CF308FBA1B4B45DE0019F9DD /* EndGameButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF308FB81B4B45DE0019F9DD /* EndGameButtonGroup.cpp */; };
+		CF308FBB1B4B45DE0019F9DD /* EndGameButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF308FB81B4B45DE0019F9DD /* EndGameButtonGroup.cpp */; };
 		CF34AE8E1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */; };
 		CF48E2A11B3A276A00BAB62B /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF48E28E1B3A276A00BAB62B /* Attack.cpp */; };
@@ -174,6 +180,12 @@
 		CF20CC431B475BBB0073CCBE /* AllPokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllPokemon.h; sourceTree = "<group>"; };
 		CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemButtonGroup.cpp; sourceTree = "<group>"; };
 		CF20CC451B477B0A0073CCBE /* ItemButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemButtonGroup.h; sourceTree = "<group>"; };
+		CF308FAC1B49C8FB0019F9DD /* HpAndPpItemAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HpAndPpItemAction.cpp; sourceTree = "<group>"; };
+		CF308FAD1B49C8FB0019F9DD /* HpAndPpItemAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HpAndPpItemAction.h; sourceTree = "<group>"; };
+		CF308FB01B49FAB80019F9DD /* StatusItemAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StatusItemAction.cpp; sourceTree = "<group>"; };
+		CF308FB11B49FAB80019F9DD /* StatusItemAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemAction.h; sourceTree = "<group>"; };
+		CF308FB81B4B45DE0019F9DD /* EndGameButtonGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EndGameButtonGroup.cpp; sourceTree = "<group>"; };
+		CF308FB91B4B45DE0019F9DD /* EndGameButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndGameButtonGroup.h; sourceTree = "<group>"; };
 		CF34AE8C1B40DB3100E80277 /* SelectPokemonMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectPokemonMenu.cpp; sourceTree = "<group>"; };
 		CF34AE8D1B40DB3100E80277 /* SelectPokemonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPokemonMenu.h; sourceTree = "<group>"; };
 		CF34AE911B40DEFC00E80277 /* ListOfScreens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfScreens.h; sourceTree = "<group>"; };
@@ -269,6 +281,7 @@
 		CFD58A251B40752F00A8BAA4 /* tinyxml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
 		CFD58A261B40752F00A8BAA4 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
 		CFD58A271B40752F00A8BAA4 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		CFD648631B5086D600A0AF95 /* BattleReturnState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleReturnState.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -380,6 +393,8 @@
 				CF20CC401B473EF70073CCBE /* PokemonButtonGroup.h */,
 				CF20CC441B477B0A0073CCBE /* ItemButtonGroup.cpp */,
 				CF20CC451B477B0A0073CCBE /* ItemButtonGroup.h */,
+				CF308FB81B4B45DE0019F9DD /* EndGameButtonGroup.cpp */,
+				CF308FB91B4B45DE0019F9DD /* EndGameButtonGroup.h */,
 			);
 			name = "Button Groups";
 			sourceTree = "<group>";
@@ -499,6 +514,10 @@
 				CFA54FFC1B4845E50020AD0C /* SwitchPokemonAction.h */,
 				CFA54FFF1B4850A60020AD0C /* AttackAction.cpp */,
 				CFA550001B4850A60020AD0C /* AttackAction.h */,
+				CF308FAC1B49C8FB0019F9DD /* HpAndPpItemAction.cpp */,
+				CF308FAD1B49C8FB0019F9DD /* HpAndPpItemAction.h */,
+				CF308FB01B49FAB80019F9DD /* StatusItemAction.cpp */,
+				CF308FB11B49FAB80019F9DD /* StatusItemAction.h */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -642,6 +661,7 @@
 				CF48E2B31B3A28C100BAB62B /* main */,
 				CF34AE901B40DB3600E80277 /* Screens */,
 				CF20CC271B46D3FE0073CCBE /* Battle.cpp */,
+				CFD648631B5086D600A0AF95 /* BattleReturnState.h */,
 				CF20CC281B46D3FE0073CCBE /* Battle.h */,
 				CF20CC431B475BBB0073CCBE /* AllPokemon.h */,
 				CFA54FF21B482F040020AD0C /* LocalBattle.cpp */,
@@ -793,12 +813,15 @@
 				CFA54FFE1B4845E50020AD0C /* SwitchPokemonAction.cpp in Sources */,
 				CFD589E81B4071E400A8BAA4 /* ListItem.cpp in Sources */,
 				CFD589E61B4071E400A8BAA4 /* ButtonPanel.cpp in Sources */,
+				CF308FB31B49FAB80019F9DD /* StatusItemAction.cpp in Sources */,
 				CF20CC421B473EF70073CCBE /* PokemonButtonGroup.cpp in Sources */,
 				CF20CC2A1B46D3FE0073CCBE /* Battle.cpp in Sources */,
 				CF20CC261B46D2B10073CCBE /* BattleScreen.cpp in Sources */,
 				CF34AE8F1B40DB3100E80277 /* SelectPokemonMenu.cpp in Sources */,
 				CFD589EE1B4071E400A8BAA4 /* ImageButton.cpp in Sources */,
+				CF308FBB1B4B45DE0019F9DD /* EndGameButtonGroup.cpp in Sources */,
 				CFD589EC1B4071E400A8BAA4 /* DisplayButton.cpp in Sources */,
+				CF308FAF1B49C8FB0019F9DD /* HpAndPpItemAction.cpp in Sources */,
 				CFD589EA1B4071E400A8BAA4 /* SliderItem.cpp in Sources */,
 				CFA54FF51B482F040020AD0C /* LocalBattle.cpp in Sources */,
 				CF54021B1B460FA3004B7CBC /* Button.cpp in Sources */,
@@ -817,6 +840,7 @@
 				CFD58A2A1B40752F00A8BAA4 /* tinyxmlerror.cpp in Sources */,
 				CFD58A2B1B40752F00A8BAA4 /* tinyxmlparser.cpp in Sources */,
 				CF48E2AF1B3A276A00BAB62B /* Trainer.cpp in Sources */,
+				CF308FAE1B49C8FB0019F9DD /* HpAndPpItemAction.cpp in Sources */,
 				CFAD44001B423DDF00219932 /* GlobalVariables.cpp in Sources */,
 				CFD589E41B4071E400A8BAA4 /* SimpleButton.cpp in Sources */,
 				CFA54FF41B482F040020AD0C /* LocalBattle.cpp in Sources */,
@@ -836,6 +860,7 @@
 				CFD589DD1B4071E400A8BAA4 /* SliderItem.cpp in Sources */,
 				CFD589E11B4071E400A8BAA4 /* ImageButton.cpp in Sources */,
 				CFD589E31B4071E400A8BAA4 /* SlideButton.cpp in Sources */,
+				CF308FBA1B4B45DE0019F9DD /* EndGameButtonGroup.cpp in Sources */,
 				CFD589DA1B4071E400A8BAA4 /* FlashItem.cpp in Sources */,
 				CFD58A291B40752F00A8BAA4 /* tinyxml.cpp in Sources */,
 				CF48E2A11B3A276A00BAB62B /* Attack.cpp in Sources */,
@@ -851,6 +876,7 @@
 				CF20CC3B1B4723730073CCBE /* AttackButtonGroup.cpp in Sources */,
 				CF48E2A91B3A276A00BAB62B /* Pokemon.cpp in Sources */,
 				CFA737931B4362A900F106C2 /* SelectPokemonMenuOption.cpp in Sources */,
+				CF308FB21B49FAB80019F9DD /* StatusItemAction.cpp in Sources */,
 				CF20CC251B46D2B10073CCBE /* BattleScreen.cpp in Sources */,
 				CF830C781B3E1CA700ECDD90 /* ofxPanel.cpp in Sources */,
 				CF830C751B3E1CA700ECDD90 /* ofxButton.cpp in Sources */,

@@ -4,6 +4,7 @@
 #include "ofMain.h"
 #include "Drawable.h"
 #include "Battle.h"
+
 class EventsLogDisplay : public Drawable {
 private:
     static const int locationX = 50;

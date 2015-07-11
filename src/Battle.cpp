@@ -3,12 +3,20 @@
 #include "Battle.h"
 #include "HpAndPpItem.h"
 #include "StatusItem.h"
+#include "BattleScreen.h"
+#include <unistd.h>
+
 
 Battle::Battle(Trainer *trainer1, Trainer *trainer2){
+    pokemon2Fainted = false;
     setTrainers(trainer1, trainer2);
     trainer1->setActivePokemon(0);
     trainer2->setActivePokemon(1);
     updating = false;
+}
+
+void Battle::registerListener(BattleScreen *newListener){
+    listener = newListener;
 }
 
 Trainer *Battle::getTrainer1(){return trainer1;}
@@ -37,10 +45,83 @@ bool Battle::isUpdating(){
     return updating;
 }
 
-void Battle::executeActions(){
+BattleReturnState Battle::executeActions(){
+    
+    
     addToLogs(action1->execute());
+    
+    if (trainerPokemonFainted(trainer1)){
+        if(trainer2Won()){
+            return PLAYER_LOST;
+        }
+        listener->switchPokemon();
+        return SWITCH_POKEMON;
+    } else if (trainerPokemonFainted(trainer2)){
+        for ( int i = 0; i < 7; i++ ){
+            
+            if(i==6){
+                return PLAYER_WON;
+            }
+            
+            if (trainer2->getAllPokemon().at(i)->getCurrentHp() != 0) {
+                trainer2->setActivePokemon(i);
+                return SWITCH_TO_MAIN_BUTTONS;
+            }
+        }
+    }
+    
     addToLogs(action2->execute());
+    
+    if (trainerPokemonFainted(trainer1)){
+        if(trainer2Won()){
+            return PLAYER_LOST;
+        }
+        listener->switchPokemon();
+        return SWITCH_POKEMON;
+    } else if (trainerPokemonFainted(trainer2)){
+        for ( int i = 0; i < 7; i++ ){
+            
+            if(i==6){
+                return PLAYER_WON;
+            }
+            
+            if (trainer2->getAllPokemon().at(i)->getCurrentHp() != 0) {
+                trainer2->setActivePokemon(i);
+                return SWITCH_TO_MAIN_BUTTONS;
+            }
+        }
+    }
+    
+    
+    return SWITCH_TO_MAIN_BUTTONS;
 }
+
+bool Battle::trainerPokemonFainted(Trainer *trainer){
+    return trainer->getActivePokemon()->getCurrentHp() == 0;
+
+}
+
+bool Battle::trainer1Won(){
+    for (int i = 0; i < 6; i++){
+       if (trainer2->getAllPokemon().at(i)->getCurrentHp() != 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+bool Battle::trainer2Won(){
+    for (int i = 0; i < 6; i++){
+        if (trainer1->getAllPokemon().at(i)->getCurrentHp() != 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
 
 void Battle::addToLogs(std::string event){
     eventsLog.push_back(event);

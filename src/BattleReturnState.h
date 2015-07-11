@@ -1,0 +1,4 @@
+
+#pragma once
+
+enum BattleReturnState {SWITCH_TO_MAIN_BUTTONS, SWITCH_POKEMON, PLAYER_LOST, PLAYER_WON};
