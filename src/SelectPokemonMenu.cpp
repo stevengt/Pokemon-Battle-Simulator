@@ -15,12 +15,18 @@ void SelectPokemonMenu::addOptions(){
     options->push_back(SelectPokemonMenuOption(new Pikachu(), options->size()));
     options->push_back(SelectPokemonMenuOption(new Charmander(), options->size()));
     options->push_back(SelectPokemonMenuOption(new Squirtle(), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pikachu(), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Charmander(), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Squirtle(), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Pikachu(), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Charmander(), options->size()));
-    options->push_back(SelectPokemonMenuOption(new Squirtle(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Bulbasaur(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Skarmory(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Ghastly(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Lotad(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Magnemite(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Jynx(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Sneasel(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Aerodactyl(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Axew(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Absol(), options->size()));
+    options->push_back(SelectPokemonMenuOption(new Clefairy(), options->size()));
+
 }
 
 void SelectPokemonMenu::setContinueButton(){
@@ -67,9 +73,9 @@ Trainer *SelectPokemonMenu::initializeTrainer(bool isTrainer1){
         trainer->addPokemon(new Pikachu());
         trainer->addPokemon(new Charmander());
         trainer->addPokemon(new Squirtle());
-        trainer->addPokemon(new Pikachu());
-        trainer->addPokemon(new Charmander());
-        trainer->addPokemon(new Squirtle());
+        trainer->addPokemon(new Bulbasaur());
+        trainer->addPokemon(new Skarmory());
+        trainer->addPokemon(new Ghastly());
     }
     return trainer;
 }

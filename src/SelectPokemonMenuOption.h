@@ -13,9 +13,9 @@ class SelectPokemonMenuOption : public Drawable{
 private:
     ofImage image;
     ofxToggle *button;
-    static const int imageWidth = 150;
-    static const int imageHeight = 150;
-    static const int buttonWidth = 150;
+    static const int imageWidth = 100;
+    static const int imageHeight = 100;
+    static const int buttonWidth = 100;
     static const int buttonHeight = 20;
     static const int frameMargin = 50;
     static const int imagePaddingRight = 25;

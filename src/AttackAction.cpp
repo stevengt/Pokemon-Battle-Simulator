@@ -21,7 +21,8 @@ std::vector<std::string> AttackAction::execute(){
     Pokemon *defendingPokemon = defendingTrainer->getActivePokemon();
     
    // float effectiveness = 1;
-    float effectiveness = Effectiveness::attackingxDefendingChart[attack->getType()][defendingPokemon->getType()];
+    float effectiveness = Effectiveness::attackingxDefendingChart[attack->getType()][defendingPokemon->getType()]
+                            *Effectiveness::attackingxDefendingChart[attack->getType()][defendingPokemon->getType2()];
     float damage = attack->getBaseDamage() * effectiveness;
     int newHp = round(defendingPokemon->getCurrentHp() - damage);
     
@@ -36,9 +37,9 @@ std::vector<std::string> AttackAction::execute(){
     
     if (effectiveness == 0){
         retVal.push_back("It's ineffective...");
-    } else if (effectiveness == 0.5){
+    } else if (effectiveness == 0.5 || effectiveness == 0.25){
         retVal.push_back("It's not very effective...");
-    } else if (effectiveness == 2){
+    } else if (effectiveness == 2 || effectiveness == 4){
         retVal.push_back("It's super effective!");
     }
     

@@ -7,6 +7,7 @@ Pokemon::Pokemon(){}
 Pokemon::Pokemon(std::string name, PokeType type, std::string imageLocation, int maxHp){
     setName(name);
     setType(type);
+    setType2(NULL_TYPE);
     setMaxHp(maxHp);
     Status status = NONE;
     setStatus(status);
@@ -14,8 +15,22 @@ Pokemon::Pokemon(std::string name, PokeType type, std::string imageLocation, int
     setImageLocation(imageLocation);
 }
 
+Pokemon::Pokemon(std::string name, PokeType type, PokeType type2 , std::string imageLocation, int maxHp){
+    setName(name);
+    setType(type);
+    setType2(type2);
+    setMaxHp(maxHp);
+    Status status = NONE;
+    setStatus(status);
+    setCurrentHp(maxHp);
+    setImageLocation(imageLocation);
+}
+
+
+
 std::string Pokemon::getName(){return name;}
-PokeType Pokemon::getType(){return type;}
+PokeType Pokemon::getType(){return type1;}
+PokeType Pokemon::getType2(){return type2;}
 Status Pokemon::getStatus(){return status;}
 std::vector<Attack*> Pokemon::getAttacks(){return attacks;}
 //ofImage getSprite(){return sprite;}
@@ -23,7 +38,8 @@ int Pokemon::getMaxHp(){return maxHp;}
 int Pokemon::getCurrentHp(){return currentHp;}
 
 void Pokemon::setName(std::string newName){name = newName;}
-void Pokemon::setType(PokeType newType){type = newType;}
+void Pokemon::setType(PokeType newType){type1 = newType;}
+void Pokemon::setType2(PokeType newType){type2 = newType;}
 void Pokemon::setStatus(Status newStatus){status=newStatus;}
 
 void Pokemon::addAttack(Attack *newAttack){
@@ -52,14 +68,14 @@ void Pokemon::setImageLocation(std::string newImageLocation){
 }
 
 
-//ofImage setSprite(){return sprite;}
 void Pokemon::setMaxHp(int newMaxHp){maxHp = newMaxHp;}
 void Pokemon::setCurrentHp(int newCurrentHp){currentHp = newCurrentHp;}
 
 bool Pokemon::equals(Pokemon otherPokemon){
     
         if (name != otherPokemon.getName()
-            || type != otherPokemon.getType()
+            || type1 != otherPokemon.getType()
+            || type2 != otherPokemon.getType2()
             || status != otherPokemon.getStatus()
             || maxHp != otherPokemon.getMaxHp()
             ||currentHp != otherPokemon.getCurrentHp()){
