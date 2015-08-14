@@ -21,7 +21,11 @@ int main( int argc, char *argv[] ) {
     return status;
 }
 bool suite_AttackTests_init = false;
+<<<<<<< HEAD
 #include "/Users/stevengt/Documents/code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/AttackTests.h"
+=======
+#include "/Users/sthomas2/Documents/Code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/AttackTests.h"
+>>>>>>> 91d7bca1f93cceadd449d86163735be38e95809c
 
 static AttackTests suite_AttackTests;
 
@@ -34,7 +38,11 @@ public:
  void runTest() { suite_AttackTests.testEquals(); }
 } testDescription_suite_AttackTests_testEquals;
 
+<<<<<<< HEAD
 #include "/Users/stevengt/Documents/code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/BagTests.h"
+=======
+#include "/Users/sthomas2/Documents/Code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/BagTests.h"
+>>>>>>> 91d7bca1f93cceadd449d86163735be38e95809c
 
 static BagTests suite_BagTests;
 
@@ -65,7 +73,11 @@ public:
  void runTest() { suite_BagTests.testEquals(); }
 } testDescription_suite_BagTests_testEquals;
 
+<<<<<<< HEAD
 #include "/Users/stevengt/Documents/code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/ItemTests.h"
+=======
+#include "/Users/sthomas2/Documents/Code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/ItemTests.h"
+>>>>>>> 91d7bca1f93cceadd449d86163735be38e95809c
 
 static ItemTests suite_ItemTests;
 
@@ -78,7 +90,11 @@ public:
  void runTest() { suite_ItemTests.testEquals(); }
 } testDescription_suite_ItemTests_testEquals;
 
+<<<<<<< HEAD
 #include "/Users/stevengt/Documents/code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/PokemonTests.h"
+=======
+#include "/Users/sthomas2/Documents/Code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/PokemonTests.h"
+>>>>>>> 91d7bca1f93cceadd449d86163735be38e95809c
 
 static PokemonTests suite_PokemonTests;
 
@@ -97,7 +113,11 @@ public:
  void runTest() { suite_PokemonTests.testRemoveAttack(); }
 } testDescription_suite_PokemonTests_testRemoveAttack;
 
+<<<<<<< HEAD
 #include "/Users/stevengt/Documents/code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/TrainerTests.h"
+=======
+#include "/Users/sthomas2/Documents/Code/of_v0.8.4_osx_release/apps/myApps/Pokemon/tests/TrainerTests.h"
+>>>>>>> 91d7bca1f93cceadd449d86163735be38e95809c
 
 static TrainerTests suite_TrainerTests;
 
