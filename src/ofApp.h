@@ -6,6 +6,8 @@
 #include "BattleScreen.h"
 #include "Battle.h"
 #include <vector>
+#include "libwebsockets.h"
+
 class ofApp : public ofBaseApp {
 
 private:

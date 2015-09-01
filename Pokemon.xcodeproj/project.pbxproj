@@ -1065,6 +1065,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					"\"$(SRCROOT)\"/cxxtest",
+					"\"$(SRCROOT)\"/libwebsockets/**",
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -1093,6 +1094,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					"\"$(SRCROOT)\"/cxxtest",
+					"\"$(SRCROOT)\"/libwebsockets/**",
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
