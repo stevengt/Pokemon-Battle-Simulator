@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011E03BA6116E89067A9F276 /* BattleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 521506D8E56BA92A9D02A238 /* BattleScreen.cpp */; };
+		0CDFA4BAFF3C653E6B589F9E /* SelectPokemonMenuOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D8CB325F63D23893A56C0FA /* SelectPokemonMenuOption.cpp */; };
+		11C30AD86EAB4331F1418D6A /* SwitchPokemonAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8A126F16FD0B3AFD7BFB2 /* SwitchPokemonAction.cpp */; };
+		25F3AE702DCE15903AA4ED41 /* Trainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D303D5B15891DE8207F9B037 /* Trainer.cpp */; };
+		31A07C8D4166D206048E27D4 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650C3ED423C92295D866AB8A /* Item.cpp */; };
+		3DDBB6698EEBC6078034C847 /* ItemButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E374EE4F7C8920DB1FACE2F3 /* ItemButtonGroup.cpp */; };
+		47A6D9F0D8E7F3ADC4B58BA5 /* PokemonButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 013801A89B205ED4CF288B9B /* PokemonButtonGroup.cpp */; };
+		61D843178517EADFCA8C6A03 /* SelectPokemonMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42C561C83725B44179C7A68 /* SelectPokemonMenu.cpp */; };
+		73D38B71244CD72BE96F8580 /* BattleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A46E09BC77E8D3ADC308E2F9 /* BattleImage.cpp */; };
+		768DD3B9865849CB30280F54 /* StatusItemAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A872AB4F18E0D7525C0E4273 /* StatusItemAction.cpp */; };
+		77009E6047D05E4F0BDA2A88 /* LocalBattle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E60D654EA3E94066A19A50B /* LocalBattle.cpp */; };
+		7BD645C7919B96C065BF1FDD /* ButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66744C6255CEA18ED5DED2BB /* ButtonGroup.cpp */; };
+		805621C1E52FEDB7C00BE8DF /* EndGameButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B61FDE0A8E05C029006AB6C /* EndGameButtonGroup.cpp */; };
+		87C044255589E67A10841C5D /* StartMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69AE47F7207819B1532B1387 /* StartMenu.cpp */; };
+		988900E4C562DED794ED8600 /* AttackButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC4003FE6958D81330CAABE6 /* AttackButtonGroup.cpp */; };
+		A7B597BADDFD04E0AF5EB828 /* PlayerAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0303629F9C1EAEACCCB96C65 /* PlayerAction.cpp */; };
+		A924AD881C24CF9A0005BC2B /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD771C24CF9A0005BC2B /* ofxBaseGui.cpp */; };
+		A924AD891C24CF9A0005BC2B /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD791C24CF9A0005BC2B /* ofxButton.cpp */; };
+		A924AD8A1C24CF9A0005BC2B /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD7C1C24CF9A0005BC2B /* ofxGuiGroup.cpp */; };
+		A924AD8B1C24CF9A0005BC2B /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD7E1C24CF9A0005BC2B /* ofxLabel.cpp */; };
+		A924AD8C1C24CF9A0005BC2B /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD801C24CF9A0005BC2B /* ofxPanel.cpp */; };
+		A924AD8D1C24CF9A0005BC2B /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD821C24CF9A0005BC2B /* ofxSlider.cpp */; };
+		A924AD8E1C24CF9A0005BC2B /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD841C24CF9A0005BC2B /* ofxSliderGroup.cpp */; };
+		A924AD8F1C24CF9A0005BC2B /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD861C24CF9A0005BC2B /* ofxToggle.cpp */; };
+		A924ADCF1C24D0EC0005BC2B /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD981C24D0EC0005BC2B /* jsoncpp.cpp */; };
+		A924ADD01C24D0EC0005BC2B /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A924ADAB1C24D0EC0005BC2B /* libwebsockets.a */; };
+		A924ADD11C24D0EC0005BC2B /* Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADC81C24D0EC0005BC2B /* Client.cpp */; };
+		A924ADD21C24D0EC0005BC2B /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADC91C24D0EC0005BC2B /* Connection.cpp */; };
+		A924ADD31C24D0EC0005BC2B /* Events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCA1C24D0EC0005BC2B /* Events.cpp */; };
+		A924ADD41C24D0EC0005BC2B /* Protocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCB1C24D0EC0005BC2B /* Protocol.cpp */; };
+		A924ADD51C24D0EC0005BC2B /* Reactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */; };
+		A924ADD61C24D0EC0005BC2B /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCD1C24D0EC0005BC2B /* Server.cpp */; };
+		A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCE1C24D0EC0005BC2B /* Util.cpp */; };
+		A924ADDC1C24E8410005BC2B /* libsocketiopoco_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A924ADDA1C24E8410005BC2B /* libsocketiopoco_static.a */; };
+		A924ADE41C24ECC80005BC2B /* SIOClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADDE1C24ECC80005BC2B /* SIOClient.cpp */; };
+		A924ADE51C24ECC80005BC2B /* SIOClientImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADDF1C24ECC80005BC2B /* SIOClientImpl.cpp */; };
+		A924ADE61C24ECC80005BC2B /* SIOClientRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE01C24ECC80005BC2B /* SIOClientRegistry.cpp */; };
+		A924ADE71C24ECC80005BC2B /* SIOEventRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE11C24ECC80005BC2B /* SIOEventRegistry.cpp */; };
+		A924ADE81C24ECC80005BC2B /* SIONotificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE21C24ECC80005BC2B /* SIONotificationHandler.cpp */; };
+		A924ADE91C24ECC80005BC2B /* SIOPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE31C24ECC80005BC2B /* SIOPacket.cpp */; };
+		B9A32C1F1DBD012324BF9610 /* Pokemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11C0900C8D5C113E4B1C45B7 /* Pokemon.cpp */; };
+		CC6A7976957BB0308C358E9B /* Bag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1955BD04CF9229A68D1E73E2 /* Bag.cpp */; };
+		CEE2492E2D27429A0CCCA768 /* GlobalVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6458C67E6C2EDBBBB9C1826 /* GlobalVariables.cpp */; };
+		D13CC1079524D21752A7030E /* HpAndPpItemAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B376F8E1B8BA6DD30B563DC5 /* HpAndPpItemAction.cpp */; };
+		D7EB7365E770AE917E8E6870 /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D1491CE65FAFF4EC1E809CB /* Attack.cpp */; };
+		DAFD75A4112270FBC9CB4BF2 /* Battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33A59E01FC6E98EF95792E56 /* Battle.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		F2433FB3B84D65FBB1DFA01D /* MainButtonGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 557EF6A2CE409DC3D9E6A8DD /* MainButtonGroup.cpp */; };
+		F400D546383E08D1A139D4FA /* HpAndPpItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE26596C7C2B3B0CAA92469 /* HpAndPpItem.cpp */; };
+		F561D26E330F9036B96869AD /* AttackAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 764EFAC5E1B618DC0E599587 /* AttackAction.cpp */; };
+		F76BD9E4C7DA2BDEBDC55C6D /* StatusItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C94110320849B2A6828D0D19 /* StatusItem.cpp */; };
+		F7DD82C416BE189FC6777E5A /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC339E5A0FFE897BF12146DD /* Button.cpp */; };
+		FF90DED99CBB6C4311DDDB97 /* EventsLogDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F289E8FA692B9818215AB77E /* EventsLogDisplay.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		013801A89B205ED4CF288B9B /* PokemonButtonGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PokemonButtonGroup.cpp; path = src/PokemonButtonGroup.cpp; sourceTree = SOURCE_ROOT; };
+		0303629F9C1EAEACCCB96C65 /* PlayerAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PlayerAction.cpp; path = src/PlayerAction.cpp; sourceTree = SOURCE_ROOT; };
+		11C0900C8D5C113E4B1C45B7 /* Pokemon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Pokemon.cpp; path = src/Pokemon.cpp; sourceTree = SOURCE_ROOT; };
+		1955BD04CF9229A68D1E73E2 /* Bag.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Bag.cpp; path = src/Bag.cpp; sourceTree = SOURCE_ROOT; };
+		1B0DC1D8703C835D538ECA75 /* AttackAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AttackAction.h; path = src/AttackAction.h; sourceTree = SOURCE_ROOT; };
+		1D1491CE65FAFF4EC1E809CB /* Attack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Attack.cpp; path = src/Attack.cpp; sourceTree = SOURCE_ROOT; };
+		22BD0F73147D5E820B02AFBB /* ItemButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ItemButtonGroup.h; path = src/ItemButtonGroup.h; sourceTree = SOURCE_ROOT; };
+		24FC8B5F0E7E31A33ED592B8 /* LocalBattle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LocalBattle.h; path = src/LocalBattle.h; sourceTree = SOURCE_ROOT; };
+		263606A51398287CAA66166B /* AllPokemon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AllPokemon.h; path = src/AllPokemon.h; sourceTree = SOURCE_ROOT; };
+		294265B7A84AE088418F493E /* StatusItem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = StatusItem.h; path = src/StatusItem.h; sourceTree = SOURCE_ROOT; };
+		29C2187B1D4B13207673311B /* GroupOf4Buttons.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GroupOf4Buttons.h; path = src/GroupOf4Buttons.h; sourceTree = SOURCE_ROOT; };
+		2FE26596C7C2B3B0CAA92469 /* HpAndPpItem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = HpAndPpItem.cpp; path = src/HpAndPpItem.cpp; sourceTree = SOURCE_ROOT; };
+		33A59E01FC6E98EF95792E56 /* Battle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Battle.cpp; path = src/Battle.cpp; sourceTree = SOURCE_ROOT; };
+		37700DEADB4789E9C32A2830 /* SwitchPokemonAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SwitchPokemonAction.h; path = src/SwitchPokemonAction.h; sourceTree = SOURCE_ROOT; };
+		3CE40D7E648AE61B08325A9F /* EventsLogDisplay.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EventsLogDisplay.h; path = src/EventsLogDisplay.h; sourceTree = SOURCE_ROOT; };
+		429C7DA3D687C516A3C94C58 /* HpAndPpItem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = HpAndPpItem.h; path = src/HpAndPpItem.h; sourceTree = SOURCE_ROOT; };
+		43091E443CD422C22263A465 /* Battle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Battle.h; path = src/Battle.h; sourceTree = SOURCE_ROOT; };
+		4C9E451939871077CB32934B /* EndGameButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EndGameButtonGroup.h; path = src/EndGameButtonGroup.h; sourceTree = SOURCE_ROOT; };
+		4F474EC3A6F181F2407B63A1 /* Pokemon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Pokemon.h; path = src/Pokemon.h; sourceTree = SOURCE_ROOT; };
+		521506D8E56BA92A9D02A238 /* BattleScreen.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BattleScreen.cpp; path = src/BattleScreen.cpp; sourceTree = SOURCE_ROOT; };
+		524C0D5483C9ACFA08D34213 /* StatusItemAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = StatusItemAction.h; path = src/StatusItemAction.h; sourceTree = SOURCE_ROOT; };
+		557EF6A2CE409DC3D9E6A8DD /* MainButtonGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MainButtonGroup.cpp; path = src/MainButtonGroup.cpp; sourceTree = SOURCE_ROOT; };
+		5C92417161B95E07E6572D92 /* BattleImage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BattleImage.h; path = src/BattleImage.h; sourceTree = SOURCE_ROOT; };
+		5DE8A126F16FD0B3AFD7BFB2 /* SwitchPokemonAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SwitchPokemonAction.cpp; path = src/SwitchPokemonAction.cpp; sourceTree = SOURCE_ROOT; };
+		650C3ED423C92295D866AB8A /* Item.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Item.cpp; path = src/Item.cpp; sourceTree = SOURCE_ROOT; };
+		66744C6255CEA18ED5DED2BB /* ButtonGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ButtonGroup.cpp; path = src/ButtonGroup.cpp; sourceTree = SOURCE_ROOT; };
+		69AE47F7207819B1532B1387 /* StartMenu.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = StartMenu.cpp; path = src/StartMenu.cpp; sourceTree = SOURCE_ROOT; };
+		6E60D654EA3E94066A19A50B /* LocalBattle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = LocalBattle.cpp; path = src/LocalBattle.cpp; sourceTree = SOURCE_ROOT; };
+		73F8822510CF59769FD58300 /* Screen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Screen.h; path = src/Screen.h; sourceTree = SOURCE_ROOT; };
+		764EFAC5E1B618DC0E599587 /* AttackAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AttackAction.cpp; path = src/AttackAction.cpp; sourceTree = SOURCE_ROOT; };
+		7B61FDE0A8E05C029006AB6C /* EndGameButtonGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = EndGameButtonGroup.cpp; path = src/EndGameButtonGroup.cpp; sourceTree = SOURCE_ROOT; };
+		7C07F54DAEDA94342A612B96 /* PokeType.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PokeType.h; path = src/PokeType.h; sourceTree = SOURCE_ROOT; };
+		7D7451EBEC6182A458CBAF65 /* BattleScreen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BattleScreen.h; path = src/BattleScreen.h; sourceTree = SOURCE_ROOT; };
+		82B0BE92DC616C053ECBFC37 /* ItemType.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ItemType.h; path = src/ItemType.h; sourceTree = SOURCE_ROOT; };
+		8318B7AFEB2B926C3DC6A22B /* Trainer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Trainer.h; path = src/Trainer.h; sourceTree = SOURCE_ROOT; };
+		8A445463DA52710F798DB52A /* MainButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MainButtonGroup.h; path = src/MainButtonGroup.h; sourceTree = SOURCE_ROOT; };
+		8A7335D8BF4A40E1D18AA126 /* Button.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Button.h; path = src/Button.h; sourceTree = SOURCE_ROOT; };
+		8D8CB325F63D23893A56C0FA /* SelectPokemonMenuOption.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SelectPokemonMenuOption.cpp; path = src/SelectPokemonMenuOption.cpp; sourceTree = SOURCE_ROOT; };
+		9344E05605D30D76C08500AB /* SelectPokemonMenuOption.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SelectPokemonMenuOption.h; path = src/SelectPokemonMenuOption.h; sourceTree = SOURCE_ROOT; };
+		959AD550E26CE6E8B8C03E2C /* Item.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Item.h; path = src/Item.h; sourceTree = SOURCE_ROOT; };
+		95B7D8BB1783FC0BC637C1A8 /* PokemonButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PokemonButtonGroup.h; path = src/PokemonButtonGroup.h; sourceTree = SOURCE_ROOT; };
+		A2065E106EFB2AB226768348 /* HpAndPpItemAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = HpAndPpItemAction.h; path = src/HpAndPpItemAction.h; sourceTree = SOURCE_ROOT; };
+		A46E09BC77E8D3ADC308E2F9 /* BattleImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BattleImage.cpp; path = src/BattleImage.cpp; sourceTree = SOURCE_ROOT; };
+		A4C6E4165E9B7F208DE8621E /* Status.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Status.h; path = src/Status.h; sourceTree = SOURCE_ROOT; };
+		A872AB4F18E0D7525C0E4273 /* StatusItemAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = StatusItemAction.cpp; path = src/StatusItemAction.cpp; sourceTree = SOURCE_ROOT; };
+		A9083C544DAF51CB074338A7 /* SelectPokemonMenu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SelectPokemonMenu.h; path = src/SelectPokemonMenu.h; sourceTree = SOURCE_ROOT; };
+		A924AD771C24CF9A0005BC2B /* ofxBaseGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
+		A924AD781C24CF9A0005BC2B /* ofxBaseGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
+		A924AD791C24CF9A0005BC2B /* ofxButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
+		A924AD7A1C24CF9A0005BC2B /* ofxButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxButton.h; sourceTree = "<group>"; };
+		A924AD7B1C24CF9A0005BC2B /* ofxGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGui.h; sourceTree = "<group>"; };
+		A924AD7C1C24CF9A0005BC2B /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		A924AD7D1C24CF9A0005BC2B /* ofxGuiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
+		A924AD7E1C24CF9A0005BC2B /* ofxLabel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
+		A924AD7F1C24CF9A0005BC2B /* ofxLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxLabel.h; sourceTree = "<group>"; };
+		A924AD801C24CF9A0005BC2B /* ofxPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanel.cpp; sourceTree = "<group>"; };
+		A924AD811C24CF9A0005BC2B /* ofxPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPanel.h; sourceTree = "<group>"; };
+		A924AD821C24CF9A0005BC2B /* ofxSlider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSlider.cpp; sourceTree = "<group>"; };
+		A924AD831C24CF9A0005BC2B /* ofxSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSlider.h; sourceTree = "<group>"; };
+		A924AD841C24CF9A0005BC2B /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSliderGroup.cpp; sourceTree = "<group>"; };
+		A924AD851C24CF9A0005BC2B /* ofxSliderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
+		A924AD861C24CF9A0005BC2B /* ofxToggle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
+		A924AD871C24CF9A0005BC2B /* ofxToggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
+		A924AD921C24D0EC0005BC2B /* ofxLibwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxLibwebsockets.h; sourceTree = "<group>"; };
+		A924AD961C24D0EC0005BC2B /* json-forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
+		A924AD971C24D0EC0005BC2B /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		A924AD981C24D0EC0005BC2B /* jsoncpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
+		A924AD9A1C24D0EC0005BC2B /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		A924AD9C1C24D0EC0005BC2B /* libwebsockets-test-server.key.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libwebsockets-test-server.key.pem"; sourceTree = "<group>"; };
+		A924AD9D1C24D0EC0005BC2B /* libwebsockets-test-server.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libwebsockets-test-server.pem"; sourceTree = "<group>"; };
+		A924AD9F1C24D0EC0005BC2B /* libwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
+		A924ADA01C24D0EC0005BC2B /* lws_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lws_config.h; sourceTree = "<group>"; };
+		A924ADAB1C24D0EC0005BC2B /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
+		A924ADC01C24D0EC0005BC2B /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		A924ADC11C24D0EC0005BC2B /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		A924ADC21C24D0EC0005BC2B /* Events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		A924ADC31C24D0EC0005BC2B /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		A924ADC41C24D0EC0005BC2B /* Reactor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reactor.h; sourceTree = "<group>"; };
+		A924ADC51C24D0EC0005BC2B /* Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		A924ADC61C24D0EC0005BC2B /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		A924ADC81C24D0EC0005BC2B /* Client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Client.cpp; sourceTree = "<group>"; };
+		A924ADC91C24D0EC0005BC2B /* Connection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
+		A924ADCA1C24D0EC0005BC2B /* Events.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Events.cpp; sourceTree = "<group>"; };
+		A924ADCB1C24D0EC0005BC2B /* Protocol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Protocol.cpp; sourceTree = "<group>"; };
+		A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reactor.cpp; sourceTree = "<group>"; };
+		A924ADCD1C24D0EC0005BC2B /* Server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		A924ADCE1C24D0EC0005BC2B /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		A924ADD91C24E8410005BC2B /* libsocketiopoco_shared.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsocketiopoco_shared.dylib; path = "socket.io-poco/lib/libsocketiopoco_shared.dylib"; sourceTree = "<group>"; };
+		A924ADDA1C24E8410005BC2B /* libsocketiopoco_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsocketiopoco_static.a; path = "socket.io-poco/lib/libsocketiopoco_static.a"; sourceTree = "<group>"; };
+		A924ADDE1C24ECC80005BC2B /* SIOClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOClient.cpp; path = "socket.io-poco/src/SIOClient.cpp"; sourceTree = "<group>"; };
+		A924ADDF1C24ECC80005BC2B /* SIOClientImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOClientImpl.cpp; path = "socket.io-poco/src/SIOClientImpl.cpp"; sourceTree = "<group>"; };
+		A924ADE01C24ECC80005BC2B /* SIOClientRegistry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOClientRegistry.cpp; path = "socket.io-poco/src/SIOClientRegistry.cpp"; sourceTree = "<group>"; };
+		A924ADE11C24ECC80005BC2B /* SIOEventRegistry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOEventRegistry.cpp; path = "socket.io-poco/src/SIOEventRegistry.cpp"; sourceTree = "<group>"; };
+		A924ADE21C24ECC80005BC2B /* SIONotificationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIONotificationHandler.cpp; path = "socket.io-poco/src/SIONotificationHandler.cpp"; sourceTree = "<group>"; };
+		A924ADE31C24ECC80005BC2B /* SIOPacket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOPacket.cpp; path = "socket.io-poco/src/SIOPacket.cpp"; sourceTree = "<group>"; };
+		AC339E5A0FFE897BF12146DD /* Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Button.cpp; path = src/Button.cpp; sourceTree = SOURCE_ROOT; };
+		B376F8E1B8BA6DD30B563DC5 /* HpAndPpItemAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = HpAndPpItemAction.cpp; path = src/HpAndPpItemAction.cpp; sourceTree = SOURCE_ROOT; };
+		C4417B5F6B1AD3AD94AE89F1 /* BattleReturnState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BattleReturnState.h; path = src/BattleReturnState.h; sourceTree = SOURCE_ROOT; };
+		C50A2247521F7B31DB6B8CD9 /* PlayerAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PlayerAction.h; path = src/PlayerAction.h; sourceTree = SOURCE_ROOT; };
+		C94110320849B2A6828D0D19 /* StatusItem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = StatusItem.cpp; path = src/StatusItem.cpp; sourceTree = SOURCE_ROOT; };
+		CE7C352043CA7AFB6CB26F58 /* AttackButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AttackButtonGroup.h; path = src/AttackButtonGroup.h; sourceTree = SOURCE_ROOT; };
+		CF07A76C281E2FC5C4AC6E19 /* BattleScreenState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BattleScreenState.h; path = src/BattleScreenState.h; sourceTree = SOURCE_ROOT; };
+		D303D5B15891DE8207F9B037 /* Trainer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Trainer.cpp; path = src/Trainer.cpp; sourceTree = SOURCE_ROOT; };
+		D6458C67E6C2EDBBBB9C1826 /* GlobalVariables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = GlobalVariables.cpp; path = src/GlobalVariables.cpp; sourceTree = SOURCE_ROOT; };
+		DA594498C2AB825D9EB6C2FE /* ListOfScreens.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ListOfScreens.h; path = src/ListOfScreens.h; sourceTree = SOURCE_ROOT; };
+		DB8D7C7DAFCE74113735EC49 /* GlobalVariables.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = GlobalVariables.h; path = src/GlobalVariables.h; sourceTree = SOURCE_ROOT; };
+		DC4003FE6958D81330CAABE6 /* AttackButtonGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AttackButtonGroup.cpp; path = src/AttackButtonGroup.cpp; sourceTree = SOURCE_ROOT; };
+		E374EE4F7C8920DB1FACE2F3 /* ItemButtonGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ItemButtonGroup.cpp; path = src/ItemButtonGroup.cpp; sourceTree = SOURCE_ROOT; };
+		E42C561C83725B44179C7A68 /* SelectPokemonMenu.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SelectPokemonMenu.cpp; path = src/SelectPokemonMenu.cpp; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* Pokemon-Battle-SimulatorDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon-Battle-SimulatorDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E7A8072FBE87273A1FE7C0F0 /* ButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ButtonGroup.h; path = src/ButtonGroup.h; sourceTree = SOURCE_ROOT; };
+		EBF1391343B7291B69288389 /* StartMenu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = StartMenu.h; path = src/StartMenu.h; sourceTree = SOURCE_ROOT; };
+		ED3B098BD470C42DCC43E845 /* Bag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Bag.h; path = src/Bag.h; sourceTree = SOURCE_ROOT; };
+		F289E8FA692B9818215AB77E /* EventsLogDisplay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = EventsLogDisplay.cpp; path = src/EventsLogDisplay.cpp; sourceTree = SOURCE_ROOT; };
+		F69222B916FBED6ACE417D4F /* Drawable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Drawable.h; path = src/Drawable.h; sourceTree = SOURCE_ROOT; };
+		FDB23FEF827B0776FA9AC3A7 /* Attack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Attack.h; path = src/Attack.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A924ADDC1C24E8410005BC2B /* libsocketiopoco_static.a in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				A924ADD01C24D0EC0005BC2B /* libwebsockets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		A924AD751C24CF9A0005BC2B /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD761C24CF9A0005BC2B /* src */,
+			);
+			name = ofxGui;
+			sourceTree = "<group>";
+		};
+		A924AD761C24CF9A0005BC2B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD771C24CF9A0005BC2B /* ofxBaseGui.cpp */,
+				A924AD781C24CF9A0005BC2B /* ofxBaseGui.h */,
+				A924AD791C24CF9A0005BC2B /* ofxButton.cpp */,
+				A924AD7A1C24CF9A0005BC2B /* ofxButton.h */,
+				A924AD7B1C24CF9A0005BC2B /* ofxGui.h */,
+				A924AD7C1C24CF9A0005BC2B /* ofxGuiGroup.cpp */,
+				A924AD7D1C24CF9A0005BC2B /* ofxGuiGroup.h */,
+				A924AD7E1C24CF9A0005BC2B /* ofxLabel.cpp */,
+				A924AD7F1C24CF9A0005BC2B /* ofxLabel.h */,
+				A924AD801C24CF9A0005BC2B /* ofxPanel.cpp */,
+				A924AD811C24CF9A0005BC2B /* ofxPanel.h */,
+				A924AD821C24CF9A0005BC2B /* ofxSlider.cpp */,
+				A924AD831C24CF9A0005BC2B /* ofxSlider.h */,
+				A924AD841C24CF9A0005BC2B /* ofxSliderGroup.cpp */,
+				A924AD851C24CF9A0005BC2B /* ofxSliderGroup.h */,
+				A924AD861C24CF9A0005BC2B /* ofxToggle.cpp */,
+				A924AD871C24CF9A0005BC2B /* ofxToggle.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxGui/src;
+			sourceTree = "<group>";
+		};
+		A924AD901C24D0EC0005BC2B /* ofxLibwebsockets */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD911C24D0EC0005BC2B /* src */,
+				A924AD931C24D0EC0005BC2B /* libs */,
+			);
+			name = ofxLibwebsockets;
+			sourceTree = "<group>";
+		};
+		A924AD911C24D0EC0005BC2B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD921C24D0EC0005BC2B /* ofxLibwebsockets.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxLibwebsockets/src;
+			sourceTree = "<group>";
+		};
+		A924AD931C24D0EC0005BC2B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD941C24D0EC0005BC2B /* jsoncpp */,
+				A924AD991C24D0EC0005BC2B /* libwebsockets */,
+				A924ADBD1C24D0EC0005BC2B /* ofxLibwebsockets */,
+			);
+			name = libs;
+			path = ../../../addons/ofxLibwebsockets/libs;
+			sourceTree = "<group>";
+		};
+		A924AD941C24D0EC0005BC2B /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD951C24D0EC0005BC2B /* json */,
+				A924AD981C24D0EC0005BC2B /* jsoncpp.cpp */,
+			);
+			path = jsoncpp;
+			sourceTree = "<group>";
+		};
+		A924AD951C24D0EC0005BC2B /* json */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD961C24D0EC0005BC2B /* json-forwards.h */,
+				A924AD971C24D0EC0005BC2B /* json.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		A924AD991C24D0EC0005BC2B /* libwebsockets */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD9A1C24D0EC0005BC2B /* COPYING */,
+				A924AD9B1C24D0EC0005BC2B /* data */,
+				A924AD9E1C24D0EC0005BC2B /* include */,
+				A924ADA11C24D0EC0005BC2B /* lib */,
+			);
+			path = libwebsockets;
+			sourceTree = "<group>";
+		};
+		A924AD9B1C24D0EC0005BC2B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD9C1C24D0EC0005BC2B /* libwebsockets-test-server.key.pem */,
+				A924AD9D1C24D0EC0005BC2B /* libwebsockets-test-server.pem */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A924AD9E1C24D0EC0005BC2B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD9F1C24D0EC0005BC2B /* libwebsockets.h */,
+				A924ADA01C24D0EC0005BC2B /* lws_config.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A924ADA11C24D0EC0005BC2B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A924ADAA1C24D0EC0005BC2B /* osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A924ADAA1C24D0EC0005BC2B /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				A924ADAB1C24D0EC0005BC2B /* libwebsockets.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		A924ADBD1C24D0EC0005BC2B /* ofxLibwebsockets */ = {
+			isa = PBXGroup;
+			children = (
+				A924ADBE1C24D0EC0005BC2B /* include */,
+				A924ADC71C24D0EC0005BC2B /* src */,
+			);
+			path = ofxLibwebsockets;
+			sourceTree = "<group>";
+		};
+		A924ADBE1C24D0EC0005BC2B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A924ADBF1C24D0EC0005BC2B /* ofxLibwebsockets */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A924ADBF1C24D0EC0005BC2B /* ofxLibwebsockets */ = {
+			isa = PBXGroup;
+			children = (
+				A924ADC01C24D0EC0005BC2B /* Client.h */,
+				A924ADC11C24D0EC0005BC2B /* Connection.h */,
+				A924ADC21C24D0EC0005BC2B /* Events.h */,
+				A924ADC31C24D0EC0005BC2B /* Protocol.h */,
+				A924ADC41C24D0EC0005BC2B /* Reactor.h */,
+				A924ADC51C24D0EC0005BC2B /* Server.h */,
+				A924ADC61C24D0EC0005BC2B /* Util.h */,
+			);
+			path = ofxLibwebsockets;
+			sourceTree = "<group>";
+		};
+		A924ADC71C24D0EC0005BC2B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A924ADC81C24D0EC0005BC2B /* Client.cpp */,
+				A924ADC91C24D0EC0005BC2B /* Connection.cpp */,
+				A924ADCA1C24D0EC0005BC2B /* Events.cpp */,
+				A924ADCB1C24D0EC0005BC2B /* Protocol.cpp */,
+				A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */,
+				A924ADCD1C24D0EC0005BC2B /* Server.cpp */,
+				A924ADCE1C24D0EC0005BC2B /* Util.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				A924AD751C24CF9A0005BC2B /* ofxGui */,
+				A924AD901C24D0EC0005BC2B /* ofxLibwebsockets */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				A924ADDE1C24ECC80005BC2B /* SIOClient.cpp */,
+				A924ADDF1C24ECC80005BC2B /* SIOClientImpl.cpp */,
+				A924ADE01C24ECC80005BC2B /* SIOClientRegistry.cpp */,
+				A924ADE11C24ECC80005BC2B /* SIOEventRegistry.cpp */,
+				A924ADE21C24ECC80005BC2B /* SIONotificationHandler.cpp */,
+				A924ADE31C24ECC80005BC2B /* SIOPacket.cpp */,
+				A924ADD91C24E8410005BC2B /* libsocketiopoco_shared.dylib */,
+				A924ADDA1C24E8410005BC2B /* libsocketiopoco_static.a */,
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* Pokemon-Battle-SimulatorDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				263606A51398287CAA66166B /* AllPokemon.h */,
+				1D1491CE65FAFF4EC1E809CB /* Attack.cpp */,
+				FDB23FEF827B0776FA9AC3A7 /* Attack.h */,
+				764EFAC5E1B618DC0E599587 /* AttackAction.cpp */,
+				1B0DC1D8703C835D538ECA75 /* AttackAction.h */,
+				DC4003FE6958D81330CAABE6 /* AttackButtonGroup.cpp */,
+				CE7C352043CA7AFB6CB26F58 /* AttackButtonGroup.h */,
+				1955BD04CF9229A68D1E73E2 /* Bag.cpp */,
+				ED3B098BD470C42DCC43E845 /* Bag.h */,
+				33A59E01FC6E98EF95792E56 /* Battle.cpp */,
+				43091E443CD422C22263A465 /* Battle.h */,
+				A46E09BC77E8D3ADC308E2F9 /* BattleImage.cpp */,
+				5C92417161B95E07E6572D92 /* BattleImage.h */,
+				C4417B5F6B1AD3AD94AE89F1 /* BattleReturnState.h */,
+				521506D8E56BA92A9D02A238 /* BattleScreen.cpp */,
+				7D7451EBEC6182A458CBAF65 /* BattleScreen.h */,
+				CF07A76C281E2FC5C4AC6E19 /* BattleScreenState.h */,
+				AC339E5A0FFE897BF12146DD /* Button.cpp */,
+				8A7335D8BF4A40E1D18AA126 /* Button.h */,
+				66744C6255CEA18ED5DED2BB /* ButtonGroup.cpp */,
+				E7A8072FBE87273A1FE7C0F0 /* ButtonGroup.h */,
+				F69222B916FBED6ACE417D4F /* Drawable.h */,
+				7B61FDE0A8E05C029006AB6C /* EndGameButtonGroup.cpp */,
+				4C9E451939871077CB32934B /* EndGameButtonGroup.h */,
+				F289E8FA692B9818215AB77E /* EventsLogDisplay.cpp */,
+				3CE40D7E648AE61B08325A9F /* EventsLogDisplay.h */,
+				D6458C67E6C2EDBBBB9C1826 /* GlobalVariables.cpp */,
+				DB8D7C7DAFCE74113735EC49 /* GlobalVariables.h */,
+				29C2187B1D4B13207673311B /* GroupOf4Buttons.h */,
+				2FE26596C7C2B3B0CAA92469 /* HpAndPpItem.cpp */,
+				429C7DA3D687C516A3C94C58 /* HpAndPpItem.h */,
+				B376F8E1B8BA6DD30B563DC5 /* HpAndPpItemAction.cpp */,
+				A2065E106EFB2AB226768348 /* HpAndPpItemAction.h */,
+				650C3ED423C92295D866AB8A /* Item.cpp */,
+				959AD550E26CE6E8B8C03E2C /* Item.h */,
+				E374EE4F7C8920DB1FACE2F3 /* ItemButtonGroup.cpp */,
+				22BD0F73147D5E820B02AFBB /* ItemButtonGroup.h */,
+				82B0BE92DC616C053ECBFC37 /* ItemType.h */,
+				DA594498C2AB825D9EB6C2FE /* ListOfScreens.h */,
+				6E60D654EA3E94066A19A50B /* LocalBattle.cpp */,
+				24FC8B5F0E7E31A33ED592B8 /* LocalBattle.h */,
+				557EF6A2CE409DC3D9E6A8DD /* MainButtonGroup.cpp */,
+				8A445463DA52710F798DB52A /* MainButtonGroup.h */,
+				0303629F9C1EAEACCCB96C65 /* PlayerAction.cpp */,
+				C50A2247521F7B31DB6B8CD9 /* PlayerAction.h */,
+				11C0900C8D5C113E4B1C45B7 /* Pokemon.cpp */,
+				4F474EC3A6F181F2407B63A1 /* Pokemon.h */,
+				013801A89B205ED4CF288B9B /* PokemonButtonGroup.cpp */,
+				95B7D8BB1783FC0BC637C1A8 /* PokemonButtonGroup.h */,
+				7C07F54DAEDA94342A612B96 /* PokeType.h */,
+				73F8822510CF59769FD58300 /* Screen.h */,
+				E42C561C83725B44179C7A68 /* SelectPokemonMenu.cpp */,
+				A9083C544DAF51CB074338A7 /* SelectPokemonMenu.h */,
+				8D8CB325F63D23893A56C0FA /* SelectPokemonMenuOption.cpp */,
+				9344E05605D30D76C08500AB /* SelectPokemonMenuOption.h */,
+				69AE47F7207819B1532B1387 /* StartMenu.cpp */,
+				EBF1391343B7291B69288389 /* StartMenu.h */,
+				A4C6E4165E9B7F208DE8621E /* Status.h */,
+				C94110320849B2A6828D0D19 /* StatusItem.cpp */,
+				294265B7A84AE088418F493E /* StatusItem.h */,
+				A872AB4F18E0D7525C0E4273 /* StatusItemAction.cpp */,
+				524C0D5483C9ACFA08D34213 /* StatusItemAction.h */,
+				5DE8A126F16FD0B3AFD7BFB2 /* SwitchPokemonAction.cpp */,
+				37700DEADB4789E9C32A2830 /* SwitchPokemonAction.h */,
+				D303D5B15891DE8207F9B037 /* Trainer.cpp */,
+				8318B7AFEB2B926C3DC6A22B /* Trainer.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* Pokemon-Battle-Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "Pokemon-Battle-Simulator" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = "Pokemon-Battle-Simulator";
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* Pokemon-Battle-SimulatorDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "Pokemon-Battle-Simulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* Pokemon-Battle-Simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A924ADE41C24ECC80005BC2B /* SIOClient.cpp in Sources */,
+				A924ADE51C24ECC80005BC2B /* SIOClientImpl.cpp in Sources */,
+				A924ADE61C24ECC80005BC2B /* SIOClientRegistry.cpp in Sources */,
+				A924ADE71C24ECC80005BC2B /* SIOEventRegistry.cpp in Sources */,
+				A924ADE81C24ECC80005BC2B /* SIONotificationHandler.cpp in Sources */,
+				A924ADE91C24ECC80005BC2B /* SIOPacket.cpp in Sources */,
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				A924ADD11C24D0EC0005BC2B /* Client.cpp in Sources */,
+				D7EB7365E770AE917E8E6870 /* Attack.cpp in Sources */,
+				F561D26E330F9036B96869AD /* AttackAction.cpp in Sources */,
+				A924ADD21C24D0EC0005BC2B /* Connection.cpp in Sources */,
+				A924AD881C24CF9A0005BC2B /* ofxBaseGui.cpp in Sources */,
+				988900E4C562DED794ED8600 /* AttackButtonGroup.cpp in Sources */,
+				CC6A7976957BB0308C358E9B /* Bag.cpp in Sources */,
+				A924AD8F1C24CF9A0005BC2B /* ofxToggle.cpp in Sources */,
+				A924AD8A1C24CF9A0005BC2B /* ofxGuiGroup.cpp in Sources */,
+				A924AD891C24CF9A0005BC2B /* ofxButton.cpp in Sources */,
+				DAFD75A4112270FBC9CB4BF2 /* Battle.cpp in Sources */,
+				A924AD8D1C24CF9A0005BC2B /* ofxSlider.cpp in Sources */,
+				A924ADCF1C24D0EC0005BC2B /* jsoncpp.cpp in Sources */,
+				73D38B71244CD72BE96F8580 /* BattleImage.cpp in Sources */,
+				011E03BA6116E89067A9F276 /* BattleScreen.cpp in Sources */,
+				F7DD82C416BE189FC6777E5A /* Button.cpp in Sources */,
+				7BD645C7919B96C065BF1FDD /* ButtonGroup.cpp in Sources */,
+				805621C1E52FEDB7C00BE8DF /* EndGameButtonGroup.cpp in Sources */,
+				A924ADD51C24D0EC0005BC2B /* Reactor.cpp in Sources */,
+				FF90DED99CBB6C4311DDDB97 /* EventsLogDisplay.cpp in Sources */,
+				A924ADD61C24D0EC0005BC2B /* Server.cpp in Sources */,
+				CEE2492E2D27429A0CCCA768 /* GlobalVariables.cpp in Sources */,
+				F400D546383E08D1A139D4FA /* HpAndPpItem.cpp in Sources */,
+				A924AD8C1C24CF9A0005BC2B /* ofxPanel.cpp in Sources */,
+				D13CC1079524D21752A7030E /* HpAndPpItemAction.cpp in Sources */,
+				31A07C8D4166D206048E27D4 /* Item.cpp in Sources */,
+				3DDBB6698EEBC6078034C847 /* ItemButtonGroup.cpp in Sources */,
+				77009E6047D05E4F0BDA2A88 /* LocalBattle.cpp in Sources */,
+				F2433FB3B84D65FBB1DFA01D /* MainButtonGroup.cpp in Sources */,
+				A7B597BADDFD04E0AF5EB828 /* PlayerAction.cpp in Sources */,
+				A924ADD31C24D0EC0005BC2B /* Events.cpp in Sources */,
+				B9A32C1F1DBD012324BF9610 /* Pokemon.cpp in Sources */,
+				A924AD8E1C24CF9A0005BC2B /* ofxSliderGroup.cpp in Sources */,
+				47A6D9F0D8E7F3ADC4B58BA5 /* PokemonButtonGroup.cpp in Sources */,
+				61D843178517EADFCA8C6A03 /* SelectPokemonMenu.cpp in Sources */,
+				A924ADD41C24D0EC0005BC2B /* Protocol.cpp in Sources */,
+				0CDFA4BAFF3C653E6B589F9E /* SelectPokemonMenuOption.cpp in Sources */,
+				87C044255589E67A10841C5D /* StartMenu.cpp in Sources */,
+				F76BD9E4C7DA2BDEBDC55C6D /* StatusItem.cpp in Sources */,
+				A924AD8B1C24CF9A0005BC2B /* ofxLabel.cpp in Sources */,
+				768DD3B9865849CB30280F54 /* StatusItemAction.cpp in Sources */,
+				11C30AD86EAB4331F1418D6A /* SwitchPokemonAction.cpp in Sources */,
+				25F3AE702DCE15903AA4ED41 /* Trainer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					"\"$(SRCROOT)\"/socket.io-poco/include",
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stevengt/Downloads/of_v0.9.0_osx_release/addons/ofxLibwebsockets/libs/libwebsockets/lib/osx,
+					"$(PROJECT_DIR)/socket.io-poco/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxLibwebsockets/libs/jsoncpp/json ../../../addons/ofxLibwebsockets/libs/jsoncpp ../../../addons/ofxLibwebsockets/libs/libwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/libwebsockets/include/ ../../../addons/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/ofxLibwebsockets ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					"\"$(SRCROOT)\"/socket.io-poco/include",
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stevengt/Downloads/of_v0.9.0_osx_release/addons/ofxLibwebsockets/libs/libwebsockets/lib/osx,
+					"$(PROJECT_DIR)/socket.io-poco/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxLibwebsockets/libs/jsoncpp/json ../../../addons/ofxLibwebsockets/libs/jsoncpp ../../../addons/ofxLibwebsockets/libs/libwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/libwebsockets/include/ ../../../addons/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/ofxLibwebsockets ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "Pokemon-Battle-Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "Pokemon-Battle-Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

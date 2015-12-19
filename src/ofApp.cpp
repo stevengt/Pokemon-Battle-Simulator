@@ -5,6 +5,8 @@
 #include "BattleScreen.h"
 #include "GlobalVariables.h"
 
+
+
 //--------------------------------------------------------------
 void ofApp::setup(){
 
@@ -12,8 +14,60 @@ void ofApp::setup(){
     currentScreen = START_MENU;
     addScreens();
     isPaused = false;
-  
+    
+    
+//    // setup client @ port 9093
+//    client.connect("localhost", 5000);
+//    client.addListener(this);
+//    client.send("Hello world!");
+//
+    
+    
+    SIOClient *sio = SIOClient::connect("http://localhost:9093");
+    sio->send("Hello Socket.IO");
+    
+    
 }
+
+
+
+//--------------------------------------------------------------
+void ofApp::onConnect( ofxLibwebsockets::Event& args ){
+    ofLogVerbose()<<"on connected";
+}
+
+//--------------------------------------------------------------
+void ofApp::onOpen( ofxLibwebsockets::Event& args ){
+    ofLogVerbose()<<"on open";
+}
+
+//--------------------------------------------------------------
+void ofApp::onClose( ofxLibwebsockets::Event& args ){
+    ofLogVerbose()<<"on close";
+}
+
+//--------------------------------------------------------------
+void ofApp::onIdle( ofxLibwebsockets::Event& args ){
+    ofLogVerbose()<<"on idle";
+}
+
+//--------------------------------------------------------------
+void ofApp::onMessage( ofxLibwebsockets::Event& args ){
+    // need to load this next frame!    buff.clear();
+    mutex.lock();
+    buff.set(args.data.getData(), args.data.size());
+    mutex.unlock();
+}
+
+//--------------------------------------------------------------
+void ofApp::onBroadcast( ofxLibwebsockets::Event& args ){
+    cout<<"got broadcast "<<args.message<<endl;
+}
+
+
+
+
+
 
 //--------------------------------------------------------------
 void ofApp::update(){
@@ -24,14 +78,14 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-    if(!*GlobalVariables::isUpdating){
+    if(!GlobalVariables::isUpdating){
         screens.at(currentScreen)->draw();
     }
 }
 
 void ofApp::addScreens(){
-    screens.push_back(new StartMenu());
-    screens.push_back(new SelectPokemonMenu());
+    screens.push_back(new StartMenu(this));
+    screens.push_back(new SelectPokemonMenu(this));
 }
 
 
@@ -52,12 +106,12 @@ void ofApp::switchToBattleScreen(Battle *battle){
 }
 
 void ofApp::switchScreens(ScreenState newScreen){
-    *GlobalVariables::isUpdating = true;
-    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->clear();
-    GlobalVariables::globalApp->currentScreen = newScreen;
-    GlobalVariables::globalApp->screens.at(GlobalVariables::globalApp->currentScreen)->populate();
+    GlobalVariables::isUpdating = true;
+    this->screens.at(this->currentScreen)->clear();
+    this->currentScreen = newScreen;
+    this->screens.at(this->currentScreen)->populate();
     ofClear(200, 200, 200 );
-    *GlobalVariables::isUpdating = false;
+    GlobalVariables::isUpdating = false;
 }
 
 //--------------------------------------------------------------
@@ -82,7 +136,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    GlobalVariables::globalApp->screens.at(currentScreen)->mousePressed(x,y);
+    this->screens.at(currentScreen)->mousePressed(x,y);
 }
 
 //--------------------------------------------------------------

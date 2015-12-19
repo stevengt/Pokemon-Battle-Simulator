@@ -3,7 +3,8 @@
 
 
 
-StartMenu::StartMenu(){
+StartMenu::StartMenu(ofApp *mainApp){
+    setMainApp(mainApp);
     populate();
 }
 
@@ -15,12 +16,12 @@ Button StartMenu::getComputerButton(){return *computerButton;}
 Button StartMenu::getOnlineButton(){return *onlineButton;}
 
 
-ofApp StartMenu::getListener(){
-    return *listener;
+ofApp* StartMenu::getMainApp(){
+    return mainApp;
 }
 
-void StartMenu::setListener(ofApp newListener){
-    listener = &newListener;
+void StartMenu::setMainApp(ofApp *mainApp){
+    this->mainApp = mainApp;
 }
 
 void StartMenu::setImage(std::string imageLocation){
@@ -56,14 +57,13 @@ void StartMenu::clear(){
 
 void StartMenu::populate(){
     setImage("images/startMenu.png");
-    setListener(*GlobalVariables::globalApp);
     setOnlineButton();
     setComputerButton();
 }
 
 void StartMenu::mousePressed(int x, int y){
     if(computerButton->inside(x,y)){
-        GlobalVariables::globalApp->switchToSelectPokemonMenu();
+        mainApp->switchToSelectPokemonMenu();
     }
 }
 

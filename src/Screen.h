@@ -2,6 +2,8 @@
 #pragma once
 #include "Drawable.h"
 
+class ofApp;
+
 class Screen : public Drawable {
 public:
     virtual void populate()=0;

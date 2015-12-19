@@ -10,7 +10,10 @@
 #include "PokemonButtonGroup.h"
 #include "EventsLogDisplay.h"
 
+
+
 class Battle;
+
 class BattleScreen : public Screen {
     
 private:

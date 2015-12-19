@@ -17,7 +17,7 @@
 class SelectPokemonMenu : public Screen {
     
 private:
-    ofApp *listener;
+    ofApp *mainApp;
     Button *continueButton;
     Button *backButton;
     Button *warningMessage = NULL;
@@ -35,8 +35,8 @@ public:
     
     std::vector<SelectPokemonMenuOption> *options;
 
-    SelectPokemonMenu();
-    void setListener(ofApp newListener);
+    SelectPokemonMenu(ofApp *mainApp);
+    void setMainApp(ofApp *mainApp);
     void addOptions();
     void setContinueButton();
     void setBackButton();

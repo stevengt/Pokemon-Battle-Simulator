@@ -4,6 +4,6 @@
 #include "ofApp.h"
 
 namespace GlobalVariables{
-    extern bool *isUpdating;
-    extern ofApp* globalApp;
+    extern bool isUpdating;
+    extern ofApp globalApp;
 }

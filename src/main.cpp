@@ -16,11 +16,9 @@ int main( ){
   //  app = new ofApp();
     bool tmp;
     GlobalVariables::isUpdating= &tmp;
-    *GlobalVariables::isUpdating = false;
-
-    GlobalVariables::globalApp = new ofApp();
+    GlobalVariables::isUpdating = false;
     
     
-    ofRunApp(GlobalVariables::globalApp);
+    ofRunApp(new ofApp());
 
 }

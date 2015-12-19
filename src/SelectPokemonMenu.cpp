@@ -3,10 +3,12 @@
 #include "AllPokemon.h"
 #include "Battle.h"
 
-SelectPokemonMenu::SelectPokemonMenu(){}
+SelectPokemonMenu::SelectPokemonMenu(ofApp *mainApp){
+    setMainApp(mainApp);
+}
 
-void SelectPokemonMenu::setListener(ofApp newListener){
-    listener = &newListener;
+void SelectPokemonMenu::setMainApp(ofApp *mainApp){
+    this->mainApp = mainApp;
 }
 
 void SelectPokemonMenu::addOptions(){
@@ -94,7 +96,6 @@ Battle *SelectPokemonMenu::makeBattle(){
 
 void SelectPokemonMenu::populate(){
     addOptions();
-    setListener(*GlobalVariables::globalApp);
     setContinueButton();
     setBackButton();
 }
@@ -118,13 +119,13 @@ bool SelectPokemonMenu::selectionIsValid(){
 
 void SelectPokemonMenu::mousePressed(int x, int y){
     if(backButton->inside(x,y)){
-        GlobalVariables::globalApp->switchToStartMenu();
+        mainApp->switchToStartMenu();
     }
     if(continueButton->inside(x,y)){
         if (!selectionIsValid()){
             setWarningMessage();
         } else {
-            GlobalVariables::globalApp->switchToBattleScreen(makeBattle());
+            mainApp->switchToBattleScreen(makeBattle());
         }
     }
     
