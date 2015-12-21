@@ -7,12 +7,10 @@
 #include "Battle.h"
 #include <vector>
 
-#include "ofxLibwebsockets.h"
 
-#include "SIOClient.h"
+#include "sio_client.h"
 
-
-using Poco::Thread;
+//using Poco::Thread;
 
 class Screen;
 
@@ -45,19 +43,6 @@ private:
         void addScreens();
         ScreenState currentScreen;
 
-
-        ofxLibwebsockets::Client client;
-    
-        ofBuffer buff;
-        ofMutex  mutex;
-    
-        // websocket methods
-        void onConnect( ofxLibwebsockets::Event& args );
-        void onOpen( ofxLibwebsockets::Event& args );
-        void onClose( ofxLibwebsockets::Event& args );
-        void onIdle( ofxLibwebsockets::Event& args );
-        void onMessage( ofxLibwebsockets::Event& args );
-        void onBroadcast( ofxLibwebsockets::Event& args );
     
 };
 

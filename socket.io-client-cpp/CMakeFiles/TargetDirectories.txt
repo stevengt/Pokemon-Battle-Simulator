@@ -1,0 +1,2 @@
+/Users/stevengt/Downloads/of_v0.9.0_osx_release/apps/myApps/Pokemon-Battle-Simulator/socket.io-client-cpp/CMakeFiles/sioclient_tls.dir
+/Users/stevengt/Downloads/of_v0.9.0_osx_release/apps/myApps/Pokemon-Battle-Simulator/socket.io-client-cpp/CMakeFiles/sioclient.dir

@@ -12,6 +12,8 @@
 	<dict>
 		<key>11B059EE04D20358F854324FF6D2D604E49D336C</key>
 		<string>github.com:stevengt/Pokemon-Battle-Simulator.git</string>
+		<key>21C71CD5ED4B8C77974DDBAF056104F039A3B593</key>
+		<string>https://github.com/socketio/socket.io-client-cpp.git</string>
 		<key>2356F1CE7D14EE2CB829BEF0572683A2BBADECF8</key>
 		<string>https://github.com/himynameschris/socket.io-poco.git</string>
 		<key>FB950DA91696DB40601A43AFF1A56B2E39217374</key>
@@ -23,8 +25,10 @@
 	<dict>
 		<key>11B059EE04D20358F854324FF6D2D604E49D336C</key>
 		<string>../..</string>
+		<key>21C71CD5ED4B8C77974DDBAF056104F039A3B593</key>
+		<string>../../socket.io-client-cpp</string>
 		<key>2356F1CE7D14EE2CB829BEF0572683A2BBADECF8</key>
-		<string>../../socket.io-poco/</string>
+		<string>../../socket.io-poco</string>
 		<key>FB950DA91696DB40601A43AFF1A56B2E39217374</key>
 		<string>../../../addons/ofxLibwebsockets</string>
 	</dict>
@@ -51,6 +55,14 @@
 			<string>11B059EE04D20358F854324FF6D2D604E49D336C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Pokemon-Battle-Simulator</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>21C71CD5ED4B8C77974DDBAF056104F039A3B593</string>
+			<key>IDESourceControlWCCName</key>
+			<string>socket.io-client-cpp</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

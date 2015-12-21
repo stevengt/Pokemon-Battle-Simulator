@@ -6,6 +6,16 @@
 #include "GlobalVariables.h"
 
 
+typedef std::function<void(void)> con_listener;
+
+
+void OnMessage(sio::event &l)
+{
+    std::cout << l.get_message();
+}
+
+
+
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -16,55 +26,17 @@ void ofApp::setup(){
     isPaused = false;
     
     
-//    // setup client @ port 9093
-//    client.connect("localhost", 5000);
-//    client.addListener(this);
-//    client.send("Hello world!");
-//
+    sio::client h;
+    //h.socket()->on("message", &OnMessage);
+    
+    h.connect("http://127.0.0.1:9093");
+    h.socket()->emit("message", sio::string_message::create("stevengt"));
+    
+    //h.socket()->emit("message");
     
     
-    SIOClient *sio = SIOClient::connect("http://localhost:9093");
-    sio->send("Hello Socket.IO");
-    
     
 }
-
-
-
-//--------------------------------------------------------------
-void ofApp::onConnect( ofxLibwebsockets::Event& args ){
-    ofLogVerbose()<<"on connected";
-}
-
-//--------------------------------------------------------------
-void ofApp::onOpen( ofxLibwebsockets::Event& args ){
-    ofLogVerbose()<<"on open";
-}
-
-//--------------------------------------------------------------
-void ofApp::onClose( ofxLibwebsockets::Event& args ){
-    ofLogVerbose()<<"on close";
-}
-
-//--------------------------------------------------------------
-void ofApp::onIdle( ofxLibwebsockets::Event& args ){
-    ofLogVerbose()<<"on idle";
-}
-
-//--------------------------------------------------------------
-void ofApp::onMessage( ofxLibwebsockets::Event& args ){
-    // need to load this next frame!    buff.clear();
-    mutex.lock();
-    buff.set(args.data.getData(), args.data.size());
-    mutex.unlock();
-}
-
-//--------------------------------------------------------------
-void ofApp::onBroadcast( ofxLibwebsockets::Event& args ){
-    cout<<"got broadcast "<<args.message<<endl;
-}
-
-
 
 
 

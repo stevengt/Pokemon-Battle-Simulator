@@ -40,13 +40,16 @@
 		A924ADD51C24D0EC0005BC2B /* Reactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */; };
 		A924ADD61C24D0EC0005BC2B /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCD1C24D0EC0005BC2B /* Server.cpp */; };
 		A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCE1C24D0EC0005BC2B /* Util.cpp */; };
-		A924ADDC1C24E8410005BC2B /* libsocketiopoco_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A924ADDA1C24E8410005BC2B /* libsocketiopoco_static.a */; };
-		A924ADE41C24ECC80005BC2B /* SIOClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADDE1C24ECC80005BC2B /* SIOClient.cpp */; };
-		A924ADE51C24ECC80005BC2B /* SIOClientImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADDF1C24ECC80005BC2B /* SIOClientImpl.cpp */; };
-		A924ADE61C24ECC80005BC2B /* SIOClientRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE01C24ECC80005BC2B /* SIOClientRegistry.cpp */; };
-		A924ADE71C24ECC80005BC2B /* SIOEventRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE11C24ECC80005BC2B /* SIOEventRegistry.cpp */; };
-		A924ADE81C24ECC80005BC2B /* SIONotificationHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE21C24ECC80005BC2B /* SIONotificationHandler.cpp */; };
-		A924ADE91C24ECC80005BC2B /* SIOPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADE31C24ECC80005BC2B /* SIOPacket.cpp */; };
+		A9E368B51C270AE40058C9D6 /* sio_client_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */; };
+		A9E368B61C270AE40058C9D6 /* sio_packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B21C270AE40058C9D6 /* sio_packet.cpp */; };
+		A9E368B71C270AE40058C9D6 /* sio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B31C270AE40058C9D6 /* sio_client.cpp */; };
+		A9E368B81C270AE40058C9D6 /* sio_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B41C270AE40058C9D6 /* sio_socket.cpp */; };
+		A9E369361C27130F0058C9D6 /* libboost_date_time-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369311C27130F0058C9D6 /* libboost_date_time-mt.a */; };
+		A9E369371C27130F0058C9D6 /* libboost_random-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369321C27130F0058C9D6 /* libboost_random-mt.a */; };
+		A9E369381C27130F0058C9D6 /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369331C27130F0058C9D6 /* libboost_system-mt.a */; };
+		A9E369391C27130F0058C9D6 /* libsioclient_tls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369341C27130F0058C9D6 /* libsioclient_tls.a */; };
+		A9E3693A1C27130F0058C9D6 /* libsioclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369351C27130F0058C9D6 /* libsioclient.a */; };
+		A9E369CC1C2781F40058C9D6 /* NewPlayerMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */; };
 		B9A32C1F1DBD012324BF9610 /* Pokemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11C0900C8D5C113E4B1C45B7 /* Pokemon.cpp */; };
 		CC6A7976957BB0308C358E9B /* Bag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1955BD04CF9229A68D1E73E2 /* Bag.cpp */; };
 		CEE2492E2D27429A0CCCA768 /* GlobalVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6458C67E6C2EDBBBB9C1826 /* GlobalVariables.cpp */; };
@@ -181,14 +184,17 @@
 		A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reactor.cpp; sourceTree = "<group>"; };
 		A924ADCD1C24D0EC0005BC2B /* Server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
 		A924ADCE1C24D0EC0005BC2B /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
-		A924ADD91C24E8410005BC2B /* libsocketiopoco_shared.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsocketiopoco_shared.dylib; path = "socket.io-poco/lib/libsocketiopoco_shared.dylib"; sourceTree = "<group>"; };
-		A924ADDA1C24E8410005BC2B /* libsocketiopoco_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsocketiopoco_static.a; path = "socket.io-poco/lib/libsocketiopoco_static.a"; sourceTree = "<group>"; };
-		A924ADDE1C24ECC80005BC2B /* SIOClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOClient.cpp; path = "socket.io-poco/src/SIOClient.cpp"; sourceTree = "<group>"; };
-		A924ADDF1C24ECC80005BC2B /* SIOClientImpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOClientImpl.cpp; path = "socket.io-poco/src/SIOClientImpl.cpp"; sourceTree = "<group>"; };
-		A924ADE01C24ECC80005BC2B /* SIOClientRegistry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOClientRegistry.cpp; path = "socket.io-poco/src/SIOClientRegistry.cpp"; sourceTree = "<group>"; };
-		A924ADE11C24ECC80005BC2B /* SIOEventRegistry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOEventRegistry.cpp; path = "socket.io-poco/src/SIOEventRegistry.cpp"; sourceTree = "<group>"; };
-		A924ADE21C24ECC80005BC2B /* SIONotificationHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIONotificationHandler.cpp; path = "socket.io-poco/src/SIONotificationHandler.cpp"; sourceTree = "<group>"; };
-		A924ADE31C24ECC80005BC2B /* SIOPacket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIOPacket.cpp; path = "socket.io-poco/src/SIOPacket.cpp"; sourceTree = "<group>"; };
+		A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client_impl.cpp; path = "socket.io-client-cpp/src/internal/sio_client_impl.cpp"; sourceTree = "<group>"; };
+		A9E368B21C270AE40058C9D6 /* sio_packet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_packet.cpp; path = "socket.io-client-cpp/src/internal/sio_packet.cpp"; sourceTree = "<group>"; };
+		A9E368B31C270AE40058C9D6 /* sio_client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client.cpp; path = "socket.io-client-cpp/src/sio_client.cpp"; sourceTree = "<group>"; };
+		A9E368B41C270AE40058C9D6 /* sio_socket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_socket.cpp; path = "socket.io-client-cpp/src/sio_socket.cpp"; sourceTree = "<group>"; };
+		A9E369311C27130F0058C9D6 /* libboost_date_time-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_date_time-mt.a"; path = "socket.io-client-cpp/build/lib/Release/libboost_date_time-mt.a"; sourceTree = "<group>"; };
+		A9E369321C27130F0058C9D6 /* libboost_random-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_random-mt.a"; path = "socket.io-client-cpp/build/lib/Release/libboost_random-mt.a"; sourceTree = "<group>"; };
+		A9E369331C27130F0058C9D6 /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "socket.io-client-cpp/build/lib/Release/libboost_system-mt.a"; sourceTree = "<group>"; };
+		A9E369341C27130F0058C9D6 /* libsioclient_tls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient_tls.a; path = "socket.io-client-cpp/build/lib/Release/libsioclient_tls.a"; sourceTree = "<group>"; };
+		A9E369351C27130F0058C9D6 /* libsioclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient.a; path = "socket.io-client-cpp/build/lib/Release/libsioclient.a"; sourceTree = "<group>"; };
+		A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewPlayerMessage.cpp; sourceTree = "<group>"; };
+		A9E369CB1C2781F40058C9D6 /* NewPlayerMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPlayerMessage.h; sourceTree = "<group>"; };
 		AC339E5A0FFE897BF12146DD /* Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Button.cpp; path = src/Button.cpp; sourceTree = SOURCE_ROOT; };
 		B376F8E1B8BA6DD30B563DC5 /* HpAndPpItemAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = HpAndPpItemAction.cpp; path = src/HpAndPpItemAction.cpp; sourceTree = SOURCE_ROOT; };
 		C4417B5F6B1AD3AD94AE89F1 /* BattleReturnState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BattleReturnState.h; path = src/BattleReturnState.h; sourceTree = SOURCE_ROOT; };
@@ -224,7 +230,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A924ADDC1C24E8410005BC2B /* libsocketiopoco_static.a in Frameworks */,
+				A9E369361C27130F0058C9D6 /* libboost_date_time-mt.a in Frameworks */,
+				A9E369371C27130F0058C9D6 /* libboost_random-mt.a in Frameworks */,
+				A9E369381C27130F0058C9D6 /* libboost_system-mt.a in Frameworks */,
+				A9E369391C27130F0058C9D6 /* libsioclient_tls.a in Frameworks */,
+				A9E3693A1C27130F0058C9D6 /* libsioclient.a in Frameworks */,
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				A924ADD01C24D0EC0005BC2B /* libwebsockets.a in Frameworks */,
 			);
@@ -430,14 +440,15 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				A924ADDE1C24ECC80005BC2B /* SIOClient.cpp */,
-				A924ADDF1C24ECC80005BC2B /* SIOClientImpl.cpp */,
-				A924ADE01C24ECC80005BC2B /* SIOClientRegistry.cpp */,
-				A924ADE11C24ECC80005BC2B /* SIOEventRegistry.cpp */,
-				A924ADE21C24ECC80005BC2B /* SIONotificationHandler.cpp */,
-				A924ADE31C24ECC80005BC2B /* SIOPacket.cpp */,
-				A924ADD91C24E8410005BC2B /* libsocketiopoco_shared.dylib */,
-				A924ADDA1C24E8410005BC2B /* libsocketiopoco_static.a */,
+				A9E369311C27130F0058C9D6 /* libboost_date_time-mt.a */,
+				A9E369321C27130F0058C9D6 /* libboost_random-mt.a */,
+				A9E369331C27130F0058C9D6 /* libboost_system-mt.a */,
+				A9E369341C27130F0058C9D6 /* libsioclient_tls.a */,
+				A9E369351C27130F0058C9D6 /* libsioclient.a */,
+				A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */,
+				A9E368B21C270AE40058C9D6 /* sio_packet.cpp */,
+				A9E368B31C270AE40058C9D6 /* sio_client.cpp */,
+				A9E368B41C270AE40058C9D6 /* sio_socket.cpp */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -520,6 +531,8 @@
 				37700DEADB4789E9C32A2830 /* SwitchPokemonAction.h */,
 				D303D5B15891DE8207F9B037 /* Trainer.cpp */,
 				8318B7AFEB2B926C3DC6A22B /* Trainer.h */,
+				A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */,
+				A9E369CB1C2781F40058C9D6 /* NewPlayerMessage.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -620,12 +633,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A924ADE41C24ECC80005BC2B /* SIOClient.cpp in Sources */,
-				A924ADE51C24ECC80005BC2B /* SIOClientImpl.cpp in Sources */,
-				A924ADE61C24ECC80005BC2B /* SIOClientRegistry.cpp in Sources */,
-				A924ADE71C24ECC80005BC2B /* SIOEventRegistry.cpp in Sources */,
-				A924ADE81C24ECC80005BC2B /* SIONotificationHandler.cpp in Sources */,
-				A924ADE91C24ECC80005BC2B /* SIOPacket.cpp in Sources */,
+				A9E368B51C270AE40058C9D6 /* sio_client_impl.cpp in Sources */,
+				A9E368B61C270AE40058C9D6 /* sio_packet.cpp in Sources */,
+				A9E368B71C270AE40058C9D6 /* sio_client.cpp in Sources */,
+				A9E368B81C270AE40058C9D6 /* sio_socket.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
@@ -667,6 +678,7 @@
 				A924ADD41C24D0EC0005BC2B /* Protocol.cpp in Sources */,
 				0CDFA4BAFF3C653E6B589F9E /* SelectPokemonMenuOption.cpp in Sources */,
 				87C044255589E67A10841C5D /* StartMenu.cpp in Sources */,
+				A9E369CC1C2781F40058C9D6 /* NewPlayerMessage.cpp in Sources */,
 				F76BD9E4C7DA2BDEBDC55C6D /* StatusItem.cpp in Sources */,
 				A924AD8B1C24CF9A0005BC2B /* ofxLabel.cpp in Sources */,
 				768DD3B9865849CB30280F54 /* StatusItemAction.cpp in Sources */,
@@ -756,6 +768,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -768,7 +782,9 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-					"\"$(SRCROOT)\"/socket.io-poco/include",
+					"\"$(SRCROOT)\"/socket.io-client-cpp/lib/websocketpp/**",
+					"\"$(SRCROOT)\"/../../../libs/boost_1_59_0",
+					"\"$(SRCROOT)\"/socket.io-client-cpp/lib/rapidjson/include/rapidjson/**",
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -777,7 +793,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/stevengt/Downloads/of_v0.9.0_osx_release/addons/ofxLibwebsockets/libs/libwebsockets/lib/osx,
-					"$(PROJECT_DIR)/socket.io-poco/lib",
+					"$(PROJECT_DIR)/../../../libs/boost_1_59_0/lib",
+					"$(PROJECT_DIR)/socket.io-client-cpp/build/lib/Release",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxLibwebsockets/libs/jsoncpp/json ../../../addons/ofxLibwebsockets/libs/jsoncpp ../../../addons/ofxLibwebsockets/libs/libwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/libwebsockets/include/ ../../../addons/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/ofxLibwebsockets ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/";
@@ -789,6 +806,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -800,7 +819,9 @@
 				GCC_MODEL_TUNING = NONE;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-					"\"$(SRCROOT)\"/socket.io-poco/include",
+					"\"$(SRCROOT)\"/socket.io-client-cpp/lib/websocketpp/**",
+					"\"$(SRCROOT)\"/../../../libs/boost_1_59_0",
+					"\"$(SRCROOT)\"/socket.io-client-cpp/lib/rapidjson/include/rapidjson/**",
 				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
@@ -809,7 +830,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/stevengt/Downloads/of_v0.9.0_osx_release/addons/ofxLibwebsockets/libs/libwebsockets/lib/osx,
-					"$(PROJECT_DIR)/socket.io-poco/lib",
+					"$(PROJECT_DIR)/../../../libs/boost_1_59_0/lib",
+					"$(PROJECT_DIR)/socket.io-client-cpp/build/lib/Release",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxLibwebsockets/libs/jsoncpp/json ../../../addons/ofxLibwebsockets/libs/jsoncpp ../../../addons/ofxLibwebsockets/libs/libwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/libwebsockets/include/ ../../../addons/ofxLibwebsockets/src ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/ofxLibwebsockets ../../../addons/ofxLibwebsockets/libs/ofxLibwebsockets/include/";
