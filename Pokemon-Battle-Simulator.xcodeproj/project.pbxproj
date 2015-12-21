@@ -40,6 +40,8 @@
 		A924ADD51C24D0EC0005BC2B /* Reactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */; };
 		A924ADD61C24D0EC0005BC2B /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCD1C24D0EC0005BC2B /* Server.cpp */; };
 		A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCE1C24D0EC0005BC2B /* Util.cpp */; };
+		A934DA171C28478600897E8B /* SelectGameRoomScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */; };
+		A934DA1A1C284B6300897E8B /* GameRoomButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A934DA181C284B6300897E8B /* GameRoomButton.cpp */; };
 		A9E368B51C270AE40058C9D6 /* sio_client_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */; };
 		A9E368B61C270AE40058C9D6 /* sio_packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B21C270AE40058C9D6 /* sio_packet.cpp */; };
 		A9E368B71C270AE40058C9D6 /* sio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B31C270AE40058C9D6 /* sio_client.cpp */; };
@@ -184,6 +186,11 @@
 		A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reactor.cpp; sourceTree = "<group>"; };
 		A924ADCD1C24D0EC0005BC2B /* Server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
 		A924ADCE1C24D0EC0005BC2B /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectGameRoomScreen.cpp; sourceTree = "<group>"; };
+		A934DA161C28478600897E8B /* SelectGameRoomScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGameRoomScreen.h; sourceTree = "<group>"; };
+		A934DA181C284B6300897E8B /* GameRoomButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoomButton.cpp; sourceTree = "<group>"; };
+		A934DA191C284B6300897E8B /* GameRoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoomButton.h; sourceTree = "<group>"; };
+		A934DA1B1C288B5D00897E8B /* ConnectionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionListener.h; sourceTree = "<group>"; };
 		A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client_impl.cpp; path = "socket.io-client-cpp/src/internal/sio_client_impl.cpp"; sourceTree = "<group>"; };
 		A9E368B21C270AE40058C9D6 /* sio_packet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_packet.cpp; path = "socket.io-client-cpp/src/internal/sio_packet.cpp"; sourceTree = "<group>"; };
 		A9E368B31C270AE40058C9D6 /* sio_client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client.cpp; path = "socket.io-client-cpp/src/sio_client.cpp"; sourceTree = "<group>"; };
@@ -533,6 +540,11 @@
 				8318B7AFEB2B926C3DC6A22B /* Trainer.h */,
 				A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */,
 				A9E369CB1C2781F40058C9D6 /* NewPlayerMessage.h */,
+				A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */,
+				A934DA161C28478600897E8B /* SelectGameRoomScreen.h */,
+				A934DA181C284B6300897E8B /* GameRoomButton.cpp */,
+				A934DA191C284B6300897E8B /* GameRoomButton.h */,
+				A934DA1B1C288B5D00897E8B /* ConnectionListener.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -640,11 +652,13 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				A934DA1A1C284B6300897E8B /* GameRoomButton.cpp in Sources */,
 				A924ADD11C24D0EC0005BC2B /* Client.cpp in Sources */,
 				D7EB7365E770AE917E8E6870 /* Attack.cpp in Sources */,
 				F561D26E330F9036B96869AD /* AttackAction.cpp in Sources */,
 				A924ADD21C24D0EC0005BC2B /* Connection.cpp in Sources */,
 				A924AD881C24CF9A0005BC2B /* ofxBaseGui.cpp in Sources */,
+				A934DA171C28478600897E8B /* SelectGameRoomScreen.cpp in Sources */,
 				988900E4C562DED794ED8600 /* AttackButtonGroup.cpp in Sources */,
 				CC6A7976957BB0308C358E9B /* Bag.cpp in Sources */,
 				A924AD8F1C24CF9A0005BC2B /* ofxToggle.cpp in Sources */,

@@ -48,11 +48,9 @@ void StartMenu::draw(){
 }
 
 void StartMenu::clear(){
-//    delete computerButton;
-//    delete onlineButton;
+
     computerButton->clear();
     onlineButton->clear();
-    //onComputerButtonClick.~ofEvent();
 }
 
 void StartMenu::populate(){
@@ -64,6 +62,8 @@ void StartMenu::populate(){
 void StartMenu::mousePressed(int x, int y){
     if(computerButton->inside(x,y)){
         mainApp->switchToSelectPokemonMenu();
+    } else if (onlineButton->inside(x, y)){
+        mainApp->switchToSelectGameRoomScreen();
     }
 }
 

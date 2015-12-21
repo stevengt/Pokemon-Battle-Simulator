@@ -7,7 +7,7 @@
 #include "Battle.h"
 #include <vector>
 
-
+#include <mutex>
 #include "sio_client.h"
 
 //using Poco::Thread;
@@ -37,12 +37,18 @@ private:
         void switchToSelectPokemonMenu();
         void switchToStartMenu();
         void switchToBattleScreen(Battle *battle);
+        void switchToSelectGameRoomScreen();
         std::vector<Screen*> screens;
         ofEvent<bool> computerBattle;
         bool isPaused;
         void addScreens();
         ScreenState currentScreen;
 
+    
+    std::mutex _lock;
+    std::condition_variable_any _cond;
+    bool connect_finish = false;
+    
     
 };
 

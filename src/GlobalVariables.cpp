@@ -5,5 +5,4 @@
 namespace GlobalVariables{
   
     bool isUpdating = false;
-
 }
