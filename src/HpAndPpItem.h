@@ -13,5 +13,5 @@ public:
     int getRestoreAmount();
     void setRestoreAmount(int newRestoreAmount);
     void use();
-    
+    std::string getJSON();
 };

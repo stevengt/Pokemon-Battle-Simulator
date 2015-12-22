@@ -8,10 +8,6 @@
 
 #include <stdio.h>
 #include <string.h>
-#define EM(__O__) std::cout<<__O__<<std::endl
-
-
-
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -54,8 +50,8 @@ void ofApp::switchToSelectPokemonMenu(){
 
 
 void ofApp::switchToStartMenu(){
+    clearClient();
     switchScreens(START_MENU);
-    
 }
 
 void ofApp::switchToSelectGameRoomScreen(){
@@ -75,6 +71,16 @@ void ofApp::switchScreens(ScreenState newScreen){
     this->screens.at(this->currentScreen)->populate();
     ofClear(200, 200, 200 );
     GlobalVariables::isUpdating = false;
+}
+
+
+void ofApp::setClient(sio::client *client){
+    this->client = client;
+}
+
+
+void ofApp::clearClient(){
+    this->client = NULL;
 }
 
 //--------------------------------------------------------------

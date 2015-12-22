@@ -11,11 +11,13 @@ class AttackAction : public PlayerAction {
 private:
     Pokemon *attackingPokemon;
     Trainer *defendingTrainer;
+    int attackIndex;
     Attack *attack;
 public:
-    AttackAction(Pokemon *attackingPokemon, Trainer *defendingTrainer, Attack *attack);
+    AttackAction(Pokemon *attackingPokemon, Trainer *defendingTrainer, int attackIndex);
     void setAttackingPokemon(Pokemon *newAttackingPokemon);
     void setDefendingTrainer(Trainer *newDefendingTrainer);
-    void setAttack(Attack *newAttack);
+    void setAttack(int newAttack);
     std::vector<std::string> execute();
+    std::string getJSON();
 };

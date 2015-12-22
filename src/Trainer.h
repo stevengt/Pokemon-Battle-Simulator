@@ -15,6 +15,7 @@ private:
 public:
     Trainer();
     Pokemon *getActivePokemon();
+    int getActivePokemonIndex();
     void setActivePokemon(int pokemonNum);
     std::vector<Pokemon*>getAllPokemon();
     Pokemon *getPokemon(int pokemonNum);
@@ -23,5 +24,6 @@ public:
     void removePokemon(int pokemonNum);
     void setBag(Bag *newBag);
     bool equals(Trainer otherTrainer);
+    std::string getJSON();
 };
 

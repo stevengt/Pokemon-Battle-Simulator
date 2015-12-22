@@ -3,10 +3,10 @@
 #include "AttackAction.h"
 #include "math.h"
 
-AttackAction::AttackAction(Pokemon *attackingPokemon, Trainer *defendingTrainer, Attack *attack){
+AttackAction::AttackAction(Pokemon *attackingPokemon, Trainer *defendingTrainer, int attackIndex){
     setAttackingPokemon(attackingPokemon);
     setDefendingTrainer(defendingTrainer);
-    setAttack(attack);
+    setAttack(attackIndex);
 }
 void AttackAction::setAttackingPokemon(Pokemon *newAttackingPokemon){
     attackingPokemon = newAttackingPokemon;
@@ -14,8 +14,9 @@ void AttackAction::setAttackingPokemon(Pokemon *newAttackingPokemon){
 void AttackAction::setDefendingTrainer(Trainer *newDefendingTrainer){
     defendingTrainer = newDefendingTrainer;
 }
-void AttackAction::setAttack(Attack *newAttack){
-    attack = newAttack;
+void AttackAction::setAttack(int newAttack){
+    attackIndex = newAttack;
+    attack = attackingPokemon->getAttacks().at(attackIndex);
 }
 std::vector<std::string> AttackAction::execute(){
     Pokemon *defendingPokemon = defendingTrainer->getActivePokemon();
@@ -57,3 +58,11 @@ std::vector<std::string> AttackAction::execute(){
     
     return retVal;
 }
+
+std::string AttackAction::getJSON(){
+    std::string json = "{ \"action type\" : \"attack\", \"index\": ";
+    json = json + std::to_string(attackIndex);
+    json = json + "}";
+    return json;
+}
+

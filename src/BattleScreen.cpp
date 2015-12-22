@@ -94,7 +94,7 @@ void BattleScreen::mousePressed(int x, int y){
                 Trainer *defendingTrainer = battle->getTrainer2();
                 for (int i = 0; i < 4 ; i++){
                     if (buttons->getButtons().at(i)->inside(x,y) && attackingPokemon->getAttacks().at(i)->getCurrentPp() != 0){
-                        if(battle->updatePlayer1TookAction(new AttackAction(attackingPokemon, defendingTrainer, attackingPokemon->getAttacks().at(i))) == SWITCH_TO_MAIN_BUTTONS ){
+                        if(battle->updatePlayer1TookAction(new AttackAction(attackingPokemon, defendingTrainer, i)) == SWITCH_TO_MAIN_BUTTONS ){
                             buttonPressed = true;
 
                         }
@@ -110,7 +110,7 @@ void BattleScreen::mousePressed(int x, int y){
                     if (buttons->getButtons().at(i)->inside(x,y)){
                         Trainer *trainer = battle->getTrainer1();
                         HpAndPpItem *item = trainer->getBag()->getHpAndPpItems().at(i);
-                        if( battle->updatePlayer1TookAction(new HpAndPpItemAction(battle->getTrainer1(), item, trainer->getActivePokemon())) == SWITCH_TO_MAIN_BUTTONS ){
+                        if( battle->updatePlayer1TookAction(new HpAndPpItemAction(battle->getTrainer1(), i, trainer->getActivePokemonIndex(), item->getItemType() == HP ? true : false )) == SWITCH_TO_MAIN_BUTTONS ){
                             buttonPressed = true;
                         }
                        
@@ -126,7 +126,7 @@ void BattleScreen::mousePressed(int x, int y){
                     if (buttons->getButtons().at(i)->inside(x,y)){
                         Trainer *trainer = battle->getTrainer1();
                         StatusItem *item = trainer->getBag()->getStatusItems().at(i);
-                        if(battle->updatePlayer1TookAction(new StatusItemAction(battle->getTrainer1(), item, trainer->getActivePokemon())) == SWITCH_TO_MAIN_BUTTONS ){
+                        if(battle->updatePlayer1TookAction(new StatusItemAction(battle->getTrainer1(), i, trainer->getActivePokemonIndex())) == SWITCH_TO_MAIN_BUTTONS ){
                             buttonPressed = true;
                         }
                        

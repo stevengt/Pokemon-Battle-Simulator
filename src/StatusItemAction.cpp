@@ -2,22 +2,24 @@
 
 #include "StatusItemAction.h"
 
-StatusItemAction::StatusItemAction(Trainer *trainer, StatusItem *item, Pokemon *pokemon){
+StatusItemAction::StatusItemAction(Trainer *trainer, int itemIndex, int pokemonIndex){
     setTrainer(trainer);
-    setItem(item);
-    setPokemon(pokemon);
+    setItem(itemIndex);
+    setPokemon(pokemonIndex);
 }
 
 void StatusItemAction::setTrainer(Trainer *newTrainer){
     trainer = newTrainer;
 }
 
-void StatusItemAction::setItem(StatusItem *newItem){
-    item = newItem;
+void StatusItemAction::setItem(int itemIndex){
+    this->itemIndex = itemIndex;
+    item = trainer->getBag()->getStatusItems().at(itemIndex);
 }
 
-void StatusItemAction::setPokemon(Pokemon *newPokemon){
-    pokemon = newPokemon;
+void StatusItemAction::setPokemon(int pokemonIndex){
+    this->pokemonIndex = pokemonIndex;
+    pokemon = trainer->getAllPokemon().at(pokemonIndex);
 }
 
 std::vector<std::string> StatusItemAction::execute(){
@@ -36,4 +38,15 @@ std::vector<std::string> StatusItemAction::execute(){
     
     return retVal;
     
+}
+
+
+std::string StatusItemAction::getJSON(){
+    std::string json = "{ \"action type\" : \"StatusItem\",";
+    json = json + "\"index\" : ";
+    json = json + std::to_string(pokemonIndex);
+    json = json + ", \"item index\" : ";
+    json = json + std::to_string(itemIndex);
+    json = json + "}";
+    return json;
 }

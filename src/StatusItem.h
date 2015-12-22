@@ -14,4 +14,5 @@ public:
     Status getStatus();
     void setStatus(Status newStatus);
     void use();
+    std::string getJSON();
 };

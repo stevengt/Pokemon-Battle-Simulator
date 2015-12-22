@@ -43,5 +43,5 @@ public:
     void setMaxHp(int newMaxHp);
     void setCurrentHp(int newCurrentHp);
     bool equals(Pokemon otherPokemon);
-    
+    std::string getJSON();
 };

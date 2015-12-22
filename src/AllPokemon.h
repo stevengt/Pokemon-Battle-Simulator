@@ -190,3 +190,30 @@ public:
     }
 };
 
+
+class PokemonFactory {
+    public:
+    
+    PokemonFactory(){}
+    
+    Pokemon* create(std::string name){
+        if (name == "Pikachu"){ return new Pikachu(); }
+        else if (name == "Charmander"){ return new Charmander(); }
+        else if (name == "Squirtle"){ return new Squirtle(); }
+        else if (name == "Bulbasaur"){ return new Bulbasaur(); }
+        else if (name == "Skarmory"){return new Skarmory(); }
+        else if (name == "Ghastly"){return new Ghastly(); }
+        else if (name == "Lotad"){return new Lotad(); }
+        else if (name == "Magnemite"){return new Magnemite(); }
+        else if (name == "Jynx"){return new Jynx(); }
+        else if (name == "Sneasel"){return new Sneasel(); }
+        else if (name == "Aerodactyl"){return new Aerodactyl(); }
+        else if (name == "Axew"){return new Axew(); }
+        else if (name == "Absol"){return new Absol(); }
+        else if (name == "Clefairy"){return new Clefairy(); }
+        else { return nullptr; }
+
+    }
+    
+};
+

@@ -5,4 +5,5 @@
 
 namespace GlobalVariables{
     extern bool isUpdating;
+    extern ofApp *globalApp;
 }

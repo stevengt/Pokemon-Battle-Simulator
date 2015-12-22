@@ -17,6 +17,10 @@ Pokemon* Trainer::getPokemon(int pokemonNum){
     return pokemon.at(pokemonNum);
 }
 
+int Trainer::getActivePokemonIndex(){
+    return activePokemon;
+}
+
 Bag *Trainer::getBag(){return bag;}
 
 Pokemon *Trainer::getActivePokemon(){
@@ -65,3 +69,16 @@ bool Trainer::equals(Trainer otherTrainer){
     }
     return true;
 }
+
+
+std::string Trainer::getJSON(){
+    std::string json = " { \"pokemon\" : [ ";
+    for(int i = 0; i < pokemon.size() ; i++){
+        json = json + getPokemon(i)->getJSON();
+        if (i < 5) {json = json + " , ";}
+    }
+    json = json + " ] }";
+    return json;
+    
+}
+

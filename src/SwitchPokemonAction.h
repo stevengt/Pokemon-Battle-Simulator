@@ -12,4 +12,6 @@ public:
     void setTrainer(Trainer *newTrainer);
     void setNewPokemonNum(int newVal);
     std::vector<std::string> execute();
+    std::string getJSON();
+    
 };

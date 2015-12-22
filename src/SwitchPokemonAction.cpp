@@ -21,3 +21,11 @@ std::vector<std::string> SwitchPokemonAction::execute(){
     retVal.push_back("Player switched out " + oldPokemonName + " for " + newPokemonName);
     return retVal;
 }
+
+std::string SwitchPokemonAction::getJSON(){
+    std::string json = "{ \"action type\" :\"switch pokemon\",";
+    json = json + "\"index\" : ";
+    json = json + std::to_string(newPokemonNum);
+    json = json + "}";
+    return json;
+}

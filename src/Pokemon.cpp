@@ -93,3 +93,10 @@ bool Pokemon::equals(Pokemon otherPokemon){
             
 }
 
+std::string Pokemon::getJSON(){
+    std::string json = "{ \"pokemon name\" : \"";
+    json = json + this->getName();
+    json = json + "\" } ";
+    return json;
+}
+

@@ -15,3 +15,35 @@ void StatusItem::setStatus(Status newStatus){status = newStatus;}
 
 //TODO
 void StatusItem::use(){return;}
+
+std::string StatusItem::getJSON(){
+    std::string json = "{ \"name\" : \"";
+    json = json + name;
+    json = json + "\", \"description\" : ";
+    json = json + description;
+    json = json + "\", \"status\" : ";
+    std::string tmp;
+    switch(status){
+        case BURNED :
+            tmp = "\"burned\"";
+            break;
+        case FROZEN :
+            tmp = "\"frozen\"";
+            break;
+        case PARALYZED:
+            tmp = "\"paralyzed\"";
+            break;
+        case POISENED:
+            tmp = "\"poisened\"";
+            break;
+        case ASLEEP:
+            tmp = "\"asleep\"";
+            break;
+        case CONFUSED:
+            tmp = "\"confused\"";
+            break;
+    }
+    json = json + tmp;
+    json = json + "}";
+    return json;
+}

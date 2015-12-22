@@ -12,12 +12,15 @@ private:
     HpAndPpItem *item;
     Pokemon *pokemon;
     Attack *attack;
+    int index;
+    int itemIndex;
+    bool isHpItem;
 public:
-    HpAndPpItemAction(Trainer *trainer, HpAndPpItem *item, Pokemon *pokemon);
-    HpAndPpItemAction(Trainer *trainer, HpAndPpItem *item, Attack *attack);
+    HpAndPpItemAction(Trainer *trainer, int itemIndex, int index, bool isHpItem);
     void setTrainer(Trainer *newTrainer);
-    void setItem(HpAndPpItem *item);
-    void setPokemon(Pokemon *pokemon);
-    void setAttack(Attack *newAttack);
+    void setItem(int itemIndex);
+    void setPokemon(int pokemonIndex);
+    void setAttack(int attackIndex);
     std::vector<std::string> execute();
+    std::string getJSON();
 };

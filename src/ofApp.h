@@ -42,13 +42,15 @@ private:
         ofEvent<bool> computerBattle;
         bool isPaused;
         void addScreens();
+        void setClient(sio::client *client);
+        void clearClient();
         ScreenState currentScreen;
 
     
     std::mutex _lock;
     std::condition_variable_any _cond;
     bool connect_finish = false;
-    
+    sio::client *client = NULL;
     
 };
 

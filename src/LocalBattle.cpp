@@ -46,7 +46,7 @@ PlayerAction *LocalBattle::generateRandomeAction(){
             }
         } else {
             randomNum2 = rand() % 4;
-            action = new AttackAction(trainer2->getActivePokemon(),trainer1,trainer2->getActivePokemon()->getAttacks().at(randomNum2));
+            action = new AttackAction(trainer2->getActivePokemon(),trainer1,randomNum2);
         }
     return action;
 }

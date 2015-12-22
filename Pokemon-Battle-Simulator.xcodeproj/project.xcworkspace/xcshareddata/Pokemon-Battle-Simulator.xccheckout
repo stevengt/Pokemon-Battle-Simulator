@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>43F70EEE-E6D5-4D9C-89A6-DD224ABE368E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Pokemon-Battle-Simulator</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>11B059EE04D20358F854324FF6D2D604E49D336C</key>
@@ -18,15 +18,15 @@
 		<string>https://github.com/labatrockwell/ofxLibwebsockets.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Pokemon-Battle-Simulator.xcodeproj/project.xcworkspace</string>
+	<string>Pokemon-Battle-Simulator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>11B059EE04D20358F854324FF6D2D604E49D336C</key>
 		<string>../..</string>
 		<key>21C71CD5ED4B8C77974DDBAF056104F039A3B593</key>
-		<string>../..socket.io-client-cpp/</string>
+		<string>../..socket.io-client-cpp</string>
 		<key>FB950DA91696DB40601A43AFF1A56B2E39217374</key>
-		<string>../../../../../addons/ofxLibwebsockets</string>
+		<string>../../../addons/ofxLibwebsockets</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:stevengt/Pokemon-Battle-Simulator.git</string>
@@ -58,7 +58,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>21C71CD5ED4B8C77974DDBAF056104F039A3B593</string>
 			<key>IDESourceControlWCCName</key>
-			<string>socket.io-client-cpp</string>
+			<string>Pokemon-Battle-Simulatorsocket.io-client-cpp</string>
 		</dict>
 	</array>
 </dict>

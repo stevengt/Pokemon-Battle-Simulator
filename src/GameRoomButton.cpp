@@ -8,24 +8,24 @@ GameRoomButton::GameRoomButton(int x, int y, int w, int h, sio::client *client, 
 
     
         client->socket()->on("room info", sio::socket::event_listener_aux([&](string const& name, object_message::ptr const& data, bool isAck,message::list &ack_resp){
-            //mainApp->_lock.lock();
+            GlobalVariables::globalApp->_lock.lock();
             std::string roomInfo = data->get_map()["data"]->get_string();
             this->Button::setText(roomInfo);
             roomInfoRecieved = true;
-            mainApp->_cond.notify_all();
-            //mainApp->_lock.unlock();
+            GlobalVariables::globalApp->_cond.notify_all();
+            GlobalVariables::globalApp->_lock.unlock();
         }));
     
     client->socket()->emit("get room info");
     
         mainApp->_lock.lock();
-        if(!roomInfoRecieved)
+        while(!roomInfoRecieved)
         {
             mainApp->_cond.wait(mainApp->_lock);
         }
+        roomInfoRecieved = false;
         mainApp->_lock.unlock();
    
-    roomInfoRecieved = false;
     
 }
 

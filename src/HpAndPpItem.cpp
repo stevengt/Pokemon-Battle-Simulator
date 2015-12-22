@@ -13,3 +13,16 @@ void HpAndPpItem::setRestoreAmount(int newRestoreAmount){restoreAmount = newRest
 
 //TODO
 void HpAndPpItem::use(){return;}
+
+std::string HpAndPpItem::getJSON(){
+    std::string json = "{ \"name\" : \"";
+    json = json + name;
+    json = json + "\", \"description\" : ";
+    json = json + description;
+    json = json + "\", \"restoreAmount\" : ";
+    json = json + std::to_string(restoreAmount);
+    json = json + ",\"item type\" : ";
+    json = json + (type == HP ? "\"hp\"" : "\"pp\"");
+    json = json + "}";
+    return json;
+}

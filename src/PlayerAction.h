@@ -9,4 +9,5 @@ protected :
     
 public:
     virtual std::vector<std::string> execute()=0;
+    virtual std::string getJSON()=0;
 };

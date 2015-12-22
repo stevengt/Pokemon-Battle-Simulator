@@ -1,32 +1,34 @@
 
 #include "HpAndPpItemAction.h"
 
-HpAndPpItemAction::HpAndPpItemAction(Trainer *trainer, HpAndPpItem *item, Pokemon *pokemon){
+HpAndPpItemAction::HpAndPpItemAction(Trainer *trainer, int itemIndex, int index, bool isHpItem){
     setTrainer(trainer);
-    setItem(item);
-    setPokemon(pokemon);
-}
-
-HpAndPpItemAction::HpAndPpItemAction(Trainer *trainer, HpAndPpItem *item, Attack *attack){
-    setTrainer(trainer);
-    setItem(item);
-    setAttack(attack);
+    setItem(itemIndex);
+    this->isHpItem = isHpItem;
+    if(isHpItem){
+        setPokemon(index);
+    } else {
+        setAttack(index);
+    }
 }
 
 void HpAndPpItemAction::setTrainer(Trainer *newTrainer){
     trainer = newTrainer;
 }
 
-void HpAndPpItemAction::setItem(HpAndPpItem *newItem){
-    item = newItem;
+void HpAndPpItemAction::setItem(int itemIndex){
+    this->itemIndex = itemIndex;
+    item = trainer->getBag()->getHpAndPpItems().at(itemIndex);
 }
 
-void HpAndPpItemAction::setPokemon(Pokemon *newPokemon){
-    pokemon = newPokemon;
+void HpAndPpItemAction::setPokemon(int pokemonIndex){
+    this->index = pokemonIndex;
+    pokemon = trainer->getPokemon(pokemonIndex);
 }
 
-void HpAndPpItemAction::setAttack(Attack *newAttack){
-    attack = newAttack;
+void HpAndPpItemAction::setAttack(int attackIndex){
+    this->index = attackIndex;
+    attack = pokemon->getAttacks().at(attackIndex);
 }
 
 std::vector<std::string> HpAndPpItemAction::execute(){
@@ -56,4 +58,17 @@ std::vector<std::string> HpAndPpItemAction::execute(){
     retVal.push_back("Player used " + item->getName());
     return retVal;
     
+}
+
+
+std::string HpAndPpItemAction::getJSON(){
+    std::string json = "{ \"action type\" : \"HpAndPpItem\",";
+    json = json + " \"isHpItem\" : ";
+    json = json + (isHpItem ? "\"true\", " : "\"false\", ");
+    json = json + "\"index\" : ";
+    json = json + std::to_string(index);
+    json = json + ", \"item index\" : ";
+    json = json + std::to_string(itemIndex);
+    json = json + "}";
+    return json;
 }

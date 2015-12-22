@@ -42,6 +42,7 @@
 		A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCE1C24D0EC0005BC2B /* Util.cpp */; };
 		A934DA171C28478600897E8B /* SelectGameRoomScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */; };
 		A934DA1A1C284B6300897E8B /* GameRoomButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A934DA181C284B6300897E8B /* GameRoomButton.cpp */; };
+		A9A417FE1C290860009D3AA9 /* OnlineBattle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A417FC1C290860009D3AA9 /* OnlineBattle.cpp */; };
 		A9E368B51C270AE40058C9D6 /* sio_client_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */; };
 		A9E368B61C270AE40058C9D6 /* sio_packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B21C270AE40058C9D6 /* sio_packet.cpp */; };
 		A9E368B71C270AE40058C9D6 /* sio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E368B31C270AE40058C9D6 /* sio_client.cpp */; };
@@ -51,7 +52,6 @@
 		A9E369381C27130F0058C9D6 /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369331C27130F0058C9D6 /* libboost_system-mt.a */; };
 		A9E369391C27130F0058C9D6 /* libsioclient_tls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369341C27130F0058C9D6 /* libsioclient_tls.a */; };
 		A9E3693A1C27130F0058C9D6 /* libsioclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E369351C27130F0058C9D6 /* libsioclient.a */; };
-		A9E369CC1C2781F40058C9D6 /* NewPlayerMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */; };
 		B9A32C1F1DBD012324BF9610 /* Pokemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11C0900C8D5C113E4B1C45B7 /* Pokemon.cpp */; };
 		CC6A7976957BB0308C358E9B /* Bag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1955BD04CF9229A68D1E73E2 /* Bag.cpp */; };
 		CEE2492E2D27429A0CCCA768 /* GlobalVariables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6458C67E6C2EDBBBB9C1826 /* GlobalVariables.cpp */; };
@@ -191,6 +191,8 @@
 		A934DA181C284B6300897E8B /* GameRoomButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoomButton.cpp; sourceTree = "<group>"; };
 		A934DA191C284B6300897E8B /* GameRoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoomButton.h; sourceTree = "<group>"; };
 		A934DA1B1C288B5D00897E8B /* ConnectionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionListener.h; sourceTree = "<group>"; };
+		A9A417FC1C290860009D3AA9 /* OnlineBattle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlineBattle.cpp; sourceTree = "<group>"; };
+		A9A417FD1C290860009D3AA9 /* OnlineBattle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineBattle.h; sourceTree = "<group>"; };
 		A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client_impl.cpp; path = "socket.io-client-cpp/src/internal/sio_client_impl.cpp"; sourceTree = "<group>"; };
 		A9E368B21C270AE40058C9D6 /* sio_packet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_packet.cpp; path = "socket.io-client-cpp/src/internal/sio_packet.cpp"; sourceTree = "<group>"; };
 		A9E368B31C270AE40058C9D6 /* sio_client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client.cpp; path = "socket.io-client-cpp/src/sio_client.cpp"; sourceTree = "<group>"; };
@@ -200,8 +202,6 @@
 		A9E369331C27130F0058C9D6 /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "socket.io-client-cpp/build/lib/Release/libboost_system-mt.a"; sourceTree = "<group>"; };
 		A9E369341C27130F0058C9D6 /* libsioclient_tls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient_tls.a; path = "socket.io-client-cpp/build/lib/Release/libsioclient_tls.a"; sourceTree = "<group>"; };
 		A9E369351C27130F0058C9D6 /* libsioclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsioclient.a; path = "socket.io-client-cpp/build/lib/Release/libsioclient.a"; sourceTree = "<group>"; };
-		A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewPlayerMessage.cpp; sourceTree = "<group>"; };
-		A9E369CB1C2781F40058C9D6 /* NewPlayerMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPlayerMessage.h; sourceTree = "<group>"; };
 		AC339E5A0FFE897BF12146DD /* Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Button.cpp; path = src/Button.cpp; sourceTree = SOURCE_ROOT; };
 		B376F8E1B8BA6DD30B563DC5 /* HpAndPpItemAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = HpAndPpItemAction.cpp; path = src/HpAndPpItemAction.cpp; sourceTree = SOURCE_ROOT; };
 		C4417B5F6B1AD3AD94AE89F1 /* BattleReturnState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BattleReturnState.h; path = src/BattleReturnState.h; sourceTree = SOURCE_ROOT; };
@@ -538,13 +538,13 @@
 				37700DEADB4789E9C32A2830 /* SwitchPokemonAction.h */,
 				D303D5B15891DE8207F9B037 /* Trainer.cpp */,
 				8318B7AFEB2B926C3DC6A22B /* Trainer.h */,
-				A9E369CA1C2781F40058C9D6 /* NewPlayerMessage.cpp */,
-				A9E369CB1C2781F40058C9D6 /* NewPlayerMessage.h */,
 				A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */,
 				A934DA161C28478600897E8B /* SelectGameRoomScreen.h */,
 				A934DA181C284B6300897E8B /* GameRoomButton.cpp */,
 				A934DA191C284B6300897E8B /* GameRoomButton.h */,
 				A934DA1B1C288B5D00897E8B /* ConnectionListener.h */,
+				A9A417FC1C290860009D3AA9 /* OnlineBattle.cpp */,
+				A9A417FD1C290860009D3AA9 /* OnlineBattle.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -657,6 +657,7 @@
 				D7EB7365E770AE917E8E6870 /* Attack.cpp in Sources */,
 				F561D26E330F9036B96869AD /* AttackAction.cpp in Sources */,
 				A924ADD21C24D0EC0005BC2B /* Connection.cpp in Sources */,
+				A9A417FE1C290860009D3AA9 /* OnlineBattle.cpp in Sources */,
 				A924AD881C24CF9A0005BC2B /* ofxBaseGui.cpp in Sources */,
 				A934DA171C28478600897E8B /* SelectGameRoomScreen.cpp in Sources */,
 				988900E4C562DED794ED8600 /* AttackButtonGroup.cpp in Sources */,
@@ -692,7 +693,6 @@
 				A924ADD41C24D0EC0005BC2B /* Protocol.cpp in Sources */,
 				0CDFA4BAFF3C653E6B589F9E /* SelectPokemonMenuOption.cpp in Sources */,
 				87C044255589E67A10841C5D /* StartMenu.cpp in Sources */,
-				A9E369CC1C2781F40058C9D6 /* NewPlayerMessage.cpp in Sources */,
 				F76BD9E4C7DA2BDEBDC55C6D /* StatusItem.cpp in Sources */,
 				A924AD8B1C24CF9A0005BC2B /* ofxLabel.cpp in Sources */,
 				768DD3B9865849CB30280F54 /* StatusItemAction.cpp in Sources */,

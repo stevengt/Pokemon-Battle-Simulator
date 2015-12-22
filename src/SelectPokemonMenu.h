@@ -11,8 +11,11 @@
 #include "GlobalVariables.h"
 #include "Button.h"
 #include "LocalBattle.h"
+#include "OnlineBattle.h"
 #include <iostream>
 #include <vector>
+
+using namespace sio;
 
 class SelectPokemonMenu : public Screen {
     

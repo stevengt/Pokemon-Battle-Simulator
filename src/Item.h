@@ -24,6 +24,7 @@ public:
     //Name and Description are unique identifiers of an item
     bool equals(Item *otherItem);
     virtual void use()=0;
+    virtual std::string getJSON()=0;
     
 };
 
