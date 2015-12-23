@@ -3,7 +3,6 @@
 
 #include "ofMain.h"
 #include "Drawable.h"
-#include "Battle.h"
 
 class EventsLogDisplay : public Drawable {
 private:
@@ -13,11 +12,11 @@ private:
     static const int height = 250;
     static const int textMargin = 5;
     static const int textOffset = 15;
-    Battle *battle;
+    std::vector<std::string> *log;
 public:
     EventsLogDisplay();
-    EventsLogDisplay(Battle *battle);
-    void setBattle(Battle *newBattle);
+    EventsLogDisplay(std::vector<std::string> *log);
+    void setLog(std::vector<std::string> *log);
     void draw();
     void clear();
 };

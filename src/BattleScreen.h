@@ -9,8 +9,16 @@
 #include "AttackButtonGroup.h"
 #include "PokemonButtonGroup.h"
 #include "EventsLogDisplay.h"
-
-
+#include "ofMain.h"
+#include "PokeType.h"
+#include "ItemButtonGroup.h"
+#include "SwitchPokemonAction.h"
+#include "AttackAction.h"
+#include "HpAndPpItemAction.h"
+#include "StatusItemAction.h"
+#include "EndGameButtonGroup.h"
+#include "BattleReturnState.h"
+#include "sio_client.h"
 
 class Battle;
 
@@ -24,11 +32,12 @@ private:
     EventsLogDisplay eventsLog;
     BattleScreenState currentState;
     ButtonGroup *buttons;
+    sio::client *client;
 
     
 public:
-    BattleScreen(Battle *battle);
-    
+    BattleScreen(Battle *battle, sio::client *client);
+    Battle *getBattle();
     void setBattle(Battle *newBattle);
     void switchState(BattleScreenState newState);
     void mousePressed(int x, int y);
@@ -36,4 +45,5 @@ public:
     void clear();
     void populate();
     void switchPokemon();
+    void setClient(sio::client *client);
 };

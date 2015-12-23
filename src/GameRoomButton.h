@@ -3,10 +3,11 @@
 
 #include "Button.h"
 #include "sio_client.h"
-#include "ofApp.h"
+
 #include "GlobalVariables.h"
 #include <cstring>
 #include <string>
+
 
 class GameRoomButton : public Button {
 private:

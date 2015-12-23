@@ -1,22 +1,12 @@
-
 #include "BattleScreen.h"
-#include "ofMain.h"
-#include "PokeType.h"
-#include "ItemButtonGroup.h"
-#include "SwitchPokemonAction.h"
-#include "AttackAction.h"
-#include "HpAndPpItemAction.h"
-#include "StatusItemAction.h"
-#include "Battle.h"
-#include "EndGameButtonGroup.h"
-#include "BattleReturnState.h"
 
-BattleScreen::BattleScreen(Battle *battle) {
+BattleScreen::BattleScreen(Battle *battle, sio::client *client) {
     setBattle(battle);
+    setClient(client);
     battle->registerListener(this);
     activePokemon1 = new BattleImage(battle->getTrainer1(), true);
     activePokemon2 = new BattleImage(battle->getTrainer2(), false);
-    eventsLog = EventsLogDisplay(battle);
+    eventsLog = EventsLogDisplay(battle->getEventsLog());
     currentState = MAIN_BUTTONS;
     
     buttons = new MainButtonGroup();
@@ -57,6 +47,7 @@ void BattleScreen::mousePressed(int x, int y){
             for (int i = 0; i < 6; i++){
                 if (buttons->getButtons().at(i)->inside(x,y) && trainer1->getAllPokemon().at(i)->getCurrentHp() != 0){
                     trainer1->setActivePokemon(i);
+                    if(client != NULL){ client->socket()->emit("pokemon fainted", sio::string_message::create(SwitchPokemonAction(trainer1, i).getJSON())); }
                     buttonPressed = true;
                     
                 }
@@ -194,4 +185,12 @@ void BattleScreen::draw(){
 }
 
 void BattleScreen::clear(){}
+
+void BattleScreen::setClient(sio::client *client){
+    this->client = client;
+}
+
+Battle *BattleScreen::getBattle(){
+    return battle;
+}
 

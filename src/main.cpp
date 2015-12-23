@@ -1,8 +1,7 @@
-#include "ofMain.h"
-#include "ofApp.h"
-#include "GlobalVariables.h"
-//#include "PokemonGlobal.cpp"
 
+#include "ofMain.h"
+#include "GlobalVariables.h"
+#include "ofApp.h"
 //========================================================================
 
 

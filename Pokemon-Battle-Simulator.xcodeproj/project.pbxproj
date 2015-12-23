@@ -113,7 +113,6 @@
 		2FE26596C7C2B3B0CAA92469 /* HpAndPpItem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = HpAndPpItem.cpp; path = src/HpAndPpItem.cpp; sourceTree = SOURCE_ROOT; };
 		33A59E01FC6E98EF95792E56 /* Battle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Battle.cpp; path = src/Battle.cpp; sourceTree = SOURCE_ROOT; };
 		37700DEADB4789E9C32A2830 /* SwitchPokemonAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SwitchPokemonAction.h; path = src/SwitchPokemonAction.h; sourceTree = SOURCE_ROOT; };
-		3CE40D7E648AE61B08325A9F /* EventsLogDisplay.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EventsLogDisplay.h; path = src/EventsLogDisplay.h; sourceTree = SOURCE_ROOT; };
 		429C7DA3D687C516A3C94C58 /* HpAndPpItem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = HpAndPpItem.h; path = src/HpAndPpItem.h; sourceTree = SOURCE_ROOT; };
 		43091E443CD422C22263A465 /* Battle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Battle.h; path = src/Battle.h; sourceTree = SOURCE_ROOT; };
 		4C9E451939871077CB32934B /* EndGameButtonGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = EndGameButtonGroup.h; path = src/EndGameButtonGroup.h; sourceTree = SOURCE_ROOT; };
@@ -191,6 +190,7 @@
 		A934DA181C284B6300897E8B /* GameRoomButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoomButton.cpp; sourceTree = "<group>"; };
 		A934DA191C284B6300897E8B /* GameRoomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoomButton.h; sourceTree = "<group>"; };
 		A934DA1B1C288B5D00897E8B /* ConnectionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionListener.h; sourceTree = "<group>"; };
+		A95771A41C2A1A1C001DC4B4 /* EventsLogDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsLogDisplay.h; sourceTree = "<group>"; };
 		A9A417FC1C290860009D3AA9 /* OnlineBattle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlineBattle.cpp; sourceTree = "<group>"; };
 		A9A417FD1C290860009D3AA9 /* OnlineBattle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineBattle.h; sourceTree = "<group>"; };
 		A9E368B11C270AE40058C9D6 /* sio_client_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sio_client_impl.cpp; path = "socket.io-client-cpp/src/internal/sio_client_impl.cpp"; sourceTree = "<group>"; };
@@ -497,7 +497,7 @@
 				7B61FDE0A8E05C029006AB6C /* EndGameButtonGroup.cpp */,
 				4C9E451939871077CB32934B /* EndGameButtonGroup.h */,
 				F289E8FA692B9818215AB77E /* EventsLogDisplay.cpp */,
-				3CE40D7E648AE61B08325A9F /* EventsLogDisplay.h */,
+				A95771A41C2A1A1C001DC4B4 /* EventsLogDisplay.h */,
 				D6458C67E6C2EDBBBB9C1826 /* GlobalVariables.cpp */,
 				DB8D7C7DAFCE74113735EC49 /* GlobalVariables.h */,
 				29C2187B1D4B13207673311B /* GroupOf4Buttons.h */,

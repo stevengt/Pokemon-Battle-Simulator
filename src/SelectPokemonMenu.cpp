@@ -107,6 +107,7 @@ Battle *SelectPokemonMenu::makeBattle(){
                 std::string pokemonName = data->get_map()["pokemon"]->get_vector().at(i)->get_map()["pokemon name"]->get_string();
                 trainer2->addPokemon(factory.create(pokemonName));
             }
+                        
             trainerInfoRecieved = true;
             GlobalVariables::globalApp->_cond.notify_all();
             GlobalVariables::globalApp->_lock.unlock();

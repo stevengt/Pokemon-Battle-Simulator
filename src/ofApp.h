@@ -1,18 +1,36 @@
 #pragma once
 
+//#include "ofMain.h"
+//#include "Screen.h"
+//#include "ListOfScreens.h"
+#include <vector>
+#include <mutex>
+//#include "OnlineBattle.h"
+#include <iostream>
+//#include "StartMenu.h"
+//#include "SelectPokemonMenu.h"
+//#include "BattleScreen.h"
+//#include "SelectGameRoomScreen.h"
+//#include "GlobalVariables.h"
+
+#include <stdio.h>
+#include <string.h>
+//using Poco::Thread;
+
+//class BattleScreen;
+//class Battle;
+//class OnlineBattle;
+
 #include "ofMain.h"
 #include "Screen.h"
 #include "ListOfScreens.h"
 #include "BattleScreen.h"
-#include "Battle.h"
-#include <vector>
+#include "GlobalVariables.h"
 
-#include <mutex>
-#include "sio_client.h"
+class StartMenu;
+class SelectPokemonMenu;
+class SelectGameRoomScreen;
 
-//using Poco::Thread;
-
-class Screen;
 
 class ofApp : public ofBaseApp {
 
@@ -51,6 +69,5 @@ private:
     std::condition_variable_any _cond;
     bool connect_finish = false;
     sio::client *client = NULL;
-    
 };
 
