@@ -48,7 +48,11 @@ void ofApp::switchToSelectPokemonMenu(){
 
 
 void ofApp::switchToStartMenu(){
-    clearClient();
+    if(client != NULL){
+        client->close();
+        client->clear_con_listeners();
+        clearClient();
+    }
     switchScreens(START_MENU);
 }
 

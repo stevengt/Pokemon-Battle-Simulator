@@ -97,7 +97,6 @@ Battle *SelectPokemonMenu::makeBattle(){
         
         mainApp->client->socket()->on("all players ready", sio::socket::event_listener_aux([&](string const& name, object_message::ptr const& data, bool isAck,message::list &ack_resp){
             GlobalVariables::globalApp->_lock.lock();
-            
             for(int i = 0; i < 6; i++){
                 std::string pokemonName = data->get_map()["pokemon"]->get_vector().at(i)->get_map()["pokemon name"]->get_string();
                 trainer2->addPokemon(factory.create(pokemonName));
@@ -111,14 +110,12 @@ Battle *SelectPokemonMenu::makeBattle(){
         mainApp->client->socket()->emit("trainer info", string_message::create(trainer1->getJSON()));
         
         mainApp->_lock.lock();
-        
         while(!trainerInfoRecieved)
         {
             mainApp->_cond.wait(mainApp->_lock);
         }
         trainerInfoRecieved = false;
         mainApp->_lock.unlock();
-        
         return new OnlineBattle(trainer1, trainer2, mainApp->client);
     }
 }

@@ -19,7 +19,6 @@ int LocalBattle::updatePlayer1TookAction(PlayerAction *action){
     updatePlayer2TookAction(generateRandomeAction());
     action1 = action;
     updatePlayer1TookAction(false);
-    updatePlayer1TookAction(false);
     return executeActions();
     
 }

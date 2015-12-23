@@ -14,9 +14,12 @@ class GameRoomButton : public Button {
 private:
     ofApp *mainApp;
     bool roomInfoRecieved = false;
+    int buttonId;
+    static int numButtons;
 public:
     sio::client *client;
     GameRoomButton(int x, int y, int w, int h, sio::client *client, ofApp *mainApp);
     void setClient(sio::client *client);
     void setMainApp(ofApp *mainApp);
+    int getId();
 };

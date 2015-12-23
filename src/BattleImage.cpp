@@ -34,7 +34,6 @@ void BattleImage::draw(){
         image.draw(imageLocation2X, imageLocation2Y, imageWidth, imageHeight);
         ofRect(imageLocation2X, imageLocation2Y + imageHeight + healthbarOffset, healthbarWidth, healthbarHeight);
     }
-    
 }
 
 void BattleImage::clear(){}

@@ -14,6 +14,7 @@ void SelectGameRoomScreen::addOptions(){
     delete client;
     
     client = new sio::client();
+    mainApp->setClient(client);
     listener = new connection_listener(*client);
     
     client->set_open_listener(std::bind(&connection_listener::on_connected, listener));
@@ -67,7 +68,11 @@ void SelectGameRoomScreen::populate(){
 
 void SelectGameRoomScreen::mousePressed(int x, int y){
     for(int i = 0; i < options->size(); i++){
-        if(options->at(i).inside(x, y)){
+        if(options->at(i).inside(x, y) && options->at(i).getText()!= "Players : 2"){
+            std::string json = "{ \"room name\" : \"room";
+            json = json + to_string(options->at(i).getId());
+            json = json + "\" }";
+            client->socket()->emit("join room", sio::string_message::create(json));
             mainApp->setClient(options->at(i).client);
             mainApp->switchToSelectPokemonMenu();
             return;

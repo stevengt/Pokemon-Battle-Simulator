@@ -179,6 +179,7 @@ void BattleScreen::switchPokemon(){
 
 
 void BattleScreen::draw(){
+    ofClear(200, 200, 200);
     activePokemon1->draw();
     activePokemon2->draw();
     eventsLog.draw();
