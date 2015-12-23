@@ -1,7 +1,4 @@
 
-
-#include "sio_client.h"
-
 #include <functional>
 #include <iostream>
 #include <thread>
@@ -23,8 +20,11 @@
 #endif
 
 
+#include "GlobalVariables.h"
+#ifndef _ofApp
+#define _ofApp 0
 #include "ofApp.h"
-
+#endif
 using namespace sio;
 using namespace std;
 
@@ -32,22 +32,21 @@ using namespace std;
 class connection_listener
 {
     sio::client &handler;
-    ofApp *mainApp;
+
 public:
 
-    connection_listener(sio::client& h, ofApp *mainApp):
+    connection_listener(sio::client& h):
     handler(h)
     {
-        this->mainApp = mainApp;
     }
 
 
     void on_connected()
     {
-        mainApp->_lock.lock();
-        mainApp->_cond.notify_all();
-        mainApp->connect_finish = true;
-        mainApp->_lock.unlock();
+        GlobalVariables::globalApp->_lock.lock();
+        GlobalVariables::globalApp->_cond.notify_all();
+        GlobalVariables::globalApp->connect_finish = true;
+        GlobalVariables::globalApp->_lock.unlock();
     }
     void on_close(client::close_reason const& reason)
     {

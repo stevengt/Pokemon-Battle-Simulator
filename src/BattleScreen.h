@@ -20,6 +20,7 @@
 #include "BattleReturnState.h"
 #include "sio_client.h"
 
+class ofApp;
 class Battle;
 
 class BattleScreen : public Screen {
@@ -32,11 +33,9 @@ private:
     EventsLogDisplay eventsLog;
     BattleScreenState currentState;
     ButtonGroup *buttons;
-    sio::client *client;
-
-    
+ 
 public:
-    BattleScreen(Battle *battle, sio::client *client);
+    BattleScreen(Battle *battle, ofApp *mainApp);
     Battle *getBattle();
     void setBattle(Battle *newBattle);
     void switchState(BattleScreenState newState);
@@ -45,5 +44,5 @@ public:
     void clear();
     void populate();
     void switchPokemon();
-    void setClient(sio::client *client);
+
 };

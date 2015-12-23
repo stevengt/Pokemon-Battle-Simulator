@@ -18,7 +18,6 @@
 class SelectGameRoomScreen : public Screen {
     
 private:
-    ofApp *mainApp;
     Button *backButton;
     Button *warningMessage = NULL;
     sio::client *client = nullptr;
@@ -35,7 +34,6 @@ public:
     std::vector<GameRoomButton> *options;
     
     SelectGameRoomScreen(ofApp *mainApp);
-    void setMainApp(ofApp *mainApp);
     void addOptions();
     void setBackButton();
     void draw();

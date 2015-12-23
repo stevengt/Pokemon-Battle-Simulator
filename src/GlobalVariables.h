@@ -1,10 +1,9 @@
 
 #pragma once
 #include <iostream>
-//#include "ofApp.h"
 
-class ofApp;
 class OnlineBattle;
+class ofApp;
 
 namespace GlobalVariables{
     extern bool isUpdating;

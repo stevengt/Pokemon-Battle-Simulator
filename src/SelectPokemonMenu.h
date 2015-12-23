@@ -20,7 +20,6 @@ using namespace sio;
 class SelectPokemonMenu : public Screen {
     
 private:
-    ofApp *mainApp;
     Button *continueButton;
     Button *backButton;
     Button *warningMessage = NULL;
@@ -39,7 +38,6 @@ public:
     std::vector<SelectPokemonMenuOption> *options;
 
     SelectPokemonMenu(ofApp *mainApp);
-    void setMainApp(ofApp *mainApp);
     void addOptions();
     void setContinueButton();
     void setBackButton();

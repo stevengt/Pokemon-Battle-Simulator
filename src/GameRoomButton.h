@@ -5,6 +5,7 @@
 #include "sio_client.h"
 
 #include "GlobalVariables.h"
+#include "ofApp.h"
 #include <cstring>
 #include <string>
 

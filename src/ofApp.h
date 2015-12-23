@@ -1,5 +1,5 @@
 #pragma once
-
+#define _ofApp
 //#include "ofMain.h"
 //#include "Screen.h"
 //#include "ListOfScreens.h"
@@ -22,15 +22,19 @@
 //class OnlineBattle;
 
 #include "ofMain.h"
-#include "Screen.h"
+//#include "Screen.h"
 #include "ListOfScreens.h"
 #include "BattleScreen.h"
 #include "GlobalVariables.h"
+#include "sio_client.h"
 
+class Screen;
+class Battle;
 class StartMenu;
 class SelectPokemonMenu;
 class SelectGameRoomScreen;
 
+using namespace sio;
 
 class ofApp : public ofBaseApp {
 

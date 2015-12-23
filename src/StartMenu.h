@@ -15,7 +15,6 @@ class StartMenu : public Screen {
     
 private:
     ofImage image;
-    ofApp *mainApp;
     Button *computerButton;
     Button *onlineButton;
     static const int imageWidth = 400;
@@ -34,7 +33,6 @@ public:
     Button getOnlineButton();
     ofApp *getMainApp();
     
-    void setMainApp(ofApp *mainApp);
     void setImage(std::string imageLocation);
     void setComputerButton();
     void setOnlineButton();

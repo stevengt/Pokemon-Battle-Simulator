@@ -3,13 +3,7 @@
 #include "AllPokemon.h"
 #include "Battle.h"
 
-SelectGameRoomScreen::SelectGameRoomScreen(ofApp *mainApp){
-    setMainApp(mainApp);
-}
-
-void SelectGameRoomScreen::setMainApp(ofApp *mainApp){
-    this->mainApp = mainApp;
-}
+SelectGameRoomScreen::SelectGameRoomScreen(ofApp *mainApp):Screen(mainApp){}
 
 void SelectGameRoomScreen::addOptions(){
     
@@ -20,7 +14,7 @@ void SelectGameRoomScreen::addOptions(){
     delete client;
     
     client = new sio::client();
-    listener = new connection_listener(*client, mainApp);
+    listener = new connection_listener(*client);
     
     client->set_open_listener(std::bind(&connection_listener::on_connected, listener));
     client->set_close_listener(std::bind(&connection_listener::on_close, listener,std::placeholders::_1));

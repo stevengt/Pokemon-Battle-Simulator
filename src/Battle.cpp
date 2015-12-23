@@ -1,6 +1,7 @@
 
 
 #include "Battle.h"
+#include "ofApp.h"
 
 Battle::Battle(Trainer *trainer1, Trainer *trainer2){
     pokemon2Fainted = false;
@@ -9,6 +10,7 @@ Battle::Battle(Trainer *trainer1, Trainer *trainer2){
     trainer2->setActivePokemon(0);
     updating = false;
     setFaintedPokemonUpdated(false);
+    eventsLog = new std::vector<std::string>;
 }
 
 void Battle::registerListener(BattleScreen *newListener){

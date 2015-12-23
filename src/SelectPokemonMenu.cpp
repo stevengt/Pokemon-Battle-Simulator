@@ -3,13 +3,8 @@
 #include "AllPokemon.h"
 #include "Battle.h"
 
-SelectPokemonMenu::SelectPokemonMenu(ofApp *mainApp){
-    setMainApp(mainApp);
-}
+SelectPokemonMenu::SelectPokemonMenu(ofApp *mainApp) : Screen(mainApp){}
 
-void SelectPokemonMenu::setMainApp(ofApp *mainApp){
-    this->mainApp = mainApp;
-}
 
 void SelectPokemonMenu::addOptions(){
     options = new std::vector<SelectPokemonMenuOption>();

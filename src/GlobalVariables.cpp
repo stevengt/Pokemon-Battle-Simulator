@@ -1,7 +1,12 @@
 
 
 #include "GlobalVariables.h"
+#include "ofApp.h"
+#include "OnlineBattle.h"
 #include <iostream>
+
+using namespace sio;
+
 namespace GlobalVariables{
   
     bool isUpdating = false;

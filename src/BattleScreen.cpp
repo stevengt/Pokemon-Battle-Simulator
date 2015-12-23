@@ -1,8 +1,9 @@
 #include "BattleScreen.h"
+#include "Battle.h"
+#include "ofApp.h"
 
-BattleScreen::BattleScreen(Battle *battle, sio::client *client) {
+BattleScreen::BattleScreen(Battle *battle, ofApp *mainApp) : Screen(mainApp) {
     setBattle(battle);
-    setClient(client);
     battle->registerListener(this);
     activePokemon1 = new BattleImage(battle->getTrainer1(), true);
     activePokemon2 = new BattleImage(battle->getTrainer2(), false);
@@ -47,7 +48,7 @@ void BattleScreen::mousePressed(int x, int y){
             for (int i = 0; i < 6; i++){
                 if (buttons->getButtons().at(i)->inside(x,y) && trainer1->getAllPokemon().at(i)->getCurrentHp() != 0){
                     trainer1->setActivePokemon(i);
-                    if(client != NULL){ client->socket()->emit("pokemon fainted", sio::string_message::create(SwitchPokemonAction(trainer1, i).getJSON())); }
+                    if(mainApp->client != NULL){ mainApp->client->socket()->emit("pokemon fainted", sio::string_message::create(SwitchPokemonAction(trainer1, i).getJSON())); }
                     buttonPressed = true;
                     
                 }
@@ -185,10 +186,6 @@ void BattleScreen::draw(){
 }
 
 void BattleScreen::clear(){}
-
-void BattleScreen::setClient(sio::client *client){
-    this->client = client;
-}
 
 Battle *BattleScreen::getBattle(){
     return battle;

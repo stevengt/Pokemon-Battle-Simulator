@@ -3,8 +3,7 @@
 
 
 
-StartMenu::StartMenu(ofApp *mainApp){
-    setMainApp(mainApp);
+StartMenu::StartMenu(ofApp *mainApp) : Screen(mainApp){
     populate();
 }
 
@@ -15,14 +14,6 @@ ofImage StartMenu::getImage(){return image;}
 Button StartMenu::getComputerButton(){return *computerButton;}
 Button StartMenu::getOnlineButton(){return *onlineButton;}
 
-
-ofApp* StartMenu::getMainApp(){
-    return mainApp;
-}
-
-void StartMenu::setMainApp(ofApp *mainApp){
-    this->mainApp = mainApp;
-}
 
 void StartMenu::setImage(std::string imageLocation){
     image = ofImage();

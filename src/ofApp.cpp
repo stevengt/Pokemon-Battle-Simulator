@@ -1,4 +1,11 @@
 #include "ofApp.h"
+#include "Screen.h"
+#include "Battle.h"
+#include "StartMenu.h"
+#include "SelectPokemonMenu.h"
+#include "SelectGameRoomScreen.h"
+
+
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -51,7 +58,7 @@ void ofApp::switchToSelectGameRoomScreen(){
 }
 
 void ofApp::switchToBattleScreen(Battle *battle){
-    screens.push_back(new BattleScreen(battle, client));
+    screens.push_back(new BattleScreen(battle, this));
     switchScreens(BATTLE_SCREEN);
 }
 

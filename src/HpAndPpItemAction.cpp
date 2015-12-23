@@ -28,7 +28,7 @@ void HpAndPpItemAction::setPokemon(int pokemonIndex){
 
 void HpAndPpItemAction::setAttack(int attackIndex){
     this->index = attackIndex;
-    attack = pokemon->getAttacks().at(attackIndex);
+    attack = trainer->getActivePokemon()->getAttacks().at(attackIndex);
 }
 
 std::vector<std::string> HpAndPpItemAction::execute(){

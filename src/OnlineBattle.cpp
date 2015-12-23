@@ -1,5 +1,6 @@
 
 #include "OnlineBattle.h"
+#include "ofApp.h"
 
 OnlineBattle::OnlineBattle(Trainer *trainer1, Trainer *trainer2, sio::client *client) : Battle(trainer1, trainer2) {
     setClient(client);
