@@ -31,15 +31,6 @@
 		A924AD8D1C24CF9A0005BC2B /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD821C24CF9A0005BC2B /* ofxSlider.cpp */; };
 		A924AD8E1C24CF9A0005BC2B /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD841C24CF9A0005BC2B /* ofxSliderGroup.cpp */; };
 		A924AD8F1C24CF9A0005BC2B /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD861C24CF9A0005BC2B /* ofxToggle.cpp */; };
-		A924ADCF1C24D0EC0005BC2B /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924AD981C24D0EC0005BC2B /* jsoncpp.cpp */; };
-		A924ADD01C24D0EC0005BC2B /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A924ADAB1C24D0EC0005BC2B /* libwebsockets.a */; };
-		A924ADD11C24D0EC0005BC2B /* Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADC81C24D0EC0005BC2B /* Client.cpp */; };
-		A924ADD21C24D0EC0005BC2B /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADC91C24D0EC0005BC2B /* Connection.cpp */; };
-		A924ADD31C24D0EC0005BC2B /* Events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCA1C24D0EC0005BC2B /* Events.cpp */; };
-		A924ADD41C24D0EC0005BC2B /* Protocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCB1C24D0EC0005BC2B /* Protocol.cpp */; };
-		A924ADD51C24D0EC0005BC2B /* Reactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */; };
-		A924ADD61C24D0EC0005BC2B /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCD1C24D0EC0005BC2B /* Server.cpp */; };
-		A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924ADCE1C24D0EC0005BC2B /* Util.cpp */; };
 		A934DA171C28478600897E8B /* SelectGameRoomScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */; };
 		A934DA1A1C284B6300897E8B /* GameRoomButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A934DA181C284B6300897E8B /* GameRoomButton.cpp */; };
 		A9A417FE1C290860009D3AA9 /* OnlineBattle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A417FC1C290860009D3AA9 /* OnlineBattle.cpp */; };
@@ -161,30 +152,6 @@
 		A924AD851C24CF9A0005BC2B /* ofxSliderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
 		A924AD861C24CF9A0005BC2B /* ofxToggle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
 		A924AD871C24CF9A0005BC2B /* ofxToggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
-		A924AD921C24D0EC0005BC2B /* ofxLibwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxLibwebsockets.h; sourceTree = "<group>"; };
-		A924AD961C24D0EC0005BC2B /* json-forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
-		A924AD971C24D0EC0005BC2B /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
-		A924AD981C24D0EC0005BC2B /* jsoncpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
-		A924AD9A1C24D0EC0005BC2B /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
-		A924AD9C1C24D0EC0005BC2B /* libwebsockets-test-server.key.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libwebsockets-test-server.key.pem"; sourceTree = "<group>"; };
-		A924AD9D1C24D0EC0005BC2B /* libwebsockets-test-server.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = "libwebsockets-test-server.pem"; sourceTree = "<group>"; };
-		A924AD9F1C24D0EC0005BC2B /* libwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
-		A924ADA01C24D0EC0005BC2B /* lws_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lws_config.h; sourceTree = "<group>"; };
-		A924ADAB1C24D0EC0005BC2B /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
-		A924ADC01C24D0EC0005BC2B /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
-		A924ADC11C24D0EC0005BC2B /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
-		A924ADC21C24D0EC0005BC2B /* Events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
-		A924ADC31C24D0EC0005BC2B /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
-		A924ADC41C24D0EC0005BC2B /* Reactor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reactor.h; sourceTree = "<group>"; };
-		A924ADC51C24D0EC0005BC2B /* Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
-		A924ADC61C24D0EC0005BC2B /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		A924ADC81C24D0EC0005BC2B /* Client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Client.cpp; sourceTree = "<group>"; };
-		A924ADC91C24D0EC0005BC2B /* Connection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
-		A924ADCA1C24D0EC0005BC2B /* Events.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Events.cpp; sourceTree = "<group>"; };
-		A924ADCB1C24D0EC0005BC2B /* Protocol.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Protocol.cpp; sourceTree = "<group>"; };
-		A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reactor.cpp; sourceTree = "<group>"; };
-		A924ADCD1C24D0EC0005BC2B /* Server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
-		A924ADCE1C24D0EC0005BC2B /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
 		A934DA151C28478600897E8B /* SelectGameRoomScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectGameRoomScreen.cpp; sourceTree = "<group>"; };
 		A934DA161C28478600897E8B /* SelectGameRoomScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGameRoomScreen.h; sourceTree = "<group>"; };
 		A934DA181C284B6300897E8B /* GameRoomButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoomButton.cpp; sourceTree = "<group>"; };
@@ -243,7 +210,6 @@
 				A9E369391C27130F0058C9D6 /* libsioclient_tls.a in Frameworks */,
 				A9E3693A1C27130F0058C9D6 /* libsioclient.a in Frameworks */,
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
-				A924ADD01C24D0EC0005BC2B /* libwebsockets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,148 +256,10 @@
 			path = ../../../addons/ofxGui/src;
 			sourceTree = "<group>";
 		};
-		A924AD901C24D0EC0005BC2B /* ofxLibwebsockets */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD911C24D0EC0005BC2B /* src */,
-				A924AD931C24D0EC0005BC2B /* libs */,
-			);
-			name = ofxLibwebsockets;
-			sourceTree = "<group>";
-		};
-		A924AD911C24D0EC0005BC2B /* src */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD921C24D0EC0005BC2B /* ofxLibwebsockets.h */,
-			);
-			name = src;
-			path = ../../../addons/ofxLibwebsockets/src;
-			sourceTree = "<group>";
-		};
-		A924AD931C24D0EC0005BC2B /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD941C24D0EC0005BC2B /* jsoncpp */,
-				A924AD991C24D0EC0005BC2B /* libwebsockets */,
-				A924ADBD1C24D0EC0005BC2B /* ofxLibwebsockets */,
-			);
-			name = libs;
-			path = ../../../addons/ofxLibwebsockets/libs;
-			sourceTree = "<group>";
-		};
-		A924AD941C24D0EC0005BC2B /* jsoncpp */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD951C24D0EC0005BC2B /* json */,
-				A924AD981C24D0EC0005BC2B /* jsoncpp.cpp */,
-			);
-			path = jsoncpp;
-			sourceTree = "<group>";
-		};
-		A924AD951C24D0EC0005BC2B /* json */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD961C24D0EC0005BC2B /* json-forwards.h */,
-				A924AD971C24D0EC0005BC2B /* json.h */,
-			);
-			path = json;
-			sourceTree = "<group>";
-		};
-		A924AD991C24D0EC0005BC2B /* libwebsockets */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD9A1C24D0EC0005BC2B /* COPYING */,
-				A924AD9B1C24D0EC0005BC2B /* data */,
-				A924AD9E1C24D0EC0005BC2B /* include */,
-				A924ADA11C24D0EC0005BC2B /* lib */,
-			);
-			path = libwebsockets;
-			sourceTree = "<group>";
-		};
-		A924AD9B1C24D0EC0005BC2B /* data */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD9C1C24D0EC0005BC2B /* libwebsockets-test-server.key.pem */,
-				A924AD9D1C24D0EC0005BC2B /* libwebsockets-test-server.pem */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		A924AD9E1C24D0EC0005BC2B /* include */ = {
-			isa = PBXGroup;
-			children = (
-				A924AD9F1C24D0EC0005BC2B /* libwebsockets.h */,
-				A924ADA01C24D0EC0005BC2B /* lws_config.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		A924ADA11C24D0EC0005BC2B /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				A924ADAA1C24D0EC0005BC2B /* osx */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		A924ADAA1C24D0EC0005BC2B /* osx */ = {
-			isa = PBXGroup;
-			children = (
-				A924ADAB1C24D0EC0005BC2B /* libwebsockets.a */,
-			);
-			path = osx;
-			sourceTree = "<group>";
-		};
-		A924ADBD1C24D0EC0005BC2B /* ofxLibwebsockets */ = {
-			isa = PBXGroup;
-			children = (
-				A924ADBE1C24D0EC0005BC2B /* include */,
-				A924ADC71C24D0EC0005BC2B /* src */,
-			);
-			path = ofxLibwebsockets;
-			sourceTree = "<group>";
-		};
-		A924ADBE1C24D0EC0005BC2B /* include */ = {
-			isa = PBXGroup;
-			children = (
-				A924ADBF1C24D0EC0005BC2B /* ofxLibwebsockets */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		A924ADBF1C24D0EC0005BC2B /* ofxLibwebsockets */ = {
-			isa = PBXGroup;
-			children = (
-				A924ADC01C24D0EC0005BC2B /* Client.h */,
-				A924ADC11C24D0EC0005BC2B /* Connection.h */,
-				A924ADC21C24D0EC0005BC2B /* Events.h */,
-				A924ADC31C24D0EC0005BC2B /* Protocol.h */,
-				A924ADC41C24D0EC0005BC2B /* Reactor.h */,
-				A924ADC51C24D0EC0005BC2B /* Server.h */,
-				A924ADC61C24D0EC0005BC2B /* Util.h */,
-			);
-			path = ofxLibwebsockets;
-			sourceTree = "<group>";
-		};
-		A924ADC71C24D0EC0005BC2B /* src */ = {
-			isa = PBXGroup;
-			children = (
-				A924ADC81C24D0EC0005BC2B /* Client.cpp */,
-				A924ADC91C24D0EC0005BC2B /* Connection.cpp */,
-				A924ADCA1C24D0EC0005BC2B /* Events.cpp */,
-				A924ADCB1C24D0EC0005BC2B /* Protocol.cpp */,
-				A924ADCC1C24D0EC0005BC2B /* Reactor.cpp */,
-				A924ADCD1C24D0EC0005BC2B /* Server.cpp */,
-				A924ADCE1C24D0EC0005BC2B /* Util.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
 				A924AD751C24CF9A0005BC2B /* ofxGui */,
-				A924AD901C24D0EC0005BC2B /* ofxLibwebsockets */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -650,13 +478,10 @@
 				A9E368B71C270AE40058C9D6 /* sio_client.cpp in Sources */,
 				A9E368B81C270AE40058C9D6 /* sio_socket.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				A924ADD71C24D0EC0005BC2B /* Util.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				A934DA1A1C284B6300897E8B /* GameRoomButton.cpp in Sources */,
-				A924ADD11C24D0EC0005BC2B /* Client.cpp in Sources */,
 				D7EB7365E770AE917E8E6870 /* Attack.cpp in Sources */,
 				F561D26E330F9036B96869AD /* AttackAction.cpp in Sources */,
-				A924ADD21C24D0EC0005BC2B /* Connection.cpp in Sources */,
 				A9A417FE1C290860009D3AA9 /* OnlineBattle.cpp in Sources */,
 				A924AD881C24CF9A0005BC2B /* ofxBaseGui.cpp in Sources */,
 				A934DA171C28478600897E8B /* SelectGameRoomScreen.cpp in Sources */,
@@ -667,15 +492,12 @@
 				A924AD891C24CF9A0005BC2B /* ofxButton.cpp in Sources */,
 				DAFD75A4112270FBC9CB4BF2 /* Battle.cpp in Sources */,
 				A924AD8D1C24CF9A0005BC2B /* ofxSlider.cpp in Sources */,
-				A924ADCF1C24D0EC0005BC2B /* jsoncpp.cpp in Sources */,
 				73D38B71244CD72BE96F8580 /* BattleImage.cpp in Sources */,
 				011E03BA6116E89067A9F276 /* BattleScreen.cpp in Sources */,
 				F7DD82C416BE189FC6777E5A /* Button.cpp in Sources */,
 				7BD645C7919B96C065BF1FDD /* ButtonGroup.cpp in Sources */,
 				805621C1E52FEDB7C00BE8DF /* EndGameButtonGroup.cpp in Sources */,
-				A924ADD51C24D0EC0005BC2B /* Reactor.cpp in Sources */,
 				FF90DED99CBB6C4311DDDB97 /* EventsLogDisplay.cpp in Sources */,
-				A924ADD61C24D0EC0005BC2B /* Server.cpp in Sources */,
 				CEE2492E2D27429A0CCCA768 /* GlobalVariables.cpp in Sources */,
 				F400D546383E08D1A139D4FA /* HpAndPpItem.cpp in Sources */,
 				A924AD8C1C24CF9A0005BC2B /* ofxPanel.cpp in Sources */,
@@ -685,12 +507,10 @@
 				77009E6047D05E4F0BDA2A88 /* LocalBattle.cpp in Sources */,
 				F2433FB3B84D65FBB1DFA01D /* MainButtonGroup.cpp in Sources */,
 				A7B597BADDFD04E0AF5EB828 /* PlayerAction.cpp in Sources */,
-				A924ADD31C24D0EC0005BC2B /* Events.cpp in Sources */,
 				B9A32C1F1DBD012324BF9610 /* Pokemon.cpp in Sources */,
 				A924AD8E1C24CF9A0005BC2B /* ofxSliderGroup.cpp in Sources */,
 				47A6D9F0D8E7F3ADC4B58BA5 /* PokemonButtonGroup.cpp in Sources */,
 				61D843178517EADFCA8C6A03 /* SelectPokemonMenu.cpp in Sources */,
-				A924ADD41C24D0EC0005BC2B /* Protocol.cpp in Sources */,
 				0CDFA4BAFF3C653E6B589F9E /* SelectPokemonMenuOption.cpp in Sources */,
 				87C044255589E67A10841C5D /* StartMenu.cpp in Sources */,
 				F76BD9E4C7DA2BDEBDC55C6D /* StatusItem.cpp in Sources */,
@@ -806,7 +626,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/stevengt/Downloads/of_v0.9.0_osx_release/addons/ofxLibwebsockets/libs/libwebsockets/lib/osx,
 					"$(PROJECT_DIR)/../../../libs/boost_1_59_0/lib",
 					"$(PROJECT_DIR)/socket.io-client-cpp/build/lib/Release",
 				);
@@ -843,7 +662,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/stevengt/Downloads/of_v0.9.0_osx_release/addons/ofxLibwebsockets/libs/libwebsockets/lib/osx,
 					"$(PROJECT_DIR)/../../../libs/boost_1_59_0/lib",
 					"$(PROJECT_DIR)/socket.io-client-cpp/build/lib/Release",
 				);

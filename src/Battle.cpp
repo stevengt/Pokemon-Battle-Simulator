@@ -71,7 +71,7 @@ bool Battle::isUpdating(){
 
 BattleReturnState Battle::executeActions(){
     int rand = std::rand() % 2;
-    executeActions(rand == 1);
+    return executeActions(rand == 1);
 }
 
 BattleReturnState Battle::executeActions(bool trainer1goesFirst){
@@ -90,9 +90,7 @@ BattleReturnState Battle::executeActions(bool trainer1goesFirst){
             } else {
                 return state;
             }
-            
-            
-            return SWITCH_TO_MAIN_BUTTONS;
+        
     } else {
             state = executeAction(action2);
             
@@ -104,10 +102,9 @@ BattleReturnState Battle::executeActions(bool trainer1goesFirst){
             } else {
                 return state;
             }
-            
-            
-            return SWITCH_TO_MAIN_BUTTONS;
     }
+    
+    return SWITCH_TO_MAIN_BUTTONS;
     
 }
 
