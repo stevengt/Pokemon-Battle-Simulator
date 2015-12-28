@@ -1,0 +1,6 @@
+﻿     Creating library bin\Pokemon.lib and object bin\Pokemon.exp
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  Pokemon.vcxproj -> C:\Users\steve_000\Downloads\of_v0.9.0_vs_release\apps\myApps\Pokemon\bin\Pokemon.exe
+  
+  	                   9	C:\Users\steve_000\Downloads\of_v0.9.0_vs_release\export\vs\Win32\
+  	    New File  		 5647872	C:\Users\steve_000\Downloads\of_v0.9.0_vs_release\export\vs\Win32\FreeImage.dll

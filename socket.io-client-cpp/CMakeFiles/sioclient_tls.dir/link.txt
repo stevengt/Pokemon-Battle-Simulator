@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq libsioclient_tls.a  CMakeFiles/sioclient_tls.dir/src/sio_client.cpp.o CMakeFiles/sioclient_tls.dir/src/sio_socket.cpp.o CMakeFiles/sioclient_tls.dir/src/internal/sio_client_impl.cpp.o CMakeFiles/sioclient_tls.dir/src/internal/sio_packet.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libsioclient_tls.a

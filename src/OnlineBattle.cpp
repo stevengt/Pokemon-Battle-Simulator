@@ -36,7 +36,7 @@ void OnlineBattle::updatePlayer1TookAction(bool nelVal){}
 
 void OnlineBattle::updatePlayer2TookAction(bool newVal){}
 
-int OnlineBattle::updatePlayer2TookAction(PlayerAction *action){}
+int OnlineBattle::updatePlayer2TookAction(PlayerAction *action) { return 0; }
 
 
 sio::client *OnlineBattle::getClient(){
@@ -50,6 +50,6 @@ void OnlineBattle::setActionInfoRecieved(bool newVal){
     actionInfoRecieved = newVal;
 }
 
-bool OnlineBattle::setTrainer1GoesFirst(bool newVal){
+void OnlineBattle::setTrainer1GoesFirst(bool newVal){
     trainer1GoesFirst = newVal;
 }

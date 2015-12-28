@@ -1,5 +1,15 @@
 
 #include "HpAndPpItem.h"
+#include <string>
+#include <sstream>
+
+template <typename T>
+std::string to_string(T value)
+{
+	std::ostringstream os;
+	os << value;
+	return os.str();
+}
 
 HpAndPpItem::HpAndPpItem(){}
 
@@ -20,7 +30,7 @@ std::string HpAndPpItem::getJSON(){
     json = json + "\", \"description\" : ";
     json = json + description;
     json = json + "\", \"restoreAmount\" : ";
-    json = json + std::to_string(restoreAmount);
+    json = json + to_string(restoreAmount);
     json = json + ",\"item type\" : ";
     json = json + (type == HP ? "\"hp\"" : "\"pp\"");
     json = json + "}";

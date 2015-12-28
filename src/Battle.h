@@ -12,7 +12,11 @@ class EventsLogDisplay;
 #include "HpAndPpItem.h"
 #include "StatusItem.h"
 #include "BattleScreen.h"
+#ifndef _UNISTD_H
+#include <io.h>
+#else
 #include <unistd.h>
+#endif
 
 class Battle {
 protected:

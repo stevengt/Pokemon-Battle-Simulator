@@ -25,7 +25,7 @@ public:
     sio::client *getClient();
     bool getActionInfoRecieved();
     void setActionInfoRecieved(bool newVal);
-    bool setTrainer1GoesFirst(bool newVal);
+    void setTrainer1GoesFirst(bool newVal);
     
 
 };

@@ -20,7 +20,7 @@ void SelectGameRoomScreen::addOptions(){
     client->set_open_listener(std::bind(&connection_listener::on_connected, listener));
     client->set_close_listener(std::bind(&connection_listener::on_close, listener,std::placeholders::_1));
     client->set_fail_listener(std::bind(&connection_listener::on_fail, listener));
-    client->connect("http://127.0.0.1:5000");
+    client->connect("ws://pokemon-battle-simulator.herokuapp.com/");
     mainApp->_lock.lock();
     while(!mainApp->connect_finish)
     {
